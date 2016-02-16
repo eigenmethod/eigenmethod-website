@@ -14,7 +14,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    font: $base-font-weight #{$base-font-size} $base-font-family;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -23,8 +23,14 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    padding: 0;
+    margin: 0;
 }
 
+
+* {
+    box-sizing: border-box;
+}
 
 
 /**
@@ -203,4 +209,92 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+
+
+
+header, main, footer {
+    max-width: 1240px;
+    margin: auto;
+}
+
+header {
+    padding: 10px 0 30px;
+}
+
+main {
+    /*text-align: center;*/
+}
+
+h1 {
+    color: #067dd9;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 68px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+strong {
+    /*color: #4cadfa;*/
+}
+
+
+.logo {
+    display: inline-block;
+    width: 193px;
+    margin-right: 30px;
+}
+
+.slogan {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.phone {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+    vertical-align: top;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.menu {
+    float: right;
+    vertical-align: middle;
+}
+
+.menu a {
+    display: inline-block;
+    text-transform: uppercase;
+    color: inherit;
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.menu a.active {
+    text-decoration: underline;
+}
+
+header .phone,
+header .menu {
+    padding-top: 17px;
+}
+
+article.about {
+    width: 660px;
+    margin: auto;
+    padding: 40px 60px;
+    background:
+        url(../img/article-bg-mid.png) no-repeat center center,
+        url(../img/article-bg-top.png) no-repeat top left,
+        url(../img/article-bg-but.png) no-repeat bottom right;
+}
+
+footer {
+    border-top: 1px solid #dedede;
+    padding: 30px 0 80px;
+    margin-top: 30px;
 }
