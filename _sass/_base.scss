@@ -326,12 +326,18 @@ footer {
     width: 1000px;
     height: 224px;
     margin: auto;
-    background-color: #33b679;
+    background-color: #e0e0e0;
     border-radius: 2px;
     overflow: hidden;
     margin-bottom: 30px;
     box-shadow: 2px 4px 8px rgba(128, 128, 128, 0.3);
 }
+
+.contacts-holder .contact .map-holder .map {
+    height: 100%;
+    width: 100%;
+}
+
 .contacts-holder .contact a {
     color: $background-color;
 }
@@ -347,6 +353,7 @@ footer {
     color: white;
     padding: 21px;
     line-height: 180px;
+    z-index: 1;
 }
 
 .contacts-holder .contact .map-holder address dl {
