@@ -10,9 +10,16 @@ title: Eigen Method
 email: your-email@domain.com
 description: > # Site of Eigen Method, we are awesome guys, lets create software together!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://eigenmethod.com"
+#url: "http://eigenmethod.com"
+url: "http://localhost:4000"
 twitter_username: eigen
 github_username:  eigen
 
 # Build settings
 markdown: kramdown
+
+# Amount of post to show on home page
+paginate: 5
+
+exclude: ["lib_requirements.txt", "README.md"]
+
