@@ -246,18 +246,20 @@ h3 {
     margin-bottom: 30px;
 }
 
-.contacts-holder .contact .map {
-    width: 1000px;
-    height: 224px;
-    margin: auto;
-    background-color: gray;
-}
-
-
 strong {
     /*color: #4cadfa;*/
 }
 
+dl dt {
+    display: inline;
+    font-style: normal;
+}
+
+dl dd {
+    display: inline;
+    font-style: normal;
+    font-weight: bold;
+}
 
 .logo {
     display: inline-block;
@@ -317,4 +319,38 @@ footer {
     border-top: 1px solid #dedede;
     padding: 34px 0 80px;
     margin-top: 34px;
+}
+
+.contacts-holder .contact .map-holder {
+    position: relative;
+    width: 1000px;
+    height: 224px;
+    margin: auto;
+    background-color: #33b679;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 2px 4px 8px rgba(128, 128, 128, 0.3);
+}
+.contacts-holder .contact a {
+    color: $background-color;
+}
+
+.contacts-holder .contact .map-holder address {
+    position: absolute;
+    display: block;
+    width: 330px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 21px;
+    line-height: 180px;
+}
+
+.contacts-holder .contact .map-holder address dl {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 32px;
 }
