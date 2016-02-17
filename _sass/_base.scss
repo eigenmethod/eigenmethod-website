@@ -283,12 +283,12 @@ dl dd {
     font-weight: 700;
 }
 
-.menu {
+.main-menu {
     float: right;
     vertical-align: middle;
 }
 
-.menu a {
+.main-menu a {
     display: inline-block;
     text-transform: uppercase;
     color: inherit;
@@ -296,12 +296,12 @@ dl dd {
     font-weight: 700;
 }
 
-.menu a.active {
+.main-menu a.active {
     text-decoration: underline;
 }
 
 header .phone,
-header .menu {
+header .main-menu {
     padding-top: 17px;
 }
 
@@ -317,8 +317,12 @@ article.about {
 
 footer {
     border-top: 1px solid #dedede;
-    padding: 34px 0 80px;
+    padding: 14px 0 80px;
     margin-top: 34px;
+}
+
+footer .main-menu {
+    margin-top: 20px;
 }
 
 .contacts-holder .contact .map-holder {
@@ -360,4 +364,17 @@ footer {
     display: inline-block;
     vertical-align: middle;
     line-height: 32px;
+}
+
+.powered {
+    display: inline-block;
+}
+
+.powered .caption {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.powered .tech {
+    letter-spacing: 16px;
 }

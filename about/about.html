@@ -32,7 +32,7 @@ permalink: /about/
 						<br>
 					</dl>
 				</address>
-				<div class="map"></div>
+				<div id="map-1" class="map"></div>
 			</div>
 		</div>
 
@@ -52,9 +52,71 @@ permalink: /about/
 						<br>
 					</dl>
 				</address>
-				<div class="map"></div>
+				<div id="map-2" class="map"></div>
 			</div>
 		</div>
 	</div>
+
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASQXLAKvIxadpZ1oMfchEZYg_IqsesHJU&callback=initMap"></script>
+
+	<script type="text/javascript">
+	function initMap() {
+
+		var icon = {
+			url: '/img/map-point.png',
+			anchor: google.maps.Point(10, 0)
+		}
+
+		var geocoder = new google.maps.Geocoder()
+
+		var map1
+		var point1
+
+		geocoder.geocode({address: 'Киев, Харьковское шоссе, 175'}, function(results, status) {
+			map1 = new google.maps.Map(document.getElementById('map-1'), {
+				center: results[0].geometry.location,
+				zoom: 11,
+				// disableDefaultUI: true,
+				streetViewControl: false,
+				mapTypeControl: false
+			});
+
+			var point1 = new google.maps.Marker({
+				map: map1,
+				position: results[0].geometry.location,
+				icon: icon,
+				anchorPoint: {
+					x: 0,
+					y: 0
+				}
+			})
+		})
+
+
+		var map2
+		var point2
+
+		geocoder.geocode({address: 'Санкт-Петербург, ул. Белоостровская, 17/2А'}, function(results, status) {
+			map2 = new google.maps.Map(document.getElementById('map-2'), {
+				center: results[0].geometry.location,
+				zoom: 11,
+				// disableDefaultUI: true,
+				streetViewControl: false,
+				mapTypeControl: false
+			});
+
+			var point2 = new google.maps.Marker({
+				map: map2,
+				position: results[0].geometry.location,
+				icon: icon,
+				anchorPoint: {
+					x: 0,
+					y: 0
+				}
+			})
+		})
+
+	}
+	</script>
 
 </main>
