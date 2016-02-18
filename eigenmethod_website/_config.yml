@@ -11,6 +11,7 @@ email: your-email@domain.com
 description: > # Site of Eigen Method, we are awesome guys, lets create software together!
 baseurl: "" # the subpath of your site, e.g. /blog
 #url: "http://eigenmethod.com"
+#url: "http://31.131.21.120"
 url: "http://localhost:4000"
 twitter_username: eigen
 github_username:  eigen

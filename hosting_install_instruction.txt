@@ -1,0 +1,86 @@
+sudo apt-get -y update
+sudo apt-get install git
+sudo apt-get install vim
+
+sudo apt-get install ruby ruby-dev make gcc nodejs
+ruby -v (если < 2.0.0 то печалька и ставим вручную)
+    sudo apt-get remove ruby
+    sudo apt-get install -y libssl-dev libreadline-dev zlib1g-dev
+    cd
+    git clone git://github.com/sstephenson/rbenv.git .rbenv
+    echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+    echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+    exec $SHELL
+
+    git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+    echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+    exec $SHELL
+
+    rbenv install 2.1.5
+    rbenv global 2.1.5
+    ruby -v
+gem install jekyll --no-rdoc --no-ri
+
+cd
+ssh-keygen
+cat ~/.ssh/id_rsa.pub (скопировать в bitbacket)
+git clone git@bitbucket.org:saprunteam/eigenmethod_website.git
+
+cd ./eigenmethod_website
+jekyll serve
+curl GET http://localhost:4000/ (видим содержимое значит гуд)
+
+sudo apt-get install openssl
+
+
+sudo apt-get install nginx
+rm /etc/nginx/sites-enabled/default
+sudo vim /etc/nginx/sites-available/eigenmethod.com
+
+server {
+        listen 80;
+        server_name eigenmethod.com;
+        access_log /home/em/eigenmethod/logs/access.log;
+        error_log /home/em/eigenmethod/logs/error.log;
+        index index.html;
+
+        location / {
+                root /home/em/eigenmethod/eigenmethod_website/_site;
+        }
+}
+
+server {
+        listen 80;
+        server_name www.eigenmethod.com;
+        return 301 http://eigenmethod.com$request_uri;
+}
+
+server {
+        listen *:443;
+        ssl on;
+        server_name eigenmethod.com;
+        rewrite ^(.*) http://eigenmethod.com$1 permanent;
+        # return 301 http://eigenmethod.com$request_uri;
+
+        ssl_certificate      /home/em/eigenmethod/serts/server.crt;
+        ssl_certificate_key  /home/em/eigenmethod/serts/server.key;
+}
+
+server {
+        listen *:443;
+        ssl on;
+        server_name www.eigenmethod.com;
+        return 301 http://eigenmethod.com$request_uri;
+
+        ssl_certificate      /home/em/eigenmethod/serts/server.crt;
+        ssl_certificate_key  /home/em/eigenmethod/serts/server.key;
+}
+
+sudo ln -s /etc/nginx/sites-available/eigenmethod.com /etc/nginx/sites-enabled/
+sudo /etc/init.d/nginx reload
+sudo /etc/init.d/nginx restart
+sudo /etc/init.d/nginx status
+
+
+
+
