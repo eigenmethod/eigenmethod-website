@@ -1,0 +1,118 @@
+---
+layout: default
+title: Products
+title_rus: Продукты
+permalink: /products/
+---
+
+<main>
+    <h1>Продукты</h1>
+
+    <ul class="product-slide">
+        <li class="promo-hh active">
+            <div class="promo">
+                <div class="head">
+                    <strong>Hyper</strong>Hive
+                </div>
+                <span>Новая мобильная платформа скоростной передачи файлов, защищенных шифрованием.</span>
+                <div class="mockup"></div>
+            </div>
+            <div class="tech">
+                <span class="caption"><strong>Использованные</strong> технологии</span>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+        </li>
+
+        <li class="promo-mb">
+            <div class="promo">
+                <div class="head">
+                    <strong></strong>
+                </div>
+                <span></span>
+                <div class="mockup"></div>
+            </div>
+            <div class="tech"></div>
+        </li>
+
+        <li class="promo-sv">
+            <div class="promo">
+                <div class="head">
+                    <strong></strong>
+                </div>
+                <span></span>
+                <div class="mockup"></div>
+            </div>
+            <div class="tech"></div>
+        </li>
+
+        <li class="promo-taxi">
+            <div class="promo">
+                <div class="head">
+                    <strong></strong>
+                </div>
+                <span></span>
+                <div class="mockup"></div>
+            </div>
+            <div class="tech"></div>
+        </li>
+    </ul>
+
+    <ul class="product-list">
+        <li class="active">
+            <div class="prev-hh" data-class=".promo-hh">
+                <div class="head">
+                    <strong>Hyper</strong>Hive
+                </div>
+                <span class="description">Мобильное решение для торговли облигациями.</span>
+            </div>
+        </li>
+        <li>
+            <div class="prev-mb" data-class=".promo-mb">
+                <div class="head">
+                    <strong>my</strong>Bond
+                </div>
+                <span class="description">Мобильное решение для торговли облигациями.</span>
+            </div>
+        </li>
+        <li>
+            <div class="prev-sv" data-class=".promo-sv">
+                <div class="head">
+                    <strong>Security</strong> Vision
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="prev-taxi" data-class=".promo-taxi">
+                <div class="head">
+                    <strong>Taxi</strong> Platform
+                </div>
+            </div>
+        </li>
+    </ul>
+
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.product-list li').click(function(e){
+            $('.product-slide li').removeClass('active')
+            $($(this).children(':first').data('class')).addClass('active')
+
+            $('.product-list li.active')
+                .removeClass('active')
+                .children(':last')
+                .insertBefore($(this).children(':first'))
+
+            $(this).addClass('active')
+
+        })
+
+        $('.product-list li.active').hide()
+    })
+</script>

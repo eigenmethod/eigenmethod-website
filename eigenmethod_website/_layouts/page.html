@@ -1,16 +1,18 @@
 ---
 layout: default
 ---
-<article class="post">
+<main>
+    <article class="post">
 
 
-  <ul class="post-content">
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        {{ content }}
-      </li>
-  </ul>
+      <ul class="post-content">
+          <li>
+            <h2>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+            {{ content }}
+          </li>
+      </ul>
 
-</article>
+    </article>
+</main>
