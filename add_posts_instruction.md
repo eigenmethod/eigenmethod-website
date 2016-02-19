@@ -39,7 +39,8 @@ Hello world!
 ##### 4) Загружаем посты на сервер
 Создаем коммит
 ```sh
-git add --all
+git status
+git add 'имя_добавляемого_файла'
 git commit -m 'парочка офигительных постов'
 git push origin master
 ```
@@ -52,7 +53,7 @@ ssh em@31.131.21.120
 Загружаем изменения
 ```sh
 cd ~/eigenmethod-website
-git pull
+git pull origin master
 ```
 Пересобираем статику
 ```sh
