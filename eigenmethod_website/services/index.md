@@ -1,7 +1,7 @@
 ---
 layout: page
 title: SERVICES
-title_rus: СЕРВИСЫ
+language: en
 permalink: /services/
 ---
 

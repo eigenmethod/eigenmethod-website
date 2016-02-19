@@ -18,9 +18,19 @@ github_username:  eigen
 
 # Build settings
 markdown: kramdown
+encoding: utf-8
 
-# Amount of post to show on home page
-paginate: 5
+# Pagenate settings
+paginate: 3
+paginate_path: "/blog/page:num"
 
+# Plugins
+gems: ["jekyll-multiple-languages", "jekyll-paginate"]
+
+# Languages settings
+languages: ['en', 'ru']
+language_default: 'en'
+
+# Excludes
 exclude: ["lib_requirements.txt", "README.md"]
 
