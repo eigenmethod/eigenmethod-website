@@ -61,9 +61,13 @@ cd ./eigenmethod-website
 mkdir logs
 mkdir serts
 ```
-Устанавливаем Jekyll
+Устанавливаем Jekyll и необходимые плагины через Bundler
 ```sh
 gem install jekyll --no-rdoc --no-ri
+gem install bundler
+bundle init
+echo 'gem "jekyll"' >> Gemfile
+echo 'gem "jekyll-paginate"' >> Gemfile
 ```
 Создаем ssl сертификаты
 ```sh
@@ -81,7 +85,7 @@ vim _config.yml
 ```
 Заменяем значение url: "http://localhost:4000" на url: "http://eigenmethod.com" и создаем статику в _site
 ```sh
-jekyll build
+bundle exec jekyll build
 ```
 Удаляем дефолтные настройки nginx.
 ```sh

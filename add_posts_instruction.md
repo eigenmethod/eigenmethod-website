@@ -3,7 +3,7 @@
 Инструкция по добавлению постов в блог сайта Eigen Method.
 
 ### Последовательность действий
-##### 1) Клонируем репозиторий
+##### 1) Клонируем репозиторий (пропустить если уже склонировали)
 ```sh
 git clone https://github.com/eigenmethod/eigenmethod-website.git
 ```
@@ -42,6 +42,7 @@ Hello world!
 git status
 git add 'имя_добавляемого_файла'
 git commit -m 'парочка офигительных постов'
+git pull origin master
 git push origin master
 ```
 Прописываем логин, пароль, ожидаем загрузки.
@@ -58,7 +59,7 @@ git pull origin master
 Пересобираем статику
 ```sh
 cd ~/eigenmethod-website/eigenmethod_website
-jekyll build
+bundle exec jekyll build
 ```
 ##### 4) Проверяем что изменения появились на сайте
 Переходим по ссылке http://eigenmethod.com/blog/

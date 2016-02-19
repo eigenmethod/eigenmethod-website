@@ -1,10 +1,8 @@
 ﻿---
 layout: post
 title: Validation of the software
-created_at: 2016-02-17
-description: test post N1.
+created_at: 2015-10-01
 ---
-
 
 # Процесс валидации программного обеспечения согласно стандарту ISO 9001
 
