@@ -25,8 +25,12 @@ paginate: 3
 paginate_path: "/blog/page:num"
 
 # Plugins
-gems:
-  - jekyll-paginate
+gems: ["jekyll-multiple-languages", "jekyll-paginate"]
 
+# Languages settings
+languages: ['en', 'ru']
+language_default: 'en'
+
+# Excludes
 exclude: ["lib_requirements.txt", "README.md"]
 

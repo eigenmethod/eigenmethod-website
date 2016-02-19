@@ -1,0 +1,123 @@
+---
+layout: default
+language: ru
+title: О НАС
+permalink: /about/
+---
+
+
+<main>
+	<h1>О компании</h1>
+	<article class="about">
+		<p><strong>EigenMethod</strong> - это молодая компания, у нас более <strong>50 отличных разработчиков</strong>. Мы занимаемся разработкой собственных программных продуктов. Но также мы помогаем другим компаниям успешно реализовывать их проекты по созданию программного обеспечения.</p>
+		<p>Для разработки своих продуктов мы используем самые передовые информационные технологии и методологии разработки. Создание программных продуктов осуществляется при помощи открытого стека технологий: <strong>Python, C++, PostgreSQL, Django, Twisted, Tornado, Redis и других</strong>.</p>
+		<p>У нас есть опыт разработки программного обеспечения, где требуется тесная интеграция с SAP системами. Мы предоставляем услуги по аутсорсингу разработки на <strong>SAP HANA, SAPUI5 и ABAP</strong>.</p>
+		<p>Наши офисы находятся в Восточной Европе, где <strong>много ИТ-талантов</strong>. Наша команда не только высококвалифицированная, но еще и эффективная по стоимости для наших клиентов так и для разработки собственных продуктов.</p>
+	</article>
+
+	<h1>Контакты</h1>
+	<div class="contacts-holder">
+		<div class="contact">
+			<h3>Головной офис</h3>
+			<div class="map-holder">
+				<address>
+					<dl>
+						<dt style="display: none;">Город:</dt>
+						<dd>Киев</dd>
+						<br>
+						<dt>Адрес:</dt>
+						<dd>02121,<br>Харьковское шоссе, 175, 2 этаж</dd>
+						<br>
+						<dt>Телефон:</dt>
+						<dd><a href="tel:0380445852243">038 044 585 22 43</a></dd>
+						<br>
+					</dl>
+				</address>
+				<div id="map-1" class="map"></div>
+			</div>
+		</div>
+
+		<div class="contact">
+			<h3>Отдел разработки</h3>
+			<div class="map-holder">
+				<address>
+					<dl>
+						<dt style="display: none;">Город:</dt>
+						<dd>Санкт-Петербург</dd>
+						<br>
+						<dt>Адрес:</dt>
+						<dd>197342,<br>ул. Белоостровская, 17/2А, 309</dd>
+						<br>
+						<dt>Телефон:</dt>
+						<dd><a href="tel:0078124382784">007 812 438 27 84</a></dd>
+						<br>
+					</dl>
+				</address>
+				<div id="map-2" class="map"></div>
+			</div>
+		</div>
+	</div>
+
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASQXLAKvIxadpZ1oMfchEZYg_IqsesHJU&callback=initMap"></script>
+
+	<script type="text/javascript">
+	function initMap() {
+
+		var icon = {
+			url: '/img/map-point.png',
+			anchor: google.maps.Point(10, 0)
+		}
+
+		var geocoder = new google.maps.Geocoder()
+
+		var map1
+		var point1
+
+		geocoder.geocode({address: 'Киев, Харьковское шоссе, 175'}, function(results, status) {
+			map1 = new google.maps.Map(document.getElementById('map-1'), {
+				center: results[0].geometry.location,
+				zoom: 11,
+				// disableDefaultUI: true,
+				streetViewControl: false,
+				mapTypeControl: false
+			});
+
+			var point1 = new google.maps.Marker({
+				map: map1,
+				position: results[0].geometry.location,
+				icon: icon,
+				anchorPoint: {
+					x: 0,
+					y: 0
+				}
+			})
+		})
+
+
+		var map2
+		var point2
+
+		geocoder.geocode({address: 'Санкт-Петербург, ул. Белоостровская, 17/2А'}, function(results, status) {
+			map2 = new google.maps.Map(document.getElementById('map-2'), {
+				center: results[0].geometry.location,
+				zoom: 11,
+				// disableDefaultUI: true,
+				streetViewControl: false,
+				mapTypeControl: false
+			});
+
+			var point2 = new google.maps.Marker({
+				map: map2,
+				position: results[0].geometry.location,
+				icon: icon,
+				anchorPoint: {
+					x: 0,
+					y: 0
+				}
+			})
+		})
+
+	}
+	</script>
+
+</main>

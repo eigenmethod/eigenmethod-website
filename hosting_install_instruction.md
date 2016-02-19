@@ -68,6 +68,7 @@ gem install bundler
 bundle init
 echo 'gem "jekyll"' >> Gemfile
 echo 'gem "jekyll-paginate"' >> Gemfile
+bundle install
 ```
 Создаем ssl сертификаты
 ```sh

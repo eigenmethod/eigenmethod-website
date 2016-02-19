@@ -46,7 +46,7 @@ git pull origin master
 git push origin master
 ```
 Прописываем логин, пароль, ожидаем загрузки.
-##### 4) Обновляем содержимое сервера
+##### 5) Обновляем содержимое сервера
 Подключаемся к серверу
 ```sh
 ssh em@31.131.21.120
@@ -61,6 +61,6 @@ git pull origin master
 cd ~/eigenmethod-website/eigenmethod_website
 bundle exec jekyll build
 ```
-##### 4) Проверяем что изменения появились на сайте
+##### 6) Проверяем что изменения появились на сайте
 Переходим по ссылке http://eigenmethod.com/blog/
 
