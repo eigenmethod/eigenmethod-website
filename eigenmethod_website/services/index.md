@@ -1,7 +1,8 @@
 ---
 layout: page
-title: SERVICES
+title: Services
 language: en
+lang: en
 permalink: /services/
 ---
 

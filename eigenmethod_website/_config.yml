@@ -20,7 +20,7 @@ github_username:  eigen
 markdown: kramdown
 encoding: utf-8
 
-# Pagenate settings
+# Pagination settings
 paginate: 3
 paginate_path: "/blog/page:num"
 
@@ -28,8 +28,7 @@ paginate_path: "/blog/page:num"
 gems: ["jekyll-multiple-languages", "jekyll-paginate"]
 
 # Languages settings
-languages: ['en', 'ru']
-language_default: 'en'
+languages: ['en']
 
 # Excludes
 exclude: ["lib_requirements.txt", "README.md"]
