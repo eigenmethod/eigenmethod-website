@@ -1,6 +1,6 @@
 <nav class="main-menu">
 	{% for node in site.pages %}
-		{% if node.title and site.language_default == node.lang %}
+		{% if node.title and site.language_default == node.language %}
 			{% if page.url == node.url %}
 				 <a class="page-link active" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>
 			{% else %}

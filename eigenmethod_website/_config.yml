@@ -28,7 +28,7 @@ paginate_path: "/blog/page:num"
 gems: ["jekyll-multiple-languages", "jekyll-paginate"]
 
 # Languages settings
-languages: ['en']
+languages: ['en', 'ru']
 
 # Excludes
 exclude: ["lib_requirements.txt", "README.md"]

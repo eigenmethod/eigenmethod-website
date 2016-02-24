@@ -68,6 +68,7 @@ gem install bundler
 bundle init
 echo 'gem "jekyll"' >> Gemfile
 echo 'gem "jekyll-paginate"' >> Gemfile
+echo 'gem "jekyll-multiple-languages"' >> Gemfile
 bundle install
 ```
 Создаем ssl сертификаты
@@ -80,13 +81,30 @@ openssl rsa -in server.key.org -out server.key
 openssl x509 -req -in server.csr -signkey server.key -out server.crt
 ```
 Настраиваем Jekyll. Изменяем _config.yml
+Заменяем значение url: "http://localhost:4000" на url: "http://eigenmethod.com" и создаем статику в _site
+(необязательный пункт если не ланируется делать proxy_pass на jekyll serve)
 ```sh
 cd ~/eigenmethod-website/eigenmethod_website/
 vim _config.yml
 ```
-Заменяем значение url: "http://localhost:4000" на url: "http://eigenmethod.com" и создаем статику в _site
+Собираем статику для каждого из языков (английский, русский, возможно в будущем появятся другие)
 ```sh
-bundle exec jekyll build
+cd ~/eigenmethod-website/eigenmethod_website
+vim ./_config.yml
+:31
+i
+languages: ['en', 'ru']
+<esc>
+:wq
+bundle exec jekyll build --destination _site_en/
+
+vim ./_config.yml
+:31
+i
+languages: ['ru', 'en']
+<esc>
+:wq
+bundle exec jekyll build --destination _site_ru/
 ```
 Удаляем дефолтные настройки nginx.
 ```sh
@@ -98,43 +116,76 @@ sudo vim /etc/nginx/sites-available/eigenmethod.com
 ```
 Содержимое должно быть таким
 ```sh
-# слушает 80й порт и возвращает содержимое из root
 server {
-  listen      80;
-  server_name eigenmethod.com;
-  access_log  /home/em/eigenmethod-website/logs/access.log;
-  error_log   /home/em/eigenmethod-website/logs/error.log;
-  index       index.html;
+  listen               80;
+  server_name          eigenmethod.com;
+  access_log           /home/em/eigenmethod-website/logs/access.log;
+  error_log            /home/em/eigenmethod-website/logs/error.log;
+  index                index.html;
 
   location / {
-    root /home/em/eigenmethod-website/eigenmethod_website/_site;
+    root               /home/em/eigenmethod-website/eigenmethod_website/_site_en;
   }
 }
 
-# перенаправляет с домена www.eigenmethod.com на домен eigenmethod.com
 server {
-  listen      80;
-  server_name www.eigenmethod.com;
-  return      301 http://eigenmethod.com$request_uri;
+  listen               80;
+  server_name          www.eigenmethod.com;
+  return               301 http://eigenmethod.com$request_uri;
 }
 
-# перенаправляет с https на http
 server {
-  listen        443;
-  ssl           on;
-  server_name   eigenmethod.com;
-  return        301 http://eigenmethod.com$request_uri;
+  listen               443;
+  ssl                  on;
+  server_name          eigenmethod.com;
+  return               301 http://eigenmethod.com$request_uri;
 
   ssl_certificate      /home/em/eigenmethod-website/serts/server.crt;
   ssl_certificate_key  /home/em/eigenmethod-website/serts/server.key;
 }
 
-# перенаправляет с https на http и с домена www.eigenmethod.com на домен eigenmethod.com
 server {
-  listen        443;
-  ssl           on;
-  server_name   www.eigenmethod.com;
-  return        301 http://eigenmethod.com$request_uri;
+  listen               443;
+  ssl                  on;
+  server_name          www.eigenmethod.com;
+  return               301 http://eigenmethod.com$request_uri;
+
+  ssl_certificate      /home/em/eigenmethod-website/serts/server.crt;
+  ssl_certificate_key  /home/em/eigenmethod-website/serts/server.key;
+}
+
+server {
+  listen               80;
+  server_name          eigenmethod.ru;
+  access_log           /home/em/eigenmethod-website/logs/access.log;
+  error_log            /home/em/eigenmethod-website/logs/error.log;
+
+  location / {
+    root               /home/em/eigenmethod-website/eigenmethod_website/_site_ru;
+    index              index.html;
+  }
+}
+server {
+  listen               80;
+  server_name          www.eigenmethod.ru;
+  return               301 http://eigenmethod.ru$request_uri;
+}
+
+server {
+  listen               443;
+  ssl                  on;
+  server_name          eigenmethod.ru;
+  return               301 http://eigenmethod.ru$request_uri;
+
+  ssl_certificate      /home/em/eigenmethod-website/serts/server.crt;
+  ssl_certificate_key  /home/em/eigenmethod-website/serts/server.key;
+}
+
+server {
+  listen               443;
+  ssl                  on;
+  server_name          www.eigenmethod.ru;
+  return               301 http://eigenmethod.ru$request_uri;
 
   ssl_certificate      /home/em/eigenmethod-website/serts/server.crt;
   ssl_certificate_key  /home/em/eigenmethod-website/serts/server.key;

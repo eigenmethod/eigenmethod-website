@@ -56,11 +56,26 @@ ssh em@31.131.21.120
 cd ~/eigenmethod-website
 git pull origin master
 ```
-Пересобираем статику
+Пересобираем статику для каждого из языков (английский, русский, возможно в будущем появятся другие)
 ```sh
 cd ~/eigenmethod-website/eigenmethod_website
-bundle exec jekyll build
+vim ./_config.yml
+:31
+i
+languages: ['en']
+<esc>
+:wq
+bundle exec jekyll build --destination _site_en/
+
+vim ./_config.yml
+:31
+i
+languages: ['ru']
+<esc>
+:wq
+bundle exec jekyll build --destination _site_ru/
 ```
-##### 6) Проверяем что изменения появились на сайте
+##### 6) Проверяем что изменения появились на сайтах
 Переходим по ссылке http://eigenmethod.com/blog/
+Переходим по ссылке http://eigenmethod.ru/blog/
 
