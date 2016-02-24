@@ -2,6 +2,7 @@
 layout: post
 title: Validation of the software fo
 created_at: 2015-10-01
+language: en
 ---
 
 # Процесс валидации программного обеспечения согласно стандарту ISO 9001

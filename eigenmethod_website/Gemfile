@@ -1,5 +1,9 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
-gem "jekyll"
-gem "jekyll-paginate"
+group :jekyll_plugins do
+  gem "jekyll"
+  gem "jekyll-multiple-languages"
+  gem "jekyll-paginate"
+  # gem "eigenmethod-jekyll-paginate",  '>=0.0.6'
+end

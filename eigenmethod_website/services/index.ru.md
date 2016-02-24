@@ -1,7 +1,6 @@
 ---
 layout: page
-title: SERVICES
-title_rus: СЕРВИСЫ
+title: Сервисы
 permalink: /services/
 ---
 

@@ -24,6 +24,7 @@ cd ./eigenmethod-website/eigenmethod_website/_posts
 layout: post
 title: test post
 created_at: 2016-02-17
+language: en
 description: test post N1.
 ---
 
@@ -35,6 +36,7 @@ Hello world!
  - layout всегда post
  - title это то, как пост будет выглядеть в в списке постов на странице блога
  - created_at должен совпадать с датой указанной в имени
+ - language должен быть один либо en либо ru либо, если мы добавим новые, то смотри в _config.yml -> languages
  - description это описание и там может быть все что угодно
 ##### 4) Загружаем посты на сервер
 Создаем коммит
@@ -46,7 +48,7 @@ git pull origin master
 git push origin master
 ```
 Прописываем логин, пароль, ожидаем загрузки.
-##### 4) Обновляем содержимое сервера
+##### 5) Обновляем содержимое сервера
 Подключаемся к серверу
 ```sh
 ssh em@31.131.21.120
@@ -56,11 +58,26 @@ ssh em@31.131.21.120
 cd ~/eigenmethod-website
 git pull origin master
 ```
-Пересобираем статику
+Пересобираем статику для каждого из языков (английский, русский, возможно в будущем появятся другие)
 ```sh
 cd ~/eigenmethod-website/eigenmethod_website
-bundle exec jekyll build
+vim ./_config.yml
+:31
+i
+languages: ['en', 'ru']
+<esc>
+:wq
+bundle exec jekyll build --destination _site_en/
+
+vim ./_config.yml
+:31
+i
+languages: ['ru', 'en']
+<esc>
+:wq
+bundle exec jekyll build --destination _site_ru/
 ```
-##### 4) Проверяем что изменения появились на сайте
+##### 6) Проверяем что изменения появились на сайтах
 Переходим по ссылке http://eigenmethod.com/blog/
+Переходим по ссылке http://eigenmethod.ru/blog/
 
