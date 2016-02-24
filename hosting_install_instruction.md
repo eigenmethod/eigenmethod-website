@@ -12,7 +12,7 @@
 Внутри папки eigenmethod вы обнаружите следующие компоненты:
   - eigenmethod_website - Jekyll проект
   - logs - место куда будут сбрасываться логи nginx (изначально отсутствует)
-  - serts - место куда нужно сохранять все сгенерированные спомощью openssl ключи (изначально отсутствует)
+  - certs - место куда нужно сохранять все сгенерированные спомощью openssl ключи (изначально отсутствует)
   - .gitignore - игнорируемые git файлы и папки
   - hosting_install_instruction.md - инструкция по развертыванию
   - lib_requirements.txt - набор команд для установки необходимого ПО (если после установки ruby -v <2.0.0 то jekyll не сможет корректно установиться и требуется установки из исходников, смотри пункт "Установка Ruby из исходников")
@@ -53,13 +53,13 @@ ruby 2.1.5p273 (2014-11-13 revision 48405) [x86_64-linux]
 ```
 
 ### Развертывание на сервере
-Заходим по ssh на сервер. Скачиваем проект в home директорию. Создаем logs и serts
+Заходим по ssh на сервер. Скачиваем проект в home директорию. Создаем logs и certs
 ```sh
 cd
 git clone git@bitbucket.org:saprunteam/eigenmethod_website.git
 cd ./eigenmethod-website
 mkdir logs
-mkdir serts
+mkdir certs
 ```
 Устанавливаем Jekyll и необходимые плагины через Bundler
 ```sh
@@ -73,7 +73,7 @@ bundle install
 ```
 Создаем ssl сертификаты
 ```sh
-cd ~/eigenmethod-website/serts
+cd ~/eigenmethod-website/certs
 openssl genrsa -des3 -out server.key 1024
 openssl req -new -key server.key -out server.csr
 cp server.key server.key.org
@@ -140,8 +140,8 @@ server {
   server_name          eigenmethod.com;
   return               301 http://eigenmethod.com$request_uri;
 
-  ssl_certificate      /home/em/eigenmethod-website/serts/server.crt;
-  ssl_certificate_key  /home/em/eigenmethod-website/serts/server.key;
+  ssl_certificate      /home/em/eigenmethod-website/certs/server.crt;
+  ssl_certificate_key  /home/em/eigenmethod-website/certs/server.key;
 }
 
 server {
@@ -150,9 +150,8 @@ server {
   server_name          www.eigenmethod.com;
   return               301 http://eigenmethod.com$request_uri;
 
-  ssl_certificate      /home/em/eigenmethod-website/serts/server.crt;
-  ssl_certificate_key  /home/em/eigenmethod-website/serts/server.key;
-}
+  ssl_certificate      /home/em/eigenmethod-website/certs/server.crt;
+  ssl_certificate_key  /home/em/eigenmethod-website/certs/server.key;
 
 server {
   listen               80;
@@ -177,8 +176,8 @@ server {
   server_name          eigenmethod.ru;
   return               301 http://eigenmethod.ru$request_uri;
 
-  ssl_certificate      /home/em/eigenmethod-website/serts/server.crt;
-  ssl_certificate_key  /home/em/eigenmethod-website/serts/server.key;
+  ssl_certificate      /home/em/eigenmethod-website/certs/server.crt;
+  ssl_certificate_key  /home/em/eigenmethod-website/certs/server.key;
 }
 
 server {
@@ -187,8 +186,8 @@ server {
   server_name          www.eigenmethod.ru;
   return               301 http://eigenmethod.ru$request_uri;
 
-  ssl_certificate      /home/em/eigenmethod-website/serts/server.crt;
-  ssl_certificate_key  /home/em/eigenmethod-website/serts/server.key;
+  ssl_certificate      /home/em/eigenmethod-website/certs/server.crt;
+  ssl_certificate_key  /home/em/eigenmethod-website/certs/server.key;
 }
 ```
 Активируем настройки симлинком

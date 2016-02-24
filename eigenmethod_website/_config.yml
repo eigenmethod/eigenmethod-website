@@ -19,17 +19,20 @@ github_username:  eigen
 # Build settings
 markdown: kramdown
 encoding: utf-8
+# safe: false
+# plugins_dir: ./_plugins
 
 # Pagination settings
 paginate: 3
 paginate_path: "/blog/page:num"
 
 # Plugins
+# gems: ["jekyll-multiple-languages", "eigenmethod-jekyll-paginate"]
 gems: ["jekyll-multiple-languages", "jekyll-paginate"]
 
 # Languages settings
 languages: ['en', 'ru']
 
 # Excludes
-exclude: ["lib_requirements.txt", "README.md"]
+exclude: ["lib_requirements.txt", "README.md", "add_posts_instruction.md", "hosting_install_instruction.md"]
 

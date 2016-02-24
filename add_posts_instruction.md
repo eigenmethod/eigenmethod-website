@@ -24,6 +24,7 @@ cd ./eigenmethod-website/eigenmethod_website/_posts
 layout: post
 title: test post
 created_at: 2016-02-17
+language: en
 description: test post N1.
 ---
 
@@ -35,6 +36,7 @@ Hello world!
  - layout всегда post
  - title это то, как пост будет выглядеть в в списке постов на странице блога
  - created_at должен совпадать с датой указанной в имени
+ - language должен быть один либо en либо ru либо, если мы добавим новые, то смотри в _config.yml -> languages
  - description это описание и там может быть все что угодно
 ##### 4) Загружаем посты на сервер
 Создаем коммит
@@ -62,7 +64,7 @@ cd ~/eigenmethod-website/eigenmethod_website
 vim ./_config.yml
 :31
 i
-languages: ['en']
+languages: ['en', 'ru']
 <esc>
 :wq
 bundle exec jekyll build --destination _site_en/
@@ -70,7 +72,7 @@ bundle exec jekyll build --destination _site_en/
 vim ./_config.yml
 :31
 i
-languages: ['ru']
+languages: ['ru', 'en']
 <esc>
 :wq
 bundle exec jekyll build --destination _site_ru/

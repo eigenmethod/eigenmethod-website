@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     colorator (0.1)
+    eigenmethod-jekyll-paginate (0.0.6)
     ffi (1.9.10)
     jekyll (3.1.1)
       colorator (~> 0.1)
@@ -35,6 +36,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  eigenmethod-jekyll-paginate (>= 0.0.6)
   jekyll
   jekyll-multiple-languages
   jekyll-paginate
