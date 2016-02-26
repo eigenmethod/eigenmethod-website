@@ -126,6 +126,18 @@ server {
   location / {
     root               /home/em/eigenmethod-website/eigenmethod_website/_site_en;
   }
+
+  error_page           404 /404.html;
+  location = /404.html {
+    root               /home/em/eigenmethod-website/eigenmethod_website/_site_en;
+    internal;
+  }
+
+  error_page           500 501 502 503 504 /50x.html;
+  location = /50x.html {
+    root               /home/em/eigenmethod-website/eigenmethod_website/_site_en;
+    internal;
+  }
 }
 
 server {
@@ -152,18 +164,32 @@ server {
 
   ssl_certificate      /home/em/eigenmethod-website/certs/server.crt;
   ssl_certificate_key  /home/em/eigenmethod-website/certs/server.key;
+}
 
 server {
   listen               80;
   server_name          eigenmethod.ru;
   access_log           /home/em/eigenmethod-website/logs/access.log;
   error_log            /home/em/eigenmethod-website/logs/error.log;
+  index                index.html;
 
   location / {
     root               /home/em/eigenmethod-website/eigenmethod_website/_site_ru;
-    index              index.html;
+  }
+
+  error_page           404 /404.html;
+  location = /404.html {
+    root               /home/em/eigenmethod-website/eigenmethod_website/_site_ru;
+    internal;
+  }
+
+  error_page           500 501 502 503 504 /50x.html;
+  location = /50x.html {
+    root               /home/em/eigenmethod-website/eigenmethod_website/_site_ru;
+    internal;
   }
 }
+
 server {
   listen               80;
   server_name          www.eigenmethod.ru;
@@ -189,6 +215,7 @@ server {
   ssl_certificate      /home/em/eigenmethod-website/certs/server.crt;
   ssl_certificate_key  /home/em/eigenmethod-website/certs/server.key;
 }
+
 ```
 Активируем настройки симлинком
 ```sh
