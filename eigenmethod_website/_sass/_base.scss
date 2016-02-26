@@ -456,7 +456,7 @@ footer .main-menu {
 .product-slide .promo > span {
     font-size: 24px;
     display: inline-block;
-    width: 350px;
+    width: 500px;
 }
 
 .product-slide li .promo .mockup {
@@ -469,8 +469,10 @@ footer .main-menu {
 
 .product-slide li.promo-hh .promo .mockup {
     background: transparent url(/img/products/mockup-hh.png) no-repeat center center;
-    height: 520px;
-    width: 786px;
+    height: 456px;
+    width: 767px;
+    top: 131px;
+    right: -105px;
 }
 
 .product-slide li.promo-mb .promo .mockup {
@@ -498,6 +500,8 @@ footer .main-menu {
 .product-slide li .tech .caption {
     text-transform: uppercase;
     font-size: 14px;
+    display: block;
+    margin-bottom: 20px;
 }
 
 .product-slide li .tech .caption strong {
