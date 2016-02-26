@@ -586,13 +586,13 @@ footer .main-menu {
     background: #fff url(/img/products/prev-taxi.png) no-repeat center center;
 }
 
-.services {
+.service {
     box-shadow: $hover-shadow;
     margin-bottom: 100px;
     margin-right: 5px;
 }
 
-.service-selectors {
+.service-components {
     display: inline-block;
     vertical-align: top;
 }
@@ -633,7 +633,14 @@ footer .main-menu {
 
 .service-list li:hover {
     background-color: rgb( 247, 247, 247 );
+}
+
+.service-list li:hover .description {
     text-decoration: underline;
+}
+
+.service-list li:hover.active .description {
+    text-decoration: none;
 }
 
 .service-list li.active {
@@ -644,28 +651,39 @@ footer .main-menu {
 }
 
 .service-list li .description {
-    width: 250px;
-    display: inline-block;
-    margin-top: 40px;
-    margin-left: 60px;
+    width: 260px;
+    //display: inline-block;
+    //margin-top: 40px;
+    //margin-left: 60px;
+    display: table;
+    margin: 30px auto;
 }
 
-.service-selectors .slide .description {
+.service-components .slide .description {
     color: #fff;
     width: 600px;
-    display: inline-block;
-    margin-top: 60px;
-    margin-left: 70px;
-    font-size: 23px;
+    //display: inline-block;
+    display: table;
+    //margin-top: 60px;
+    //margin-left: 70px;
+    vertical-align: middle;
+    margin: 60px auto;
+    font-size: 24px;
+    font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 100;
 }
 
-#slider {
+.service-components .slide .description h2 {
+    font-weight: bold;
+}
+
+.service-slider {
     width: 820px;
     height: 640px;
     position: relative;
 }
 
-.service-selectors .slide {
+.service-components .slide {
     position: absolute;
     overflow: hidden;
     top: 0;
@@ -678,8 +696,25 @@ footer .main-menu {
     background-size: cover;
 }
 
-.service-selectors .slide.active {
+.service-components .slide.active {
     opacity: 1;
     z-index: 10;
-    transition: opacity $fade-transition;
+}
+
+a.more-info {
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 2px;
+    background-image: -moz-linear-gradient( 90deg, rgb( 37, 72, 145 ) 0%, rgb( 6, 125, 217 ) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb( 37, 72, 145 ) 0%, rgb( 6, 125, 217 ) 100%);
+    box-shadow: 2px 3.464px 10px 0px rgb( 0, 0, 2 );
+    text-decoration: none;
+}
+
+#error {
+    width:550px;
+    height:550px;
+    margin: 0px auto;
 }
