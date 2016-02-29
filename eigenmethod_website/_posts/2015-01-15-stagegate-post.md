@@ -1,27 +1,29 @@
 ---
 layout: post
-title: Использование модели Stage-Gate Process
+title: Using Stage-Gate Process model
 created_at: 2016-02-17
 language: en
 description: На основе подхода Stage-Gate Process был разработан подход к разработке программных и программно-аппаратных комплексов любой сложности.
 ---
 
-## Модель для ведения продуктов Stage-Gate в реалиях команды Eigenmethod
+## Stage-Gate model for accompanying products in the environment provided by the Eigenmethod team
 
-Компания Eigenmethod адаптировала общую модель «Stage-Gate» и получила качественный инструмент, регламентирующий процесс развития продукта. Данный подход мы практикуем как для внутренних, собственных продуктов, например «Таксопарк» и «SeptemEx», так и предлагаем клиентам для решения их задач.  
-Нашим будущим клиентам мы можем предложить ведение их продуктов, как по всему жизненному циклу продукта, так и по отдельным этапам.
+The Eigenmethod company has adjusted a general “Stage-Gate” model and received a high-quality tool regulating the process of product development. We not only use this approach for our own internal products such as “Taxopark” and “SeptemEx” but also offer it to clients for solving their tasks.  
+We can offer our future clients maintenance of their products during the whole product life cycle and during a certain stage or stages.  
 
 ![](http://eigenmethod.com/img/SG.png)
 
-Все стадии можно условно разделить на две группы: до разработки и после разработки.  
-До разработки продукта мы можем помочь клиенту консультациями на основных стадиях зарождения продукта: «idea» и «concept» Наше экспертное мнение по идее продукта, его концепции и бизнес-плану поможет провести адекватную оценку возможности реализации задумки клиента.  
-На стадии «vision» мы можем провести исследовательские работы, обозначить ряд гипотез, которые позволят качественно подойти к формированию концепцию продукта.  
-В качестве примера можно привести наши исследования в области MADP. Мы выдвинули гипотезу о том, что если взять определенный протокол передачи данных, то можно существенно выиграть в скорости у популярного и производительного аналога. Гипотеза оказалась верной, после чего был выдвинут еще ряд гипотез и проведены исследования. Вследствие этого была сформирована концепция мобильной платформы «HyperHive», а затем и разработан сам продукт.  
-Таким образом, мы можем помочь клиенту осуществить полный цикл R&D, сначала проведя исследовательские работы по заявленной проблеме согласно концепции Kanban, а затем если оценка концепции будет пройдена успешно, то и разработку проекта.
-После постановки задачи наступает стадия разработки и тестирования продукта, т.е. стадия «development». Наша команда организовала процесс разработки и тестирования согласно методологии Scrum, о котором подробнее можно почитать здесь.  
-Стадия «validation». После того, как продукт был разработан, необходимо подтвердить то, что данный продукт позволяет корректно выполнять тот бизнес-процесс, который лежит в основе продукта. Подробнее о данном процессе можно прочитать тут.  
-На стадии «launch» решаются вопросы подготовки площадки, развертывания решения, настройки и запуска. Даже если будет необходимость участия в маркетинговых исследованиях, наши специалисты могут подумать каким образом решение клиенту преподнести в выгодном свете.  
-Стадия «support». Мы можем предоставить техническую поддержку продукта, а также и оказать помощь клиенту в формировании собственной линии поддержки при помощи консультаций по организации процесса, подбору персонала, обучению будущих специалистов.
-В завершении – стадия «close», где мы можем помочь клиенту осуществить снятие продукта с поддержки.  
-Необходимо отметить, что благодаря  использованию модели Stage-Gate можно существенно сократить расходы на разработку продуктов, которые потенциально могут быть неуспешными. На самых ранних и недорогостоящих стадиях «concept» или «vision» собирается комиссия продукта, которая может отправить идею или концепцию продукта на доработку . Таким образом, потенциально неуспешный продукт не выйдет на стадию разработки, где цена ошибки может стоить очень дорого. 
+All stages can be with some reservations divided into two groups: before the development and after the development.  
+Before the development we can help the client with advice at the main stages of the product conception: “idea” и “concept”. Our expert commentary on the idea of the product, its concept and business plan will help to adequately asses the possibility to realize the client’s idea.  
+At the «vision» stage we can conduct research work and come up with a number of hypotheses which will allow to form a high-quality concept of the product.  
+As an example we can name our research in the MADP sphere. We put forward a hypothesis that if we take a certain communications protocol, we can significantly surpass a popular and effective analogue in speed. The hypothesis proved to be true, afterwards a range of other hypotheses was developed and research was conducted. As the result, the concept of “HyperHive” mobile platform was formed and then the product was developed.  
+Thus, we can help the client to carry out the full R&D cycle, at first performing research works on the specified issue according to the Kanban concept, and then, if the concept is assessed as successful, developing the project.  
+Task setting is followed by working out and testing of the product, that means, the “development” stage. Our team has organized the process of testing and development according to the Scrum techniques. 
+“Validation” stage. When the product has been developed, it is necessary to ensure that this product allows to properly execute the business process on which the product is based.  
+At the “launch” stage tasks of preparing the area, executing the solution, adjusting and launching are solved. If it is necessary to participate in marketing research, our specialists can work out an idea about how the advantages of the solution can be presented.  
+“Support” stage. We can provide technical support for the product, as well as help the client to create their own line of support consulting them on organizing the process, choosing staff and teaching future specialists.  
+At the end there is a “close” stage where we can help the client to shut down the support for the product.  
+It should also be noted that thanks to the Stage-Gate model it is possible to considerably reduce expenses on the development of the products which can be unsuccessful in future. At the earliest and inexpensive “concept” or “vision” stages a product committee, which can take the decision about further work on an idea or concept, is gathered. Thus, potentially unsuccessful product will not go to the development stage, where the price of an error could be high.  
+
+
 
