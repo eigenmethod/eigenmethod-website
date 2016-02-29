@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Валидация ПО
+title: Software validation
 created_at: 2016-02-17
 language: en
 description: Мы решили включить в нашу модель Stage-Gate еще один этап, а именно процесс валида-ции.  Валидация позволит Заказчику...
 ---
 
-## Процесс валидации программного обеспечения согласно стандарту ISO 9001
+## The process of software validation according to the ISO 9001 standard
 
 ![](http://eigenmethod.com/img/validation.jpg)
 
-Если следовать системе менеджмента качества, то валидация – это   подтверждение на основе представления объективных свидетельств того, что требования, предназначенные для конкретного использования или применения, выполнены (ISO 9000:2005).
-Процесс валидации осуществляется при помощи:  
+According to the quality management system, validation is confirmation that the requirements for a specific use or application have been met. This confirmation is based on providing objective evidence (*ISO 9000:2005*).  
+The process of validation is carried out with the help of:  
+ 
+* worked out strategy and validation criteria for all ready products;
+* specified actions on carrying out the validation;
+* demonstration of the compliance of the developed software to the requirements of the customer and rules of their use;
+* discussing the received validation results with the customer and approving them.
 
-* разработанной стратегии и критериев валидации для всех рабочих продуктов;
-* оговоренных действий по проведению валидации;
-* демонстрации соответствия разработанных программных продуктов требованиям заказчика и правилам их использования;
-* согласования с заказчиком полученных результатов валидации.
-
-Одним из главных шагов при проведении валидации является разработка валидационного мастер-плана (VMP). Это основной документ, с которого начинается любой проект валидации программного обеспечения.   
-Валидация программного обеспечения включает в себя не только документированные доказательства соответствия ПО определенным требованиям, но и охватывает полный жизненный цикл: от концепции до закрытия.   
-Также необходимо сказать об отличии валидации от верификации. Верификация – это процесс подтверждения того, что разработанное программное обеспечение соответствует проектной документации, т.е. реализовано в соответствии с требованиями.   
-Процесс валидации ориентирован на работу пользователей в разработанном программном обеспечении. Валидация дает возможность проверить позволяет  ли разработанное программное обеспечение осуществлять тот бизнес-процесс, ради которого оно создавалось и доказать, что разработанное программное обеспечение приводит к ожидаемым результатам. 
+One of the major steps in a validation process is developing the validation master plan (VMP). This is the main document which works as the first step in any software validation project.  
+Software validation includes not only documented evidence of the software compliance to certain requirements but also covers the whole life cycle: from the concept to shutting down.  
+It is also necessary to mention the difference between validation and verification. Verification is the process of confirming that the developed software complies to the project documentation, in other words, is realized in accordance with the requirements.   
+The validation process is aimed at the work of users in the developed software. Validation gives the opportunity to check if the developed software allows to carry out the business process it was created for and to prove that the developed software leads to the expected results.  
