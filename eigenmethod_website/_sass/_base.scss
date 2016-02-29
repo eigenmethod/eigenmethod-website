@@ -652,29 +652,26 @@ footer .main-menu {
 
 .service-list li .description {
     width: 260px;
-    //display: inline-block;
-    //margin-top: 40px;
-    //margin-left: 60px;
     display: table;
-    margin: 30px auto;
+    margin: 20px auto;
 }
 
 .service-components .slide .description {
     color: #fff;
     width: 600px;
-    //display: inline-block;
     display: table;
-    //margin-top: 60px;
-    //margin-left: 70px;
     vertical-align: middle;
     margin: 60px auto;
     font-size: 24px;
-    font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 100;
+    font-family: "Roboto-Light", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.service-components .slide .description span{
+    font-family: "Roboto-Bold", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .service-components .slide .description h2 {
-    font-weight: bold;
+    font-family: "Roboto-Bold", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .service-slider {

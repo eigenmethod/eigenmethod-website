@@ -239,3 +239,17 @@ sudo /etc/init.d/nginx status
 ```sh
 sudo vim /var/log/nginx/error.log
 ```
+
+### Разделение постов по языкам
+Для того чтобы отображались только посты соответствующие языку сайта делаем следующее
+Открываем файл из стандартного плагина пеиджинации jekyll
+```
+# если bundler установлен от судо
+sudo vim /var/lib/gems/2.1.0/gems/jekyll-paginate-1.1.0/lib/jekyll-paginate/pagination.rb
+# если bundler установлен без судо
+vim /home/$USER/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/jekyll-paginate-1.1.0/lib/jekyll-paginate/pagination.rb
+```
+Добавляем 43-ю строку
+```
+all_posts = all_posts.reject { |p| p['language'] != site.config['languages'][0] }
+```
