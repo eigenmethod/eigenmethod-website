@@ -1,0 +1,92 @@
+---
+layout: default
+title: Services
+permalink: /services/
+---
+
+<main>
+    <h1>Services</h1>
+
+    <div class="service">
+        <div class="service-components">
+            <ul class="service-list">
+                <li class="active">
+                    <p class="description">Outsourcing of a development according to the Agile approach</p>
+                </li>
+                <li>
+                    <p class="description">Outsourcing of the software validation process according to the ISO 9001 standard</p>
+                </li>
+                <li>
+                    <p class="description">Outsourcing in the sphere of SAP technologies</p>
+                </li>
+                <li>
+                    <p class="description">Controlling the product at any stage of its life cycle</p>
+                </li>
+            </ul>
+        </div><!--
+     --><div class="service-components">
+            <div class="service-slider">
+                <div class="slide active" style="background-image: url(/img/services/services_01.png);">
+                    <div class="description">
+                        <h2>Outsourcing of a development according to the Agile approach</h2>
+                        <p>
+                            You have an idea or a concept, and your specialists have collected all the functional requirements for you future solution, but there is no one to develop it? We can help you with that!
+                            <br><br>
+                            Our team offers its services of developing the software according to the <b>Scrum</b> and <b>Kanban</b> methodology…
+                            <br><br>
+                            <a class="more-info" href="/2015/02/10/agile-post.html">
+                                More info >
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url(/img/services/services_02.png);">
+                    <div class="description">
+                        <h2>Outsourcing of the software validation process according to the ISO 9001 standard</h2>
+                        <p>
+                            According to the <b>quality management</b> system, validation is a process of presenting the evidence of the fact that requirements of a specific external consumer or user of the product, service or system are satisfied to <b>that extent</b> which was originally laid in by the idea and the concept of the product.
+                            <br><br>
+                            <a class="more-info" href="/2015/10/01/validation-post.html">
+                                More info >
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url(/img/services/services_03.png);">
+                    <div class="description">
+                        <h2>Outsourcing in the sphere of SAP technologies</h2>
+                        <p>
+                            We have the experience of development of the software where <b>tight integration</b> with <b>SAP</b> systems is required. We provide services of outsourcing of developments for SAP HANA, SAPUI5 and ABAP.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url(/img/services/services_04.png);">
+                    <div class="description">
+                        <h2>Controlling the product at any stage of its life cycle</h2>
+                        <p>
+                            The <b>ideal</b> roadmap of outsourcing of IT-product development for companies which do not specialize in <b>developing</b> software or software and hardware complexes.
+                            <br><br>
+                            <a class="more-info" href="/2015/01/15/stagegate-post.html">
+                                More info >
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div><!--
+ --></div>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.service-list li').click(function(e){
+            $( '.slide' ).removeClass('active')
+            var index = $( "li" ).index( this );
+            $( '.slide:eq(' + index + ')' ).addClass('active')
+            $('.service-list li').removeClass('active')
+            $(this).addClass('active')
+        })
+    })
+</script>

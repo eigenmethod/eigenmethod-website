@@ -34,5 +34,6 @@ gems: ["jekyll-multiple-languages", "jekyll-paginate"]
 languages: ['en', 'ru']
 
 # Excludes
-exclude: ["lib_requirements.txt", "README.md", "add_posts_instruction.md", "hosting_install_instruction.md"]
+exclude: ["lib_requirements.txt", "README.md", "add_posts_instruction.md",
+          "hosting_install_instruction.md", "Gemfile", "Gemfile.lock"]
 

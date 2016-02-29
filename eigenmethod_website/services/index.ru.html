@@ -1,0 +1,92 @@
+---
+layout: default
+title: Сервисы
+permalink: /services/
+---
+
+<main>
+    <h1>Services</h1>
+
+    <div class="service">
+        <div class="service-components">
+            <ul class="service-list">
+                <li class="active">
+                    <p class="description">Аутсорсинг разработки согласно подходу Agile</p>
+                </li>
+                <li>
+                    <p class="description">Аутсорсинг процесса валидации программного обеспечения согласно стандарту ISO 9001</p>
+                </li>
+                <li>
+                    <p class="description">Аутсорсинг в области SAP технологий</p>
+                </li>
+                <li>
+                    <p class="description">Ведение продукта на любом этапе жизненного цикла</p>
+                </li>
+            </ul>
+        </div><!--
+     --><div class="service-components">
+            <div class="service-slider">
+                <div class="slide active" style="background-image: url(/img/services/services_01.png);">
+                    <div class="description">
+                        <h2>Аутсорсинг разработки согласно подходу Agile</h2>
+                        <p>
+                            Если у Вас есть идея, заложена концепция, а Ваши специалисты собрали все функциональные требования будущего решения, но некому его разработать? Мы можем Вам в этом помочь!
+                            <br>
+                            Наша команда предлагает свои услуги по разработке программного обеспечения согласно методологии Scrum и Kanban…
+                            <br><br>
+                            <a class="more-info" href="/2015/02/10/agile-post.html">
+                                Подробнее >
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url(/img/services/services_02.png);">
+                    <div class="description">
+                        <h2>Аутсорсинг процесса валидации программного обеспечения согласно стандарту ISO 9001</h2>
+                        <p>
+                            Согласно системе менеджмента качества (СМК), валидация – это процесс приведения доказательств того, что требования конкретного внешнего потребителя или пользователя продукта, услуги или системы удовлетворены в той мере, которая изначально закладывалась идеей и концепцией продукта.
+                            <br><br>
+                            <a class="more-info" href="/2015/10/01/validation-post.html">
+                                Подробнее >
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url(/img/services/services_03.png);">
+                    <div class="description">
+                        <h2>Аутсорсинг в области SAP технологий</h2>
+                        <p>
+                            У нас есть опыт разработки программного обеспечения, где требуется тесная интеграция с SAP системами. Мы предоставляем услуги по аутсорсингу разработки на SAP HANA, SAPUI5 и ABAP.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url(/img/services/services_04.png);">
+                    <div class="description">
+                        <h2>Ведение продукта на любом этапе жизненного цикла</h2>
+                        <p>
+                            Идеальный сценарий аутсорсинга разработки ИТ-продукта для компаний, которые не специализируются на разработке программного обеспечения  или программно-аппаратных комплексов.
+                            <br><br>
+                            <a class="more-info" href="/2015/01/15/stagegate-post.html">
+                                Подробнее >
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div><!--
+ --></div>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.service-list li').click(function(e){
+            $( '.slide' ).removeClass('active')
+            var index = $( "li" ).index( this );
+            $( '.slide:eq(' + index + ')' ).addClass('active')
+            $('.service-list li').removeClass('active')
+            $(this).addClass('active')
+        })
+    })
+</script>
