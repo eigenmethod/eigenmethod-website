@@ -485,6 +485,10 @@ footer .main-menu {
 
 .product-slide li.promo-taxi .promo .mockup {
     background: transparent url(/img/products/mockup-taxi.png) no-repeat center center;
+    height: 456px;
+    width: 767px;
+    top: 131px;
+    right: -105px;
 }
 
 .product-slide li .tech {
@@ -628,6 +632,9 @@ footer .main-menu {
     overflow: hidden;
     transition: $base-transition;
     border-bottom: 1px solid rgb(210, 210, 210);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -655,9 +662,9 @@ footer .main-menu {
 }
 
 .service-list li .description {
-    width: 260px;
-    display: table;
-    margin: 20px auto;
+    max-width: 70%;
+    font-size: 20px;
+    margin-bottom: 0;
 }
 
 .service-components .slide .description {
