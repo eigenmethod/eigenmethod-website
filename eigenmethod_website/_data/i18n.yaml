@@ -1,11 +1,15 @@
 en:
     previous_page: Previous
     next_page: Next
+    previous_post: Previous post
+    next_post: Next post
     footer_caption: Powered by
     slogan: High-quality solutions for your business
 
 ru:
     previous_page: Предыдущая
     next_page: Следующая
+    previous_post: Предыдущая статья
+    next_post: Следущая статья
     footer_caption: С использованием
     slogan: Качественные решения для Вашего бизнеса

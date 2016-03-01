@@ -11,7 +11,7 @@ description: На основе подхода Stage-Gate Process был разр
 The Eigenmethod company has adjusted a general “Stage-Gate” model and received a high-quality tool regulating the process of product development. We not only use this approach for our own internal products such as “Taxopark” and “SeptemEx” but also offer it to clients for solving their tasks.  
 We can offer our future clients maintenance of their products during the whole product life cycle and during a certain stage or stages.  
 
-![](http://eigenmethod.com/img/SG.png)
+######![](http://eigenmethod.com/img/SG.png)
 
 All stages can be with some reservations divided into two groups: before the development and after the development.  
 Before the development we can help the client with advice at the main stages of the product conception: “idea” и “concept”. Our expert commentary on the idea of the product, its concept and business plan will help to adequately asses the possibility to realize the client’s idea.  
