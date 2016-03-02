@@ -8,7 +8,7 @@ description: В своей работе мы придерживаемся гиб
 
 ## Development according to Agile approach
 
-#####![](http://eigenmethod.com/img/agile.jpg)
+##### ![](http://eigenmethod.com/img/agile.jpg)
 
 
 We stick to the flexible techniques of development in our work as most of our projects are commercial. The main characteristic of commercial projects is dynamic forming of requirements, where Agile is absolutely appropriate.  

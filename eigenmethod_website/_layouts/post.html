@@ -13,21 +13,13 @@ layout: default
   </div>
 
   {% if page.previous.url %}
-    <a class="prev-post" href="{{page.previous.url}}">
-      <div style="width: 200px">
-        <span>{{ site.data.i18n[page.language].previous_post }}</span>
-        {{page.previous.title}}
-      </div>
+    <a class="prev-post" href="{{page.previous.url}}" title="{{page.previous.title}}">
       <img src="/img/big-arrow.png" />
     </a>
   {% endif %}
   {% if page.next.url %}
-    <a class="next-post" href="{{page.next.url}}">
+    <a class="next-post" href="{{page.next.url}}" title="{{page.next.title}}">
       <img src="/img/big-arrow.png" />
-      <div style="width: 200px">
-        <span>{{ site.data.i18n[page.language].next_post }}</span>
-        {{page.next.title}}
-      </div>
     </a>
   {% endif %}
 
