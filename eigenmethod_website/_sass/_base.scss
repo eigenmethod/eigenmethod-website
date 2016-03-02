@@ -240,6 +240,11 @@ h1 {
     margin-top: 65px;
 }
 
+h1 span {
+    font-family: "Roboto-Thin", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
 h3 {
     font-size: 24px;
     text-align: center;
@@ -342,6 +347,11 @@ footer .main-menu {
     margin-top: 20px;
 }
 
+.line-components {
+    display: inline-block;
+    vertical-align: top;
+}
+
 .contacts-holder .contact .map-holder {
     position: relative;
     width: 1000px;
@@ -396,6 +406,75 @@ footer .main-menu {
     letter-spacing: 16px;
 }
 
+/* home */
+
+.home .advantages {
+    text-align: center;
+}
+
+.home .advantage {
+    width: 305px;
+}
+
+.home .advantage p {
+    text-align: left;
+    margin: 0 20px;
+    //text-indent: 20px;
+}
+
+.home .advantage img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 40px;
+}
+
+.home .tags {
+    text-align: center;
+    margin:60px 0;
+}
+
+.home .tags img {
+    width: 50%;
+    height: 50%;
+}
+
+.home .news-main {
+    width: 700px;
+    cursor: pointer;
+}
+.home .news-small {
+    width: 535px;
+    margin: 0;
+}
+
+.home .news-small li {
+    cursor: pointer;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .news-small li:last-child{
+    margin-top: 15px;
+}
+
+//.home .news-main .post-meta {
+//    position: absolute;
+//    top: 65%;
+//}
+//
+//.home .news-small li .post-meta {
+//    position: absolute;
+//    top: 65%;
+//}
+
+.home .line-components h4 {
+    color: $blue-color;
+    font-size: 22px;
+}
+
+/* products */
 
 .product-slide {
     width: 1240px;
@@ -517,8 +596,6 @@ footer .main-menu {
     color: $blue-color;
 }
 
-
-
 .product-list {
     letter-spacing: 0px;
     font-size: 0;
@@ -599,15 +676,12 @@ footer .main-menu {
     background: #fff url(/img/products/prev-taxi.png) no-repeat center center;
 }
 
+/* services */
+
 .service {
     box-shadow: $hover-shadow;
     margin-bottom: 100px;
     margin-right: 5px;
-}
-
-.service-components {
-    display: inline-block;
-    vertical-align: top;
 }
 
 .service-list {
@@ -640,7 +714,6 @@ footer .main-menu {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .service-list li:last-child {
@@ -672,7 +745,7 @@ footer .main-menu {
     margin-bottom: 0;
 }
 
-.service-components .slide .description {
+.service .line-components .slide .description {
     color: #fff;
     width: 600px;
     display: table;
@@ -682,11 +755,11 @@ footer .main-menu {
     font-family: "Roboto-Light", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.service-components .slide .description span{
+.service .line-components .slide .description span{
     font-family: "Roboto-Bold", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.service-components .slide .description h2 {
+.service .line-components .slide .description h2 {
     font-family: "Roboto-Bold", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -696,7 +769,7 @@ footer .main-menu {
     position: relative;
 }
 
-.service-components .slide {
+.service .line-components .slide {
     position: absolute;
     overflow: hidden;
     top: 0;
@@ -709,10 +782,12 @@ footer .main-menu {
     background-size: cover;
 }
 
-.service-components .slide.active {
+.service .line-components .slide.active {
     opacity: 1;
     z-index: 10;
 }
+
+/* Кнопки для перехода к более подробной информации */
 
 a.more-info {
     display: inline-block;
@@ -732,8 +807,36 @@ a.more-info img {
     left: 15px;
 }
 
+/* Отображение ошибок 404, 500 */
+
 #error {
     width:550px;
     height:550px;
     margin: 0px auto;
+}
+
+/* Кнопки смены слайдов */
+
+.slide-links {
+	margin-top:10px;
+	text-align:center;
+}
+
+.slide-links .control-slide {
+	margin:2px;
+	display:inline-block;
+	width:16px;
+	height:16px;
+	overflow:hidden;
+	text-indent:-9999px;
+	background:url(/img/bg-radio.png) center bottom no-repeat;
+}
+
+.slide-links .control-slide:hover {
+	cursor:pointer;
+	background-position:center center;
+}
+
+.slide-links .control-slide.active {
+	background-position:center top;
 }
