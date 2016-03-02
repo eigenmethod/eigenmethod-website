@@ -11,6 +11,7 @@ description: Мы решили включить в нашу модель Stage-G
 ##### ![](http://eigenmethod.com/img/validation.jpg)
 
 According to the quality management system, validation is confirmation that the requirements for a specific use or application have been met. This confirmation is based on providing objective evidence (*ISO 9000:2005*).  
+
 The process of validation is carried out with the help of:  
  
 * worked out strategy and validation criteria for all ready products;
