@@ -3,12 +3,13 @@ layout: post
 title: Software validation
 created_at: 2016-02-17
 language: en
-description: Мы решили включить в нашу модель Stage-Gate еще один этап, а именно процесс валида-ции.  Валидация позволит Заказчику...
+representation_img: /img/posts/news-validate.png
+description: The process of software validation according to the ISO 9001 standard
 ---
 
 ## The process of software validation according to the ISO 9001 standard
 
-##### ![](http://eigenmethod.com/img/validation.jpg)
+##### ![](/img/posts/validation.jpg)
 
 According to the quality management system, validation is confirmation that the requirements for a specific use or application have been met. This confirmation is based on providing objective evidence (*ISO 9000:2005*).  
 

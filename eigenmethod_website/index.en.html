@@ -5,6 +5,7 @@ permalink: /
 
 <main>
     <div class="home">
+        <br><br>
         <ul class="product-slide">
             <li class="promo-hh active">
                 <div class="promo">
@@ -26,7 +27,7 @@ permalink: /
                     <div class="mockup"></div>
                 </div>
                 <div class="tech">
-                    <span class="caption">We are <strong>using</strong></span>
+                    <span class="caption">We<strong>use</strong></span>
                     <a class="tech-logo tech--python" title="Python"></a>
                     <a class="tech-logo tech--django" title="Django"></a>
                     <a class="tech-logo tech--postgresql" title="PostgreSQL"></a>
@@ -43,7 +44,7 @@ permalink: /
             <li class="promo-mb">
                 <div class="promo">
                     <div class="head">
-                        <strong>Septem</strong>Ex
+                        <strong>my</strong>Bond
                     </div>
                     <span>
                         Software complex for bond trading and managing the activities of brokers backoffice.
@@ -55,7 +56,7 @@ permalink: /
                     <div class="mockup"></div>
                 </div>
                 <div class="tech">
-                    <span class="caption">We are <strong>using</strong></span>
+                    <span class="caption">We<strong>use</strong></span>
                     <a class="tech-logo tech--python" title="Python"></a>
                     <a class="tech-logo tech--django" title="Django"></a>
                     <a class="tech-logo tech--postgresql" title="PostgreSQL"></a>
@@ -83,7 +84,7 @@ permalink: /
                     <div class="mockup"></div>
                 </div>
                 <div class="tech">
-                    <span class="caption">We are <strong>using</strong></span>
+                    <span class="caption">We <strong>use</strong></span>
                     <a class="tech-logo tech--python" title="Python"></a>
                     <a class="tech-logo tech--django" title="Django"></a>
                     <a class="tech-logo tech--postgresql" title="PostgreSQL"></a>
@@ -111,7 +112,7 @@ permalink: /
                     <div class="mockup"></div>
                 </div>
                 <div class="tech">
-                    <span class="caption">We are <strong>using</strong></span>
+                    <span class="caption">We <strong>use</strong></span>
                     <a class="tech-logo tech--python" title="Python"></a>
                     <a class="tech-logo tech--django" title="Django"></a>
                     <a class="tech-logo tech--postgresql" title="PostgreSQL"></a>
@@ -132,7 +133,7 @@ permalink: /
             <span class="control-slide">3</span>
         </div>
 
-        <h1><span>our</span><br>advantages</h1>
+        <h1><span>our</span><br>benefits</h1>
 
         <div class="advantages">
             <div class="line-components advantage">
@@ -157,7 +158,7 @@ permalink: /
             </div>
         </div>
 
-        <h1><span>used</span><br>technology</h1>
+        <h1>technologies</h1>
 
         <div class="tags">
             <img src="/img/index/tags.png" />
@@ -165,24 +166,49 @@ permalink: /
 
         <h1><span>main</span><br>news</h1>
 
+
         <div class="line-components news-main">
-            <img src="/img/index/back-validate.png" />
+            <a href="{{site.posts[0].url}}" style="text-decoration: none">
+                <div class="post" style="background-image: url({{site.posts[0].representation_img}})">
+                    <div class="post-meta">
+                        <h4>{{site.posts[0].title}}</h4>
+                        <p class="date">{{ site.posts[0].date | date: "%b %-d, %Y" }}</p>
+                        <p>{{site.posts[0].description}}</p>
+                    </div>
+                </div>
+            </a>
         </div>
         <div class="line-components">
             <ul class="news-small">
-                <li>
-                    <img src="/img/index/back-agile.png" />
-                </li>
-                <li>
-                    <img src="/img/index/back-scrum.png" />
-                </li>
+                <a href="{{site.posts[1].url}}" style="text-decoration: none">
+                    <li>
+                        <div class="post" style="background-image: url({{site.posts[1].representation_img}})">
+                            <div class="post-meta">
+                                <h4>{{site.posts[1].title}}</h4>
+                                <p class="date">{{ site.posts[1].date | date: "%b %-d, %Y" }}</p>
+                                <p>{{site.posts[1].description}}</p>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="{{site.posts[2].url}}" style="text-decoration: none">
+                    <li>
+                        <div class="post" style="background-image: url({{site.posts[2].representation_img}})">
+                            <div class="post-meta">
+                               <h4>{{site.posts[2].title}}</h4>
+                               <p class="date">{{ site.posts[2].date | date: "%b %-d, %Y" }}</p>
+                               <p>{{site.posts[2].description}}</p>
+                            </div>
+                        </div>
+                    </li>
+                </a>
             </ul>
         </div>
 
     </div>
 </main>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="/css/jquery.min.js"></script>
 
 <script type="text/javascript">
     $(document).ready(function() {

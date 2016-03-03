@@ -3,16 +3,17 @@ layout: post
 title: Using Stage-Gate Process model
 created_at: 2016-02-17
 language: en
-description: На основе подхода Stage-Gate Process был разработан подход к разработке программных и программно-аппаратных комплексов любой сложности.
+representation_img: /img/posts/SG.png
+description: Stage-Gate model for accompanying products in the environment provided by the Eigenmethod team
 ---
 
 ## Stage-Gate model for accompanying products in the environment provided by the Eigenmethod team
 
-The Eigenmethod company has adjusted a general “Stage-Gate” model and received a high-quality tool regulating the process of product development. We not only use this approach for our own internal products such as “Taxopark” and “SeptemEx” but also offer it to clients for solving their tasks.  
+The Eigenmethod company has adjusted a general “Stage-Gate” model and received a high-quality tool regulating the process of product development. We not only use this approach for our own internal products such as “Taxopark” and “myBond” but also offer it to clients for solving their tasks.
 
 We can offer our future clients maintenance of their products during the whole product life cycle and during a certain stage or stages.  
 
-###### ![](http://eigenmethod.com/img/SG.png)
+###### ![](img/posts/SG.png)
 
 All stages can be with some reservations divided into two groups: before the development and after the development.  
 Before the development we can help the client with advice at the main stages of the product conception: “idea” и “concept”. Our expert commentary on the idea of the product, its concept and business plan will help to adequately asses the possibility to realize the client’s idea.  
