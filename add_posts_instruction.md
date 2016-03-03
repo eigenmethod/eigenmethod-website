@@ -56,7 +56,7 @@ ssh em@31.131.21.120
 Загружаем изменения
 ```sh
 cd ~/eigenmethod-website
-git pull origin master
+sudo git pull origin master
 ```
 Пересобираем статику для каждого из языков (английский, русский, возможно в будущем появятся другие)
 ```sh
