@@ -737,3 +737,41 @@ a.more-info img {
     height:550px;
     margin: 0px auto;
 }
+
+.space {
+    padding-top: 40px;
+}
+
+.notice {
+    margin-top: 40px;
+    display: flex;
+    padding: 0 60px;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+.notice > div {
+    flex-basis: 40%;
+
+}
+
+.notice > div + div {
+    text-align: right;
+}
+
+
+.notice h2 {
+    color: $blue-color;
+    font-size: 40px;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+.box {
+    background-color: #fff;
+    box-shadow: $base-shadow;
+    border-radius: 2px;
+    padding: 60px 63px;
+    margin-bottom: 40px;
+}
