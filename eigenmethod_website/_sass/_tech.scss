@@ -1,6 +1,6 @@
-.tech-logo {
+.tech-logo-01 {
     display: inline-block;
-    background: transparent url(/img/logo-list.png) no-repeat top left;
+    background: transparent url(/img/logos/logo-list-01.png) no-repeat top left;
     vertical-align: middle;
     margin: 0 25px;
 }
@@ -177,5 +177,144 @@
     height: 73px;
     width: 73px;
     background-position: 0 -1130px;
+    margin: 0;
+}
+
+.tech-logo-02 {
+    display: inline-block;
+    background: transparent url(/img/logos/logo-list-02.png) no-repeat top left;
+    vertical-align: middle;
+    margin: 0 25px;
+}
+
+p.tech-logo {
+    font-family: "Roboto-Thin", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center
+}
+
+p.borded-top {
+    padding-top: 25px;
+    //padding-bottom: 25px;
+    border-top: 1px solid #e6e6e6;
+}
+
+.tech--sap {
+    height: 41px;
+    width: 77px;
+    background-position: 0px 0px;
+    margin: 0;
+}
+
+.tech--web-services {
+    height: 41px;
+    width: 59px;
+    background-position: 0px -46px;
+    margin: 0;
+}
+
+.tech--microsoft {
+    height: 41px;
+    width: 142px;
+    background-position: 0px -95px;
+    margin: 0;
+}
+
+.tech--dbms {
+    height: 46px;
+    width: 44px;
+    background-position: 0px -139px;
+    margin: 0;
+}
+
+.tech--oracle {
+    height: 31px;
+    width: 134px;
+    background-position: 0px -188px;
+    margin: 0;
+}
+
+.tech--smb {
+    height: 46px;
+    width: 65px;
+    background-position: 8px -221px;
+    margin: 0;
+}
+
+.tech--ibm {
+    height: 41px;
+    width: 93px;
+    background-position: 0px -274px;
+    margin: 0;
+}
+
+.tech--cloud {
+    height: 42px;
+    width: 62px;
+    background-position: 0px -318px;
+    margin: 0;
+}
+
+.tech--nat-app {
+    height: 63px;
+    width: 59px;
+    background-position: 0px -359px;
+    margin: 0;
+}
+
+.tech--web-app {
+    height: 56px;
+    width: 73px;
+    background-position: 0px -427px;
+    margin: 0;
+}
+
+.tech--cross-plat-app {
+    height: 62px;
+    width: 44px;
+    background-position: 0px -493px;
+    margin: 0;
+}
+
+.tech--xcode {
+    height: 89px;
+    width: 97px;
+    background-position: 0px -564px;
+    margin: 0;
+}
+
+.tech--android-studio {
+    height: 89px;
+    width: 81px;
+    background-position: 0px -663px;
+    margin: 0;
+}
+
+.tech--cordova-colored {
+    height: 89px;
+    width: 89px;
+    background-position: 0px -760px;
+    margin: 0;
+}
+
+.tech--windows {
+    height: 89px;
+    width: 89px;
+    background-position: 0px -866px;
+    margin: 0;
+}
+
+.tech--pdf {
+    height: 63px;
+    width: 39px;
+    background-position: 0px -961px;
+    margin: 0;
+}
+
+.tech--run-circle {
+    height: 63px;
+    width: 74px;
+    background-position: 0px -1014px;
     margin: 0;
 }

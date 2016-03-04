@@ -13,7 +13,7 @@ The Eigenmethod company has adjusted a general “Stage-Gate” model and receiv
 
 We can offer our future clients maintenance of their products during the whole product life cycle and during a certain stage or stages.  
 
-###### ![](img/posts/SG.png)
+###### ![](/img/posts/SG.png)
 
 All stages can be with some reservations divided into two groups: before the development and after the development.  
 Before the development we can help the client with advice at the main stages of the product conception: “idea” и “concept”. Our expert commentary on the idea of the product, its concept and business plan will help to adequately asses the possibility to realize the client’s idea.  
