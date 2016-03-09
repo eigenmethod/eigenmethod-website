@@ -14,7 +14,7 @@ description: Development according to Agile approach
 
 We stick to the flexible techniques of development in our work as most of our projects are commercial. The main characteristic of commercial projects is dynamic forming of requirements, where Agile is absolutely appropriate.
   
-A large project gives a client the opportunity to pay for several steps and to understand in course of the work that he will receive exactly what he wants for a reasonable price on time. Waterfall models (with the use of specifications and technical tasks) do not provide these opportunities.  
+A large project gives a client the opportunity to pay for several steps and to understand in course of the work that he will receive exactly what he wants for a reasonable price on time. [Waterfall models][wtf] (with the use of specifications and technical tasks) do not provide these opportunities.  
 
 The customer always has the opportunity to monitor the course of development, to correct functions of the project, to test or launch it, even stop it at any moment.
 
@@ -29,4 +29,5 @@ Scrum techniques are used by our team for existing and long-standing projects as
 
 [//]: #
    [scr]: <http://eigenmethod.com/2015/03/05/scrum-post.html>
-   [kan]: <https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BD%D0%B1%D0%B0%D0%BD>
+   [kan]: <https://en.wikipedia.org/wiki/Kanban>
+   [wtf]: <https://en.wikipedia.org/wiki/Waterfall_model>

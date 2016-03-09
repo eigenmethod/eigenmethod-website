@@ -26,11 +26,11 @@ At Vision stage we can conduct research work and come up with a number of hypoth
 
 As an example we can name our research in the [MADP][madp] sphere. We put forward a hypothesis that if we take a certain communication protocol, we can significantly be greater in speed. The hypothesis proved to be true. Afterwards another issues were hypothesized and research was conducted. As the result, the concept of [HyperHive][HH] mobile platform was formed and then the product was developed.  
 
-Thus, we can help the client to carry out the full R&D cycle, at first performing research works on the specified issue according to the Kanban concept, and then, if the concept is evaluated successfully, developing the project.  
+Thus, we can help the client to carry out the full [R&D cycle][rd], at first performing research works on the specified issue according to the Kanban concept, and then, if the concept is evaluated successfully, developing the project.  
 
 The next is  Development stage. Our team has organized the process of testing and development according to the Scrum techniques, please find more details [here][scr].
 
-After that, Validation stage. When the product has been developed, it is necessary to ensure that this product fits the business process which the product is based on. Please find more details on this process [here][val].
+After that, [Validation][val] stage. When the product has been developed, it is necessary to ensure that this product fits the business process which the product is based on. Please find more details on this process [here][val].
 
 At the Launch stage includes the preparation of site deployment, product deployment and product launch. If it is necessary to participate in marketing research, our specialists can work out an idea about how the advantages of the solution can be presented. 
 
@@ -45,3 +45,4 @@ It should also be noted that thanks to the Stage-Gate model it is possible to co
    [val]: <http://eigenmethod.com/2015/10/01/validation-post.html>
    [scr]: <http://eigenmethod.com/2015/03/05/scrum-post.html>
    [HH]: <http://eigenmethod.com/products/hh/>
+   [rd]: <https://en.wikipedia.org/wiki/Research_and_development>
