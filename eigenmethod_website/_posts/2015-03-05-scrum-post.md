@@ -3,17 +3,20 @@ layout: post
 title: Scrum in our projects
 created_at: 2015-03-05
 language: en
-representation_img: /img/posts/news-scrum.png
+representation_img: /img/posts/news-scrum.jpg
 description: Scrum techniques in EigenMethod development
 ---
 
 ## Scrum techniques in EigenMethod development 
 
+##  ![](/img/posts/Scrumm.jpg)
+
+
 Our team works according to Scrum techniques, where Scrum is one of the most popular techniques of flexible development. One of the reasons of its popularity is flexibility. According to the definition, Scrum is a carcass of development using which it is possible to effectively solve the arising problems producing goods of the greatest importance. 
  
 When one talks about Scrum techniques, usually they mean flexible methodology of software development based on Scrum rules and practices and used in their own company. It is very likely that our Scrum differs from your Scrum, which shows that the classic Scrum techniques are adapted by each company for their needs and goals.  
 
-######  ![](/img/posts/scrum.png)
+######  ![](/img/posts/scrums.png)
 
 It is necessary to pay attention to Product and Sprint Backlog terms as they are the basis of our methodology.  
 
