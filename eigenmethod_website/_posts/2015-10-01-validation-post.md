@@ -11,7 +11,7 @@ description: The process of software validation according to the ISO 9001 standa
 
 ##### ![](/img/posts/validation.jpg)
 
-According to the quality management system, validation is confirmation that the requirements for a specific use or application have been met. This confirmation is based on providing objective evidence ([*ISO 9000:2005*][]).  
+According to the quality management system, validation is confirmation that the requirements for a specific use or application have been met. This confirmation is based on providing objective evidence ([*ISO 9000:2005*][iso]).  
 
 The process of validation is carried out with the help of:  
  
