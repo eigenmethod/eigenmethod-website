@@ -3,16 +3,20 @@ layout: post
 title: Using Stage-Gate Process model
 created_at: 2016-02-17
 language: en
-description: На основе подхода Stage-Gate Process был разработан подход к разработке программных и программно-аппаратных комплексов любой сложности.
+representation_img: /img/posts/SG.png
+description: Stage-Gate model for accompanying products in the environment provided by the Eigenmethod team
 ---
 
 ## Stage-Gate model for accompanying products in the environment provided by the Eigenmethod team
+
+##### ![](/img/posts/SGM.jpg)
+
 
 We have adjusted a general Stage-Gate model and received a high-quality tool regulating the process of product development. We not only use this approach for our own internal products such as Platform Taxi and myBond but also offer it to clients for solving their tasks. 
 
 We can offer the maintenance of our client’s products during the whole product life cycle and during a certain stage or stages. 
 
-###### ![](http://eigenmethod.com/img/SG.png)
+###### ![](/img/posts/SGS.png)
 
 Conditionally, all stages can be divided into two groups: before the development and after the development.
  
@@ -20,7 +24,7 @@ Before the development we can help the client with advice at the main stages of 
 
 At Vision stage we can conduct research work and come up with a number of hypotheses which will allow to form a high-quality product concept.
 
-As an example we can name our research in the [MADP][madp] sphere. We put forward a hypothesis that if we take a certain communication protocol, we can significantly be greater in speed. The hypothesis proved to be true. Afterwards another issues were hypothesized and research was conducted. As the result, the concept of HyperHive mobile platform was formed and then the product was developed.  
+As an example we can name our research in the [MADP][madp] sphere. We put forward a hypothesis that if we take a certain communication protocol, we can significantly be greater in speed. The hypothesis proved to be true. Afterwards another issues were hypothesized and research was conducted. As the result, the concept of [HyperHive][HH] mobile platform was formed and then the product was developed.  
 
 Thus, we can help the client to carry out the full R&D cycle, at first performing research works on the specified issue according to the Kanban concept, and then, if the concept is evaluated successfully, developing the project.  
 
@@ -40,3 +44,4 @@ It should also be noted that thanks to the Stage-Gate model it is possible to co
    [madp]: <https://www.gartner.com/reviews/market/mobile-application-development-platforms>
    [val]: <http://eigenmethod.com/2015/10/01/validation-post.html>
    [scr]: <http://eigenmethod.com/2015/03/05/scrum-post.html>
+   [HH]: <http://eigenmethod.com/products/hh/>

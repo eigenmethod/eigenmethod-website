@@ -240,6 +240,11 @@ h1 {
     margin-top: 65px;
 }
 
+h1 span {
+    font-family: "Roboto-Thin", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
 h3 {
     font-size: 24px;
     text-align: center;
@@ -342,6 +347,22 @@ footer .main-menu {
     margin-top: 20px;
 }
 
+.inline {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.full-width {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .contacts-holder .contact .map-holder {
     position: relative;
     width: 1000px;
@@ -396,6 +417,124 @@ footer .main-menu {
     letter-spacing: 16px;
 }
 
+/* home */
+
+.home .advantages {
+    text-align: center;
+}
+
+.home .advantage {
+    width: 305px;
+}
+
+.home .advantage p {
+    text-align: left;
+    margin: 0 20px;
+    //text-indent: 20px;
+}
+
+.home .advantage img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 40px;
+}
+
+.home .tags {
+    text-align: center;
+    margin:60px 0;
+}
+
+.home .tags img {
+    width: 50%;
+    height: 50%;
+}
+
+.home .news-main {
+    width: 700px;
+    height: 396px;
+    //cursor: pointer;
+    margin: 0;
+}
+.home .news-small {
+    width: 525px;
+    height: 190px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.home .news-small li {
+    //cursor: pointer;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+.home .news-small li:last-child{
+    //margin-bottom: 0;
+}
+
+.home .post-meta p.date {
+    font-family: "Roboto-Thin", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+.home .post-meta {
+    position: relative;
+}
+
+.home .post-meta p {
+    color: white;
+    margin-bottom: 2px;
+}
+
+.home .post-meta h4 {
+    font-family: "Roboto-Bold", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.home .news-main .post-meta {
+    top: 50%;
+    padding: 0 60px;
+}
+
+.home .news-small li .post-meta {
+    top: 40%;
+    padding: 0 40px;
+}
+
+.home .news-main .post-meta h4 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.home .news-small .post-meta h4 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.home .news-main .post-meta p {
+    font-size: 20px;
+}
+
+.home .news-small .post-meta p {
+    font-size: 15px;
+}
+
+.home .post {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.home .inline h4 {
+    color: $blue-color;
+    font-size: 22px;
+}
+
+/* products */
 
 .product-slide {
     width: 1240px;
@@ -517,8 +656,6 @@ footer .main-menu {
     color: $blue-color;
 }
 
-
-
 .product-list {
     letter-spacing: 0px;
     font-size: 0;
@@ -599,15 +736,12 @@ footer .main-menu {
     background: #fff url(/img/products/prev-taxi.png) no-repeat center center;
 }
 
+/* services */
+
 .service {
     box-shadow: $hover-shadow;
     margin-bottom: 100px;
     margin-right: 5px;
-}
-
-.service-components {
-    display: inline-block;
-    vertical-align: top;
 }
 
 .service-list {
@@ -640,7 +774,6 @@ footer .main-menu {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .service-list li:last-child {
@@ -672,7 +805,7 @@ footer .main-menu {
     margin-bottom: 0;
 }
 
-.service-components .slide .description {
+.service .inline .slide .description {
     color: #fff;
     width: 600px;
     display: table;
@@ -682,11 +815,11 @@ footer .main-menu {
     font-family: "Roboto-Light", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.service-components .slide .description span{
+.service .inline .slide .description span{
     font-family: "Roboto-Bold", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.service-components .slide .description h2 {
+.service .inline .slide .description h2 {
     font-family: "Roboto-Bold", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -696,7 +829,7 @@ footer .main-menu {
     position: relative;
 }
 
-.service-components .slide {
+.service .inline .slide {
     position: absolute;
     overflow: hidden;
     top: 0;
@@ -709,10 +842,12 @@ footer .main-menu {
     background-size: cover;
 }
 
-.service-components .slide.active {
+.service .inline .slide.active {
     opacity: 1;
     z-index: 10;
 }
+
+/* more info btn */
 
 a.more-info {
     display: inline-block;
@@ -732,8 +867,145 @@ a.more-info img {
     left: 15px;
 }
 
+/* errors 404, 500 */
+
 #error {
     width:550px;
     height:550px;
     margin: 0px auto;
+}
+
+.space {
+    padding-top: 40px;
+}
+
+.notice {
+    margin-top: 40px;
+    display: flex;
+    padding: 0 60px;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+.notice > div {
+    flex-basis: 40%;
+
+}
+
+.notice > div + div {
+    text-align: right;
+}
+
+
+.notice h2 {
+    color: $blue-color;
+    font-size: 40px;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+.box {
+    background-color: #fff;
+    box-shadow: $base-shadow;
+    border-radius: 2px;
+    padding: 60px 63px;
+    margin-bottom: 40px;
+}
+
+.box-gray {
+    background-color: #fafafa;
+    padding: 25px;
+    //text-align: center;
+    box-shadow: $base-shadow;
+}
+
+.box-blue {
+    background-image: -moz-linear-gradient( 90deg, rgb( 52, 170, 220 ) 0%, rgb( 0, 123, 254 ) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb( 52, 170, 220 ) 0%, rgb( 0, 123, 254 ) 100%);
+    padding: 25px;
+    box-shadow: $base-shadow;
+    color: white;
+}
+
+.box-gray h4 {
+    text-align: center;
+    font-size: 30px;
+    padding: 0 14%;
+    //font-family: "Roboto-Bold", 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+    margin-bottom: 35px;
+}
+
+.box-blue h4 {
+    text-align: center;
+    margin: 0;
+}
+
+/* index slider controls */
+
+.slide-links {
+	margin-top:10px;
+	text-align:center;
+}
+
+.slide-links .control-slide {
+	margin:2px;
+	display:inline-block;
+	width:16px;
+	height:16px;
+	overflow:hidden;
+	text-indent:-9999px;
+	background:url(/img/bg-radio.png) center bottom no-repeat;
+}
+
+.slide-links .control-slide:hover {
+	cursor:pointer;
+	background-position:center center;
+}
+
+.slide-links .control-slide.active {
+	background-position:center top;
+}
+
+table, th, td {
+   border: 1px solid rgb(210, 210, 210);;
+   border-collapse: collapse;
+}
+
+.hh-table {
+    width:100%;
+}
+
+.hh-table th {
+    height: 157px;
+    //width: auto;
+    padding: 15px;
+    background-color:#fafafa
+}
+
+.hh-table td {
+    height: 157px;
+    width: 11%;
+    padding: 25px;
+    text-align: center;
+}
+
+.hh-table td:first-of-type{
+    width: 30%;
+    text-align: left;
+}
+
+.hh-table td:last-of-type{
+    border-left: 4px solid $blue-color;
+    border-right: 4px solid $blue-color;
+}
+
+.hh-table th:last-of-type{
+    border-left: 4px solid $blue-color;
+    border-right: 4px solid $blue-color;
+    border-top: 4px solid $blue-color;
+}
+
+.hh-table tr:last-of-type td:last-of-type {
+    border-bottom: 4px solid $blue-color;
 }
