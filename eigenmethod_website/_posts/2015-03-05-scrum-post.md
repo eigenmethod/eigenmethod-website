@@ -22,7 +22,7 @@ It is necessary to pay attention to Product and Sprint Backlog terms as they are
 
 Product Backlog is a prioritized list of business requirements and technical requirements to the system available at the moment. Sprint Backlog contains functionality chosen by Product Owner from Product Backlog for the current Sprint. 
  
-Our company maintains Product and Sprint Backlog in the product management system, and both cooperative team work on documentation and exchange of necessary information is carried out with the help of [Google Docs][].  
+Our company maintains Product and Sprint Backlog in the product management system, and both cooperative team work on documentation and exchange of necessary information is carried out with the help of [Google Docs][god].  
 
 The basis of Scrum is Sprint, in course of which the work on the project is carried out.  
 
