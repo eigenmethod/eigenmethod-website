@@ -921,8 +921,8 @@ a.more-info img {
 }
 
 .box-blue {
-    background-image: -moz-linear-gradient( 90deg, rgb( 52, 170, 220 ) 0%, rgb( 0, 123, 254 ) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb( 52, 170, 220 ) 0%, rgb( 0, 123, 254 ) 100%);
+    background-image: -moz-linear-gradient( 90deg, rgb( 0, 123, 254 ) 0%, rgb( 0, 123, 254 ) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb( 0, 123, 254 ) 0%, rgb( 0, 123, 254 ) 100%);
     padding: 25px;
     box-shadow: $base-shadow;
     color: white;
@@ -967,45 +967,138 @@ a.more-info img {
 	background-position:center top;
 }
 
-table, th, td {
-   border: 1px solid rgb(210, 210, 210);;
-   border-collapse: collapse;
+table, th, td, tr {
+    //border: 1px solid rgb(210, 210, 210);
+    border-collapse: collapse;
+    //width: 100%;
+    //height: 100%;
+    padding: 0;
 }
 
 .hh-table {
     width:100%;
 }
 
-.hh-table th {
-    height: 157px;
-    //width: auto;
+.hh-table div {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-bottom: 1px solid rgb(210, 210, 210);
+    border-left: 1px solid rgb(210, 210, 210);
+    border-collapse: collapse;
     padding: 15px;
-    background-color:#fafafa
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hh-table div.diagonal-line {
+    background: url("/img/hh/corner-line.png") no-repeat, #fafafa;
+    display: table;
+}
+
+.hh-table p.bot-left {
+    position: relative;
+    text-align: left;
+    //height: 50%;
+    margin: 25px 80px
+}
+
+.hh-table p.top-right {
+    position: relative;
+    text-align: right;
+    height: 40%;
+    margin: 25px 80px
+}
+
+.hh-table th div {
+    height: 160px;
+    padding: 0;
+    background-color: #fafafa;
+    font-weight: 200;
 }
 
 .hh-table td {
-    height: 157px;
     width: 11%;
+}
+
+.hh-table td:first-of-type {
+    width: 30%;
+}
+
+.hh-table td div {
+    height: 160px;
     padding: 25px;
     text-align: center;
 }
 
-.hh-table td:first-of-type{
-    width: 30%;
+.hh-table td:first-of-type div {
     text-align: left;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.hh-table td:last-of-type{
-    border-left: 4px solid $blue-color;
-    border-right: 4px solid $blue-color;
+.hh-table th div {
+    border-top: 1px solid rgb(210, 210, 210);
 }
 
-.hh-table th:last-of-type{
-    border-left: 4px solid $blue-color;
-    border-right: 4px solid $blue-color;
-    border-top: 4px solid $blue-color;
+.hh-table tr:first-of-type div {
+    border-top: 1px solid rgb(210, 210, 210);
 }
 
-.hh-table tr:last-of-type td:last-of-type {
-    border-bottom: 4px solid $blue-color;
+.hh-table th:last-of-type div {
+    border-left: 3px solid $blue-color;
+    border-right: 3px solid $blue-color;
+}
+
+.hh-table td:last-of-type div {
+    border-left: 3px solid $blue-color;
+    border-right: 3px solid $blue-color;
+}
+
+.hh-table tr:last-of-type td:last-of-type div {
+    border-bottom: 3px solid $blue-color;
+    border-right: 3px solid $blue-color;
+}
+
+.hh-table th:last-of-type div {
+    border-top: 3px solid $blue-color;
+}
+
+/* feedback */
+
+.feedback {
+    position: fixed;
+    top: 40%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 2px 4px 10px -5px rgba(128, 128, 128, 0.3);
+    border-radius: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.feedback .phone {
+    font-size: 20px;
+    font-weight: 200;
+    color: $blue-color;
+}
+
+.feedback a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.feedback p {
+    font-size: 12px;
+    font-weight: 200;
+    margin-bottom: 8px;
+}
+
+.feedback span {
+    font-size: 15px;
 }
