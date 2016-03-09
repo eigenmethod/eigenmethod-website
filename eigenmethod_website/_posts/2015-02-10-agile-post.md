@@ -18,11 +18,15 @@ A large project gives a client the opportunity to pay for several steps and to u
 
 The customer always has the opportunity to monitor the course of development, to correct functions of the project, to test or launch it, even stop it at any moment.
 
-We pay special attention to such Agile approaches as Kanban and Scrum.  
+We pay special attention to such Agile approaches as [Kanban][kan] and [Scrum][scr].  
 
-We use Kanban concept when:  
+We use [Kanban][kan] concept when:  
    
 *	tasks of the project are connected with research; 
 *	our company has not worked with specific project tasks before.
 
 Scrum techniques are used by our team for existing and long-standing projects as well as for performing typical tasks which have been solved many times before.
+
+[//]: #
+   [scr]: <http://eigenmethod.com/2015/03/05/scrum-post.html>
+   [kan]: <https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BD%D0%B1%D0%B0%D0%BD>

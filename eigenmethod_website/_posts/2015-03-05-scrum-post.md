@@ -22,7 +22,7 @@ It is necessary to pay attention to Product and Sprint Backlog terms as they are
 
 Product Backlog is a prioritized list of business requirements and technical requirements to the system available at the moment. Sprint Backlog contains functionality chosen by Product Owner from Product Backlog for the current Sprint. 
  
-Our company maintains Product and Sprint Backlog in the product management system, and both cooperative team work on documentation and exchange of necessary information is carried out with the help of Google Docs.  
+Our company maintains Product and Sprint Backlog in the product management system, and both cooperative team work on documentation and exchange of necessary information is carried out with the help of [Google Docs][].  
 
 The basis of Scrum is Sprint, in course of which the work on the project is carried out.  
 
@@ -32,3 +32,5 @@ Internal work on the Sprint project takes 1-2 weeks. Before each sprint the team
 
 For the external work with the client we use release management; the work on release lasts only 2-3 months, and at the end of that work the client receives a ready and checked product performing a specific business process.  
 
+[//]: #
+   [god]: <https://docs.google.com>
