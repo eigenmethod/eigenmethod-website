@@ -7,8 +7,29 @@ layout: default
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
   </header>
 
+  {% assign m = page.date | date: "%-m" %}
+
   <div class="post-content" itemprop="articleBody">
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%-d" }}
+        {% case m %}
+          {% when '1' %}{{ site.data.i18n[page.language].january }}
+          {% when '2' %}{{ site.data.i18n[page.language].february }}
+          {% when '3' %}{{ site.data.i18n[page.language].march }}
+          {% when '4' %}{{ site.data.i18n[page.language].april }}
+          {% when '5' %}{{ site.data.i18n[page.language].may }}
+          {% when '6' %}{{ site.data.i18n[page.language].june }}
+          {% when '7' %}{{ site.data.i18n[page.language].july }}
+          {% when '8' %}{{ site.data.i18n[page.language].august }}
+          {% when '9' %}{{ site.data.i18n[page.language].september }}
+          {% when '10' %}{{ site.data.i18n[page.language].october }}
+          {% when '11' %}{{ site.data.i18n[page.language].november }}
+          {% when '12' %}{{ site.data.i18n[page.language].december }}
+        {% endcase %}
+        {{ page.date | date: "%Y" }}
+      </time>
+    </p>
     {{ content }}
   </div>
 
