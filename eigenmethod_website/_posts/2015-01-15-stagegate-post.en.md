@@ -16,11 +16,12 @@ We have adjusted a general Stage-Gate model and received a high-quality tool reg
 
 We can offer the maintenance of our client’s products during the whole product life cycle and during a certain stage or stages. 
 
-###### ![](/img/posts/SGS.png)
 
 Conditionally, all stages can be divided into two groups: before the development and after the development.
  
 Before the development we can help the client with advice at the main stages of the product conception: Idea и Concept. Our expert opinion on the product idea, its concept and business plan will help to adequately evaluate the possibility of realizing the client’s idea.
+
+###### ![](/img/posts/SGS.png)
 
 At Vision stage we can conduct research work and come up with a number of hypotheses which will allow to form a high-quality product concept.
 
