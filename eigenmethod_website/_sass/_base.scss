@@ -56,8 +56,8 @@ img {
 }
 
 img.sv-icon {
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 90px;
+    max-height: 125px;
 }
 
 /**
@@ -930,6 +930,8 @@ a.more-info img {
     border-radius: 2px;
     padding: 25px;
     box-shadow: $base-shadow;
+    padding-left: 63px;
+    padding-right: 63px;
 }
 
 .box-blue {
