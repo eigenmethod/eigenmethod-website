@@ -171,38 +171,39 @@ permalink: /
 
         <h1><span>main</span><br>news</h1>
 
+        {% assign posts = (site.posts | where:"language", {{site.language_default}})  %}
 
         <div class="inline news-main">
-            <a href="{{site.posts[0].url}}" style="text-decoration: none">
-                <div class="post" style="background: -webkit-linear-gradient( 30deg, rgba(0, 0, 0, 100) 0%, rgba( 0, 0, 0, 0 ) 100%), url('{{site.posts[0].representation_img}}') center center no-repeat">
+            <a href="{{posts[0].url}}" style="text-decoration: none">
+                <div class="post" style="background: -webkit-linear-gradient( 30deg, rgba(0, 0, 0, 100) 0%, rgba( 0, 0, 0, 0 ) 100%), url('{{posts[0].representation_img}}') center center no-repeat">
                     <div class="post-meta">
-                        <h4>{{site.posts[0].title}}</h4>
-                        <p class="date">{{ site.posts[0].date | date: "%b %-d, %Y" }}</p>
-                        <p>{{site.posts[0].description}}</p>
+                        <h4>{{posts[0].title}}</h4>
+                        <p class="date">{{ posts[0].date | date: "%b %-d, %Y" }}</p>
+                        <p>{{posts[0].description}}</p>
                     </div>
                 </div>
             </a>
         </div>
         <div class="inline">
             <ul class="news-small">
-                <a href="{{site.posts[1].url}}" style="text-decoration: none">
+                <a href="{{posts[1].url}}" style="text-decoration: none">
                     <li>
-                        <div class="post" style="background: -webkit-linear-gradient( 30deg, rgba(0, 0, 0, 100) 0%, rgba( 0, 0, 0, 0 ) 100%), url('{{site.posts[1].representation_img}}') center center no-repeat">
+                        <div class="post" style="background: -webkit-linear-gradient( 30deg, rgba(0, 0, 0, 100) 0%, rgba( 0, 0, 0, 0 ) 100%), url('{{posts[1].representation_img}}') center center no-repeat">
                             <div class="post-meta">
-                                <h4>{{site.posts[1].title}}</h4>
-                                <p class="date">{{ site.posts[1].date | date: "%b %-d, %Y" }}</p>
-                                <p>{{site.posts[1].description}}</p>
+                                <h4>{{posts[1].title}}</h4>
+                                <p class="date">{{ posts[1].date | date: "%b %-d, %Y" }}</p>
+                                <p>{{posts[1].description}}</p>
                             </div>
                         </div>
                     </li>
                 </a>
-                <a href="{{site.posts[2].url}}" style="text-decoration: none">
+                <a href="{{posts[2].url}}" style="text-decoration: none">
                     <li>
-                        <div class="post" style="background: -webkit-linear-gradient( 30deg, rgba(0, 0, 0, 100) 0%, rgba( 0, 0, 0, 0 ) 100%), url('{{site.posts[2].representation_img}}') center center no-repeat">
+                        <div class="post" style="background: -webkit-linear-gradient( 30deg, rgba(0, 0, 0, 100) 0%, rgba( 0, 0, 0, 0 ) 100%), url('{{posts[2].representation_img}}') center center no-repeat">
                             <div class="post-meta">
-                               <h4>{{site.posts[2].title}}</h4>
-                               <p class="date">{{ site.posts[2].date | date: "%b %-d, %Y" }}</p>
-                               <p>{{site.posts[2].description}}</p>
+                               <h4>{{posts[2].title}}</h4>
+                               <p class="date">{{ posts[2].date | date: "%b %-d, %Y" }}</p>
+                               <p>{{posts[2].description}}</p>
                             </div>
                         </div>
                     </li>
