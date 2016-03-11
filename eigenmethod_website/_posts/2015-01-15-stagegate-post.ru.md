@@ -43,7 +43,7 @@ description: На основании модели Stage-Gate был разраб
 
 [//]: #
    [madp]: <https://www.gartner.com/reviews/market/mobile-application-development-platforms>
-   [val]: <http://eigenmethod.com/2015/10/01/validation-post.html>
-   [scr]: <http://eigenmethod.com/2015/03/05/scrum-post.html>
-   [HH]: <http://eigenmethod.com/products/hh/>
+   [val]: <http://eigenmethod.ru/2015/10/01/validation-post.ru.html>
+   [scr]: <http://eigenmethod.ru/2015/03/05/scrum-post.ru.html>
+   [HH]: <http://eigenmethod.ru/products/hh/>
    [rd]: <https://en.wikipedia.org/wiki/Research_and_development>

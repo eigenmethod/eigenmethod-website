@@ -29,6 +29,6 @@ description: Разработка программных продуктов со
 
 
 [//]: #
-   [scr]: <http://eigenmethod.com/2015/03/05/scrum-post.html>
+   [scr]: <http://eigenmethod.ru/2015/03/05/scrum-post.ru.html>
    [kan]: <https://en.wikipedia.org/wiki/Kanban>
    [wtf]: <https://en.wikipedia.org/wiki/Waterfall_model>
