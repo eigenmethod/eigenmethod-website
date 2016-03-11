@@ -6,7 +6,25 @@ layout: default
   <ul class="post-list">
     {% for post in paginator.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        {% assign m = post.date | date: "%-m" %}
+        <span class="post-meta">
+          {{ post.date | date: "%-d" }}
+          {% case m %}
+            {% when '1' %}{{ site.data.i18n[site.language_default].january }}
+            {% when '2' %}{{ site.data.i18n[site.language_default].february }}
+            {% when '3' %}{{ site.data.i18n[site.language_default].march }}
+            {% when '4' %}{{ site.data.i18n[site.language_default].april }}
+            {% when '5' %}{{ site.data.i18n[site.language_default].may }}
+            {% when '6' %}{{ site.data.i18n[site.language_default].june }}
+            {% when '7' %}{{ site.data.i18n[site.language_default].july }}
+            {% when '8' %}{{ site.data.i18n[site.language_default].august }}
+            {% when '9' %}{{ site.data.i18n[site.language_default].september }}
+            {% when '10' %}{{ site.data.i18n[site.language_default].october }}
+            {% when '11' %}{{ site.data.i18n[site.language_default].november }}
+            {% when '12' %}{{ site.data.i18n[site.language_default].december }}
+          {% endcase %}
+          {{ post.date | date: "%Y" }}
+        </span>
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>

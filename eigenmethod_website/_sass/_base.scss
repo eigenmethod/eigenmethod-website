@@ -427,7 +427,7 @@ footer .main-menu {
 }
 
 .home .advantage {
-    width: 305px;
+    width: 244px;
 }
 
 .home .advantage p {
@@ -466,11 +466,7 @@ footer .main-menu {
 }
 
 .home .news-small li {
-    //cursor: pointer;
     list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 16px;
     width: 100%;
     height: 100%;
@@ -484,29 +480,45 @@ footer .main-menu {
     font-family: "Roboto-Thin", 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin-bottom: 10px;
 }
+.home .news-gradient {
+    height: 100%;
+    position: relative;
+    background-image: linear-gradient( 30deg, rgba(0, 0, 0, 100) 0%, rgba( 0, 0, 0, 0 ) 100%);
+    background-image: -moz-linear-gradient( 30deg, rgba(0, 0, 0, 100) 0%, rgba( 0, 0, 0, 0 ) 100%);
+    background-image: -webkit-linear-gradient( 30deg, rgba(0, 0, 0, 100) 0%, rgba( 0, 0, 0, 0 ) 100%);
+    background-image: -o-linear-gradient( 30deg, rgba(0, 0, 0, 100) 0%, rgba( 0, 0, 0, 0 ) 100%);
+    background-image: -ms-linear-gradient( 30deg, rgba(0, 0, 0, 100) 0%, rgba( 0, 0, 0, 0 ) 100%);
+}
 
 .home .post-meta {
-    position: relative;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    //padding-left: 4%;
+    //padding-right: 4%;
+    padding: 4%;
+
 }
 
 .home .post-meta p {
     color: white;
     margin-bottom: 2px;
+    word-wrap: break-word;
 }
 
 .home .post-meta h4 {
     font-family: "Roboto-Bold", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.home .news-main .post-meta {
-    top: 50%;
-    padding: 0 60px;
-}
-
-.home .news-small li .post-meta {
-    top: 40%;
-    padding: 0 40px;
-}
+//.home .news-main .post-meta {
+//    top: 50%;
+//    padding: 0 60px;
+//}
+//
+//.home .news-small li .post-meta {
+//    top: 40%;
+//    padding: 0 40px;
+//}
 
 .home .news-main .post-meta h4 {
     font-size: 36px;
@@ -529,12 +541,19 @@ footer .main-menu {
 .home .post {
     height: 100%;
     width: 100%;
-    background-size: cover;
+    //background-size: cover;
+    //background-repeat: no-repeat;
+    text-decoration: none
 }
 
 .home .inline h4 {
     color: $blue-color;
     font-size: 22px;
+}
+
+.home .advantages .inline h4 {
+    padding: 0 20px;
+    height: 51px;
 }
 
 /* products */
