@@ -175,93 +175,99 @@ permalink: /
 
         <div class="inline news-main">
             <a href="{{posts[0].url}}" style="text-decoration: none">
-                <div class="post" style="background: -webkit-linear-gradient( 30deg, rgba(0, 0, 0, 100) 0%, rgba( 0, 0, 0, 0 ) 100%), url('{{posts[0].representation_img}}') center center no-repeat">
-                    <div class="post-meta">
-                        <h4>{{posts[0].title}}</h4>
-                        <p class="date">
-                            {% assign m = posts[0].date | date: "%-m" %}
-                            {{ posts[0].date | date: "%-d" }}
-                            {% case m %}
-                              {% when '1' %}{{ site.data.i18n[page.language].january }}
-                              {% when '2' %}{{ site.data.i18n[page.language].february }}
-                              {% when '3' %}{{ site.data.i18n[page.language].march }}
-                              {% when '4' %}{{ site.data.i18n[page.language].april }}
-                              {% when '5' %}{{ site.data.i18n[page.language].may }}
-                              {% when '6' %}{{ site.data.i18n[page.language].june }}
-                              {% when '7' %}{{ site.data.i18n[page.language].july }}
-                              {% when '8' %}{{ site.data.i18n[page.language].august }}
-                              {% when '9' %}{{ site.data.i18n[page.language].september }}
-                              {% when '10' %}{{ site.data.i18n[page.language].october }}
-                              {% when '11' %}{{ site.data.i18n[page.language].november }}
-                              {% when '12' %}{{ site.data.i18n[page.language].december }}
-                            {% endcase %}
-                            {{ posts[0].date | date: "%Y" }}
-                        </p>
-                        <p>{{posts[0].description}}</p>
+                <div class="post" style="background: url('{{posts[0].representation_img}}') no-repeat; background-size: cover;">
+                    <div class="news-gradient">
+                        <div class="post-meta">
+                            <h4>{{posts[0].title}}</h4>
+                            <p class="date">
+                                {% assign m = posts[0].date | date: "%-m" %}
+                                {{ posts[0].date | date: "%-d" }}
+                                {% case m %}
+                                  {% when '1' %}{{ site.data.i18n[site.language_default].january }}
+                                  {% when '2' %}{{ site.data.i18n[site.language_default].february }}
+                                  {% when '3' %}{{ site.data.i18n[site.language_default].march }}
+                                  {% when '4' %}{{ site.data.i18n[site.language_default].april }}
+                                  {% when '5' %}{{ site.data.i18n[site.language_default].may }}
+                                  {% when '6' %}{{ site.data.i18n[site.language_default].june }}
+                                  {% when '7' %}{{ site.data.i18n[site.language_default].july }}
+                                  {% when '8' %}{{ site.data.i18n[site.language_default].august }}
+                                  {% when '9' %}{{ site.data.i18n[site.language_default].september }}
+                                  {% when '10' %}{{ site.data.i18n[site.language_default].october }}
+                                  {% when '11' %}{{ site.data.i18n[site.language_default].november }}
+                                  {% when '12' %}{{ site.data.i18n[site.language_default].december }}
+                                {% endcase %}
+                                {{ posts[0].date | date: "%Y" }}
+                            </p>
+                            <p>{{posts[0].description}}</p>
+                        </div>
                     </div>
                 </div>
             </a>
         </div>
         <div class="inline">
             <ul class="news-small">
-                <a href="{{posts[1].url}}" style="text-decoration: none">
-                    <li>
-                        <div class="post" style="background: -webkit-linear-gradient( 30deg, rgba(0, 0, 0, 100) 0%, rgba( 0, 0, 0, 0 ) 100%), url('{{posts[1].representation_img}}') center center no-repeat">
-                            <div class="post-meta">
-                                <h4>{{posts[1].title}}</h4>
-                                <p class="date">
-                                    {% assign m = posts[1].date | date: "%-m" %}
-                                    {{ posts[1].date | date: "%-d" }}
-                                    {% case m %}
-                                      {% when '1' %}{{ site.data.i18n[page.language].january }}
-                                      {% when '2' %}{{ site.data.i18n[page.language].february }}
-                                      {% when '3' %}{{ site.data.i18n[page.language].march }}
-                                      {% when '4' %}{{ site.data.i18n[page.language].april }}
-                                      {% when '5' %}{{ site.data.i18n[page.language].may }}
-                                      {% when '6' %}{{ site.data.i18n[page.language].june }}
-                                      {% when '7' %}{{ site.data.i18n[page.language].july }}
-                                      {% when '8' %}{{ site.data.i18n[page.language].august }}
-                                      {% when '9' %}{{ site.data.i18n[page.language].september }}
-                                      {% when '10' %}{{ site.data.i18n[page.language].october }}
-                                      {% when '11' %}{{ site.data.i18n[page.language].november }}
-                                      {% when '12' %}{{ site.data.i18n[page.language].december }}
-                                    {% endcase %}
-                                    {{ posts[1].date | date: "%Y" }}
-                                </p>
-                                <p>{{posts[1].description}}</p>
+                <li>
+                    <a href="{{posts[1].url}}" style="text-decoration: none">
+                        <div class="post" style="background: url('{{posts[1].representation_img}}') no-repeat; background-size: cover;">
+                            <div class="news-gradient">
+                                <div class="post-meta">
+                                    <h4>{{posts[1].title}}</h4>
+                                    <p class="date">
+                                        {% assign m = posts[1].date | date: "%-m" %}
+                                        {{ posts[1].date | date: "%-d" }}
+                                        {% case m %}
+                                          {% when '1' %}{{ site.data.i18n[site.language_default].january }}
+                                          {% when '2' %}{{ site.data.i18n[site.language_default].february }}
+                                          {% when '3' %}{{ site.data.i18n[site.language_default].march }}
+                                          {% when '4' %}{{ site.data.i18n[site.language_default].april }}
+                                          {% when '5' %}{{ site.data.i18n[site.language_default].may }}
+                                          {% when '6' %}{{ site.data.i18n[site.language_default].june }}
+                                          {% when '7' %}{{ site.data.i18n[site.language_default].july }}
+                                          {% when '8' %}{{ site.data.i18n[site.language_default].august }}
+                                          {% when '9' %}{{ site.data.i18n[site.language_default].september }}
+                                          {% when '10' %}{{ site.data.i18n[site.language_default].october }}
+                                          {% when '11' %}{{ site.data.i18n[site.language_default].november }}
+                                          {% when '12' %}{{ site.data.i18n[site.language_default].december }}
+                                        {% endcase %}
+                                        {{ posts[1].date | date: "%Y" }}
+                                    </p>
+                                    <p>{{posts[1].description}}</p>
+                                </div>
                             </div>
                         </div>
-                    </li>
-                </a>
-                <a href="{{posts[2].url}}" style="text-decoration: none">
-                    <li>
-                        <div class="post" style="background: -webkit-linear-gradient( 30deg, rgba(0, 0, 0, 100) 0%, rgba( 0, 0, 0, 0 ) 100%), url('{{posts[2].representation_img}}') center center no-repeat">
-                            <div class="post-meta">
-                               <h4>{{posts[2].title}}</h4>
-                               <p class="date">
-                                    {% assign m = posts[2].date | date: "%-m" %}
-                                    {{ posts[2].date | date: "%-d" }}
-                                    {% case m %}
-                                      {% when '1' %}{{ site.data.i18n[page.language].january }}
-                                      {% when '2' %}{{ site.data.i18n[page.language].february }}
-                                      {% when '3' %}{{ site.data.i18n[page.language].march }}
-                                      {% when '4' %}{{ site.data.i18n[page.language].april }}
-                                      {% when '5' %}{{ site.data.i18n[page.language].may }}
-                                      {% when '6' %}{{ site.data.i18n[page.language].june }}
-                                      {% when '7' %}{{ site.data.i18n[page.language].july }}
-                                      {% when '8' %}{{ site.data.i18n[page.language].august }}
-                                      {% when '9' %}{{ site.data.i18n[page.language].september }}
-                                      {% when '10' %}{{ site.data.i18n[page.language].october }}
-                                      {% when '11' %}{{ site.data.i18n[page.language].november }}
-                                      {% when '12' %}{{ site.data.i18n[page.language].december }}
-                                    {% endcase %}
-                                    {{ posts[2].date | date: "%Y" }}
-                               </p>
-                               <p>{{posts[2].description}}</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{posts[2].url}}" style="text-decoration: none">
+                        <div class="post" style="background: url('{{posts[2].representation_img}}') no-repeat; background-size: cover;">
+                            <div class="news-gradient">
+                                <div class="post-meta">
+                                   <h4>{{posts[2].title}}</h4>
+                                   <p class="date">
+                                        {% assign m = posts[2].date | date: "%-m" %}
+                                        {{ posts[2].date | date: "%-d" }}
+                                        {% case m %}
+                                          {% when '1' %}{{ site.data.i18n[site.language_default].january }}
+                                          {% when '2' %}{{ site.data.i18n[site.language_default].february }}
+                                          {% when '3' %}{{ site.data.i18n[site.language_default].march }}
+                                          {% when '4' %}{{ site.data.i18n[site.language_default].april }}
+                                          {% when '5' %}{{ site.data.i18n[site.language_default].may }}
+                                          {% when '6' %}{{ site.data.i18n[site.language_default].june }}
+                                          {% when '7' %}{{ site.data.i18n[site.language_default].july }}
+                                          {% when '8' %}{{ site.data.i18n[site.language_default].august }}
+                                          {% when '9' %}{{ site.data.i18n[site.language_default].september }}
+                                          {% when '10' %}{{ site.data.i18n[site.language_default].october }}
+                                          {% when '11' %}{{ site.data.i18n[site.language_default].november }}
+                                          {% when '12' %}{{ site.data.i18n[site.language_default].december }}
+                                        {% endcase %}
+                                        {{ posts[2].date | date: "%Y" }}
+                                   </p>
+                                   <p>{{posts[2].description}}</p>
+                                </div>
                             </div>
                         </div>
-                    </li>
-                </a>
+                    </a>
+                </li>
             </ul>
         </div>
 
@@ -271,10 +277,11 @@ permalink: /
 <script src="/css/jquery.min.js"></script>
 
 <script type="text/javascript">
+    var slideTimer;
+
     $(document).ready(function() {
         var hwTimeOut = 5000;
         var index = 0;
-        var clicked = false;
 
         var animSlide = function (index) {
             $('.product-slide li.active').removeClass('active');
@@ -286,23 +293,23 @@ permalink: /
         $('.control-slide').click(function (e) {
             index = parseFloat($(this).text());
             animSlide(index);
-            clicked = true;
+            clearTimeout(slideTimer);
         });
 
-        window.setInterval(function () {
-            clicked = false;
+        $('.control-slide, .product-slide').on('mouseenter', function (e) {
+            clearTimeout(slideTimer);
+        });
 
-            $('.control-slide').click(function (e) {
-                index = parseFloat($(this).text());
-                animSlide(index);
-                clicked = true;
-            });
+        $('.control-slide, .product-slide').on('mouseleave', function (e) {
+            slideTimer = setTimeout(slide, hwTimeOut);
+        });
 
-            if (index < 3) {index = index + 1;}
-            else {index = 0;}
+        function slide() {
+            index = index < 3 ? index + 1 : 0
+            animSlide(index);
+            slideTimer = setTimeout(slide, hwTimeOut);
+        };
 
-            if (!clicked) {animSlide(index);}
-
-        }, hwTimeOut);
+        slideTimer = setTimeout(slide, hwTimeOut);
     })
 </script>
