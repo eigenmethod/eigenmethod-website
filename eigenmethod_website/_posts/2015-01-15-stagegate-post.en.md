@@ -43,7 +43,7 @@ It should also be noted that thanks to the Stage-Gate model it is possible to co
 
 [//]: #
    [madp]: <https://www.gartner.com/reviews/market/mobile-application-development-platforms>
-   [val]: <http://eigenmethod.com/2015/10/01/validation-post.html>
-   [scr]: <http://eigenmethod.com/2015/03/05/scrum-post.html>
+   [val]: <http://eigenmethod.com/2015/10/01/validation-post.en.html>
+   [scr]: <http://eigenmethod.com/2015/03/05/scrum-post.en.html>
    [HH]: <http://eigenmethod.com/products/hh/>
    [rd]: <https://en.wikipedia.org/wiki/Research_and_development>

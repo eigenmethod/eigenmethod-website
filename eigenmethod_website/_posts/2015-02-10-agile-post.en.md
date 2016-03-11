@@ -28,6 +28,6 @@ We use [Kanban][kan] concept when:
 Scrum techniques are used by our team for existing and long-standing projects as well as for performing typical tasks which have been solved many times before.
 
 [//]: #
-   [scr]: <http://eigenmethod.com/2015/03/05/scrum-post.html>
+   [scr]: <http://eigenmethod.com/2015/03/05/scrum-post.en.html>
    [kan]: <https://en.wikipedia.org/wiki/Kanban>
    [wtf]: <https://en.wikipedia.org/wiki/Waterfall_model>
