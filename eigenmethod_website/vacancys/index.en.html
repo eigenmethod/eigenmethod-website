@@ -6,7 +6,7 @@ weight: 4
 ---
 
 
-<main>
+<div class="main">
 	{% assign posts = (site.posts | where:"language", {{site.language_default}}) | where:"layout", "vacancy" %}
 	    <div class="box">
         <table class="hh-table">
@@ -23,4 +23,4 @@ weight: 4
 			{% endfor %}
         </table>
     </div>
-</main>
+</div>

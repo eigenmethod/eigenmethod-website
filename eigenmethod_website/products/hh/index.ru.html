@@ -3,7 +3,7 @@ layout: default
 permalink: /products/hh/
 ---
 
-<main>
+<div class="main">
     <h1>HyperHive</h1>
 
     <ul class="product-slide">
@@ -262,18 +262,18 @@ permalink: /products/hh/
         <p><span><b>Микола Струтинский</b>, <i>BDD</i></span></p>
     </div>
 
-</main>
+</div>
 
-    <script src="/css/jquery.min.js"></script>
+<script src="/css/jquery.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).scroll(function() {
-            var y = $(this).scrollTop();
+<script type="text/javascript">
+    $(document).scroll(function() {
+        var y = $(this).scrollTop();
 
-            if (y > 1500) {
-              $('.feedback').fadeIn();
-            } else {
-              $('.feedback').fadeOut();
-            }
-        });
-    </script>
+        if (y > 1500) {
+          $('.feedback').fadeIn();
+        } else {
+          $('.feedback').fadeOut();
+        }
+    });
+</script>

@@ -3,7 +3,7 @@ layout: default
 permalink: /products/sv/
 ---
 
-<main>
+<div class="main">
     <h1>Secure Vision</h1>
 
     <ul class="product-slide">
@@ -143,22 +143,22 @@ permalink: /products/sv/
         <p><span><b>Mykola Strutynski</b>, <i>BDD</i></span></p>
     </div>
 
-</main>
+</div>
 
-    <script src="/css/jquery.min.js"></script>
+<script src="/css/jquery.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('.feedback').hide();
-        });
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.feedback').hide();
+    });
 
-        $(document).scroll(function() {
-            var y = $(this).scrollTop();
+    $(document).scroll(function() {
+        var y = $(this).scrollTop();
 
-            if (y > 1500) {
-              $('.feedback').fadeIn();
-            } else {
-              $('.feedback').fadeOut();
-            }
-        });
-    </script>
+        if (y > 1500) {
+          $('.feedback').fadeIn();
+        } else {
+          $('.feedback').fadeOut();
+        }
+    });
+</script>

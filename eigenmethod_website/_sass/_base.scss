@@ -21,7 +21,9 @@ body {
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
     -o-font-feature-settings: "kern" 1;
+    -ms-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
+    -ms-text-size-adjust: 100%;
     font-kerning: normal;
     padding: 0;
     margin: 0;
@@ -219,7 +221,7 @@ pre {
 
 
 
-header, main, footer {
+header, footer {
     max-width: 1240px;
     margin: auto;
     float: none;
@@ -229,8 +231,10 @@ header {
     padding: 40px 0 20px;
 }
 
-main {
-    /*text-align: center;*/
+.main {
+    max-width: 1240px;
+    margin: auto;
+    float: none;
 }
 
 h1 {
@@ -363,7 +367,7 @@ footer .main-menu {
 .flex-center {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .contacts-holder .contact .map-holder {
@@ -820,8 +824,13 @@ footer .main-menu {
 }
 
 .service-list li.active {
+    //background-image: -moz-linear-gradient( 90deg, rgb( 6, 125, 217 ) 0%, rgb( 8, 139, 239 ) 100%);
+    //background-image: -webkit-linear-gradient( 90deg, rgb( 6, 125, 217 ) 0%, rgb( 8, 139, 239 ) 100%);
+    background-image: linear-gradient( 90deg, rgb( 6, 125, 217 ) 0%, rgb( 8, 139, 239 ) 100%);
     background-image: -moz-linear-gradient( 90deg, rgb( 6, 125, 217 ) 0%, rgb( 8, 139, 239 ) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb( 6, 125, 217 ) 0%, rgb( 8, 139, 239 ) 100%);
+    background-image: -o-linear-gradient( 90deg, rgb( 6, 125, 217 ) 0%, rgb( 8, 139, 239 ) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb( 6, 125, 217 ) 0%, rgb( 8, 139, 239 ) 100%);
     color: #fff;
     text-decoration: none;
 }
@@ -882,8 +891,14 @@ a.more-info {
     color: #fff;
     font-size: 18px;
     border-radius: 3px;
-    background-image: -moz-linear-gradient( 90deg, rgb( 37, 72, 145 ) 0%, rgb( 6, 125, 217 ) 100%), url(/img/arrow.png);
-    background-image: -webkit-linear-gradient( 90deg, rgb( 37, 72, 145 ) 0%, rgb( 6, 125, 217 ) 100%), url(/img/arrow.png);
+    //background-image: -moz-linear-gradient( 90deg, rgb( 37, 72, 145 ) 0%, rgb( 6, 125, 217 ) 100%);
+    //background-image: -webkit-linear-gradient( 90deg, rgb( 37, 72, 145 ) 0%, rgb( 6, 125, 217 ) 100%);
+    background-image: linear-gradient( 90deg, rgb( 37, 72, 145 ) 0%, rgb( 6, 125, 217 ) 100%);
+    background-image: -moz-linear-gradient( 90deg, rgb( 37, 72, 145 ) 0%, rgb( 6, 125, 217 ) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb( 37, 72, 145 ) 0%, rgb( 6, 125, 217 ) 100%);
+    background-image: -o-linear-gradient( 90deg, rgb( 37, 72, 145 ) 0%, rgb( 6, 125, 217 ) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb( 37, 72, 145 ) 0%, rgb( 6, 125, 217 ) 100%);
+
     box-shadow: 1px 1px 5px 0px rgb( 0, 0, 2 );
     text-decoration: none;
     font-family: "Roboto-Light", 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -959,8 +974,13 @@ a.more-info img {
 }
 
 .box-blue {
+    //background-image: -moz-linear-gradient( 90deg, rgb( 0, 123, 254 ) 0%, rgb( 0, 123, 254 ) 100%);
+    //background-image: -webkit-linear-gradient( 90deg, rgb( 0, 123, 254 ) 0%, rgb( 0, 123, 254 ) 100%);
+    background-image: linear-gradient( 90deg, rgb( 0, 123, 254 ) 0%, rgb( 0, 123, 254 ) 100%);
     background-image: -moz-linear-gradient( 90deg, rgb( 0, 123, 254 ) 0%, rgb( 0, 123, 254 ) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb( 0, 123, 254 ) 0%, rgb( 0, 123, 254 ) 100%);
+    background-image: -o-linear-gradient( 90deg, rgb( 0, 123, 254 ) 0%, rgb( 0, 123, 254 ) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb( 0, 123, 254 ) 0%, rgb( 0, 123, 254 ) 100%);
     border-radius: 2px;
     padding: 25px;
     box-shadow: $base-shadow;
@@ -1040,6 +1060,8 @@ table, th, td, tr {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
     border-bottom: 1px solid rgb(210, 210, 210);
     border-left: 1px solid rgb(210, 210, 210);
     border-collapse: collapse;
@@ -1132,6 +1154,8 @@ table, th, td, tr {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
     border-bottom: 1px solid rgb(210, 210, 210);
     border-left: 1px solid rgb(210, 210, 210);
     border-collapse: collapse;
