@@ -1,0 +1,26 @@
+---
+layout: default
+title: Вакансии
+permalink: /vacancys/
+weight: 4
+---
+
+
+<main>
+	{% assign posts = (site.posts | where:"language", {{site.language_default}}) | where:"layout", "vacancy" %}
+	    <div class="box">
+        <table class="hh-table">
+            <tr>
+                <th><div>Название</div></th>
+                <th><div>Город</div></th>
+                <th><div>Опыт</div></th>
+                <th><div>Навыки</div></th>
+            </tr>
+			{% for post in posts %}
+            <tr>
+                <td><div>{{ post.title }}</div></td><td><div>{{ post.city }}</div></td><td><div>{{ post.expirience }}</div></td><td><div>{{ post.skills }}</div></td>
+            </tr>
+			{% endfor %}
+        </table>
+    </div>
+</main>

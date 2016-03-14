@@ -424,6 +424,7 @@ footer .main-menu {
 
 .home .advantages {
     text-align: center;
+    width: 1240px;
 }
 
 .home .advantage {
@@ -450,6 +451,10 @@ footer .main-menu {
 .home .tags img {
     width: 50%;
     height: 50%;
+}
+
+.home .news {
+    width: 1240px;
 }
 
 .home .news-main {
@@ -553,7 +558,7 @@ footer .main-menu {
 
 .home .advantages .inline h4 {
     padding: 0 20px;
-    height: 51px;
+    //height: 51px;
 }
 
 /* products */

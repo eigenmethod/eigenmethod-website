@@ -138,28 +138,35 @@ permalink: /
             <span class="control-slide">3</span>
         </div>
 
-        <h1><span>наши</span><br>преимущества</h1>
+        <h1 style="margin-bottom: 5px;"><span>наши преимущества</span></h1>
+        <h1 style="font-size: 36px; margin-bottom: 5px; margin-top: 5px; line-height: 20px;">и</h1>
+        <h1 style="margin-top: 5px;">ключевые приоритеты</h1>
 
         <div class="advantages">
             <div class="inline advantage">
-                <img src="/img/index/competence.png" />
-                <h4>Компетентность</h4>
-                <p>На текущий момент мы имеем ядро команды разработки, в котором собрались представители таких известных компаний, как Google, Yandex, Avito, Motorola и Electronic Arts.</p>
+                <img src="/img/index/advantage-1.png" />
+                <h4 style="height: 80px;">Высоко-<br>квалифицированные специалисты</h4>
+                <p>Мы помогли уже многим клиентам, и будем продолжать оказывать помощь в подборе подходящих специалистов для проектов. Мы ищем высококвалифицированных ИТ-специалистов и формируем проектные команды, которые максимально подходят для решения задач в рамках проекта.</p>
             </div>
             <div class="inline advantage">
-                <img src="/img/index/openness.png" />
-                <h4>Открытость</h4>
-                <p>EigenMethod использует открытые технологии и подходы к разработке, что обеспечивает возможность разработки и дальнейшей поддержки силами множества специалистов, которые присутствуют на рынке труда.</p>
+                <img src="/img/index/advantage-2.png" />
+                <h4 style="height: 80px;">Качество разработки</h4>
+                <p>Мы постоянно проводим тестирование наших продуктов на всех уровнях. Это помогает достичь самого высокого качества и устранить любые возможные проблемы или сложности. В итоге вы получите ту систему, которую хотели изначально. Также мы предоставляем гарантию на наши решения.</p>
             </div>
             <div class="inline advantage">
-                <img src="/img/index/prospects.png" />
-                <h4>Перспективность</h4>
-                <p>Видение, сформировавшееся в результате анализа нашего опыта в области разработки, соответствует современным стратегиям и трендам развития рынка.</p>
+                <img src="/img/index/advantage-3.png" />
+                <h4 style="height: 80px;">Мониторинг</h4>
+                <p>Наши клиенты вовлечены во все стадии создания решения. Они имеют возможность планировать проект, устанавливать сроки и приоритеты, обсуждать ход разработки. Мы используем самые передовые технологии, что позволяет обеспечить высокую скорость разработки, не прибегая к снижению качества продукта.</p>
             </div>
             <div class="inline advantage">
-                <img src="/img/index/flexibility.png" />
-                <h4>Гибкость</h4>
-                <p>EigenMethod готов прислушиваться к своим клиентам и реализовывать решения, которые отвечают бизнес-процессам клиента.</p>
+                <img src="/img/index/advantage-4.png" />
+                <h4 style="height: 80px;">Постоянное взаимодействие с клиентом</h4>
+                <p>Мы знаем насколько важно быть в курсе всех событий. Мы делаем все возможное, чтобы наши клиенты получали своевременную информацию об изменениях или обновлениях.</p>
+            </div>
+            <div class="inline advantage">
+                <img src="/img/index/advantage-5.png" />
+                <h4 style="height: 80px;">Прозрачное ценообразование</h4>
+                <p>Наши клиенты всегда знают за что платят и как формируется стоимость решения.</p>
             </div>
         </div>
 
@@ -171,106 +178,107 @@ permalink: /
 
         <h1><span>главные</span><br>новости</h1>
 
-        {% assign posts = (site.posts | where:"language", {{site.language_default}})  %}
+        {% assign posts = (site.posts | where:"language", {{site.language_default}}) | where:"layout", "post" %}
 
-        <div class="inline news-main">
-            <a href="{{posts[0].url}}" style="text-decoration: none">
-                <div class="post" style="background: url('{{posts[0].representation_img}}') no-repeat; background-size: cover;">
-                    <div class="news-gradient">
-                        <div class="post-meta">
-                            <h4>{{posts[0].title}}</h4>
-                            <p class="date">
-                                {% assign m = posts[0].date | date: "%-m" %}
-                                {{ posts[0].date | date: "%-d" }}
-                                {% case m %}
-                                  {% when '1' %}{{ site.data.i18n[site.language_default].january }}
-                                  {% when '2' %}{{ site.data.i18n[site.language_default].february }}
-                                  {% when '3' %}{{ site.data.i18n[site.language_default].march }}
-                                  {% when '4' %}{{ site.data.i18n[site.language_default].april }}
-                                  {% when '5' %}{{ site.data.i18n[site.language_default].may }}
-                                  {% when '6' %}{{ site.data.i18n[site.language_default].june }}
-                                  {% when '7' %}{{ site.data.i18n[site.language_default].july }}
-                                  {% when '8' %}{{ site.data.i18n[site.language_default].august }}
-                                  {% when '9' %}{{ site.data.i18n[site.language_default].september }}
-                                  {% when '10' %}{{ site.data.i18n[site.language_default].october }}
-                                  {% when '11' %}{{ site.data.i18n[site.language_default].november }}
-                                  {% when '12' %}{{ site.data.i18n[site.language_default].december }}
-                                {% endcase %}
-                                {{ posts[0].date | date: "%Y" }}
-                            </p>
-                            <p>{{posts[0].description}}</p>
+        <div class="news">
+            <div class="inline news-main">
+                <a href="{{posts[0].url}}" style="text-decoration: none">
+                    <div class="post" style="background: url('{{posts[0].representation_img}}') no-repeat; background-size: cover;">
+                        <div class="news-gradient">
+                            <div class="post-meta">
+                                <h4>{{posts[0].title}}</h4>
+                                <p class="date">
+                                    {% assign m = posts[0].date | date: "%-m" %}
+                                    {{ posts[0].date | date: "%-d" }}
+                                    {% case m %}
+                                      {% when '1' %}{{ site.data.i18n[site.language_default].january }}
+                                      {% when '2' %}{{ site.data.i18n[site.language_default].february }}
+                                      {% when '3' %}{{ site.data.i18n[site.language_default].march }}
+                                      {% when '4' %}{{ site.data.i18n[site.language_default].april }}
+                                      {% when '5' %}{{ site.data.i18n[site.language_default].may }}
+                                      {% when '6' %}{{ site.data.i18n[site.language_default].june }}
+                                      {% when '7' %}{{ site.data.i18n[site.language_default].july }}
+                                      {% when '8' %}{{ site.data.i18n[site.language_default].august }}
+                                      {% when '9' %}{{ site.data.i18n[site.language_default].september }}
+                                      {% when '10' %}{{ site.data.i18n[site.language_default].october }}
+                                      {% when '11' %}{{ site.data.i18n[site.language_default].november }}
+                                      {% when '12' %}{{ site.data.i18n[site.language_default].december }}
+                                    {% endcase %}
+                                    {{ posts[0].date | date: "%Y" }}
+                                </p>
+                                <p>{{posts[0].description}}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="inline">
-            <ul class="news-small">
-                <li>
-                    <a href="{{posts[1].url}}" style="text-decoration: none">
-                        <div class="post" style="background: url('{{posts[1].representation_img}}') no-repeat; background-size: cover;">
-                            <div class="news-gradient">
-                                <div class="post-meta">
-                                    <h4>{{posts[1].title}}</h4>
-                                    <p class="date">
-                                        {% assign m = posts[1].date | date: "%-m" %}
-                                        {{ posts[1].date | date: "%-d" }}
-                                        {% case m %}
-                                          {% when '1' %}{{ site.data.i18n[site.language_default].january }}
-                                          {% when '2' %}{{ site.data.i18n[site.language_default].february }}
-                                          {% when '3' %}{{ site.data.i18n[site.language_default].march }}
-                                          {% when '4' %}{{ site.data.i18n[site.language_default].april }}
-                                          {% when '5' %}{{ site.data.i18n[site.language_default].may }}
-                                          {% when '6' %}{{ site.data.i18n[site.language_default].june }}
-                                          {% when '7' %}{{ site.data.i18n[site.language_default].july }}
-                                          {% when '8' %}{{ site.data.i18n[site.language_default].august }}
-                                          {% when '9' %}{{ site.data.i18n[site.language_default].september }}
-                                          {% when '10' %}{{ site.data.i18n[site.language_default].october }}
-                                          {% when '11' %}{{ site.data.i18n[site.language_default].november }}
-                                          {% when '12' %}{{ site.data.i18n[site.language_default].december }}
-                                        {% endcase %}
-                                        {{ posts[1].date | date: "%Y" }}
-                                    </p>
-                                    <p>{{posts[1].description}}</p>
+                </a>
+            </div>
+            <div class="inline">
+                <ul class="news-small">
+                    <li>
+                        <a href="{{posts[1].url}}" style="text-decoration: none">
+                            <div class="post" style="background: url('{{posts[1].representation_img}}') no-repeat; background-size: cover;">
+                                <div class="news-gradient">
+                                    <div class="post-meta">
+                                        <h4>{{posts[1].title}}</h4>
+                                        <p class="date">
+                                            {% assign m = posts[1].date | date: "%-m" %}
+                                            {{ posts[1].date | date: "%-d" }}
+                                            {% case m %}
+                                              {% when '1' %}{{ site.data.i18n[site.language_default].january }}
+                                              {% when '2' %}{{ site.data.i18n[site.language_default].february }}
+                                              {% when '3' %}{{ site.data.i18n[site.language_default].march }}
+                                              {% when '4' %}{{ site.data.i18n[site.language_default].april }}
+                                              {% when '5' %}{{ site.data.i18n[site.language_default].may }}
+                                              {% when '6' %}{{ site.data.i18n[site.language_default].june }}
+                                              {% when '7' %}{{ site.data.i18n[site.language_default].july }}
+                                              {% when '8' %}{{ site.data.i18n[site.language_default].august }}
+                                              {% when '9' %}{{ site.data.i18n[site.language_default].september }}
+                                              {% when '10' %}{{ site.data.i18n[site.language_default].october }}
+                                              {% when '11' %}{{ site.data.i18n[site.language_default].november }}
+                                              {% when '12' %}{{ site.data.i18n[site.language_default].december }}
+                                            {% endcase %}
+                                            {{ posts[1].date | date: "%Y" }}
+                                        </p>
+                                        <p>{{posts[1].description}}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{posts[2].url}}" style="text-decoration: none">
-                        <div class="post" style="background: url('{{posts[2].representation_img}}') no-repeat; background-size: cover;">
-                            <div class="news-gradient">
-                                <div class="post-meta">
-                                   <h4>{{posts[2].title}}</h4>
-                                   <p class="date">
-                                        {% assign m = posts[2].date | date: "%-m" %}
-                                        {{ posts[2].date | date: "%-d" }}
-                                        {% case m %}
-                                          {% when '1' %}{{ site.data.i18n[site.language_default].january }}
-                                          {% when '2' %}{{ site.data.i18n[site.language_default].february }}
-                                          {% when '3' %}{{ site.data.i18n[site.language_default].march }}
-                                          {% when '4' %}{{ site.data.i18n[site.language_default].april }}
-                                          {% when '5' %}{{ site.data.i18n[site.language_default].may }}
-                                          {% when '6' %}{{ site.data.i18n[site.language_default].june }}
-                                          {% when '7' %}{{ site.data.i18n[site.language_default].july }}
-                                          {% when '8' %}{{ site.data.i18n[site.language_default].august }}
-                                          {% when '9' %}{{ site.data.i18n[site.language_default].september }}
-                                          {% when '10' %}{{ site.data.i18n[site.language_default].october }}
-                                          {% when '11' %}{{ site.data.i18n[site.language_default].november }}
-                                          {% when '12' %}{{ site.data.i18n[site.language_default].december }}
-                                        {% endcase %}
-                                        {{ posts[2].date | date: "%Y" }}
-                                   </p>
-                                   <p>{{posts[2].description}}</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{posts[2].url}}" style="text-decoration: none">
+                            <div class="post" style="background: url('{{posts[2].representation_img}}') no-repeat; background-size: cover;">
+                                <div class="news-gradient">
+                                    <div class="post-meta">
+                                       <h4>{{posts[2].title}}</h4>
+                                       <p class="date">
+                                            {% assign m = posts[2].date | date: "%-m" %}
+                                            {{ posts[2].date | date: "%-d" }}
+                                            {% case m %}
+                                              {% when '1' %}{{ site.data.i18n[site.language_default].january }}
+                                              {% when '2' %}{{ site.data.i18n[site.language_default].february }}
+                                              {% when '3' %}{{ site.data.i18n[site.language_default].march }}
+                                              {% when '4' %}{{ site.data.i18n[site.language_default].april }}
+                                              {% when '5' %}{{ site.data.i18n[site.language_default].may }}
+                                              {% when '6' %}{{ site.data.i18n[site.language_default].june }}
+                                              {% when '7' %}{{ site.data.i18n[site.language_default].july }}
+                                              {% when '8' %}{{ site.data.i18n[site.language_default].august }}
+                                              {% when '9' %}{{ site.data.i18n[site.language_default].september }}
+                                              {% when '10' %}{{ site.data.i18n[site.language_default].october }}
+                                              {% when '11' %}{{ site.data.i18n[site.language_default].november }}
+                                              {% when '12' %}{{ site.data.i18n[site.language_default].december }}
+                                            {% endcase %}
+                                            {{ posts[2].date | date: "%Y" }}
+                                       </p>
+                                       <p>{{posts[2].description}}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
     </div>
 </main>
 

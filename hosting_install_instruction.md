@@ -249,7 +249,9 @@ sudo vim /var/lib/gems/2.1.0/gems/jekyll-paginate-1.1.0/lib/jekyll-paginate/pagi
 # если bundler установлен без судо
 vim /home/$USER/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/jekyll-paginate-1.1.0/lib/jekyll-paginate/pagination.rb
 ```
-Добавляем 43-ю строку
+Добавляем в 43-ю строку
 ```
 all_posts = all_posts.reject { |p| p['language'] != site.config['languages'][0] }
+all_posts = all_posts.reject { |p| p['layout'] != 'post' }
 ```
+Теперь paginator.posts будет содержать только посты соответствующие выбранному языку и только те у которых layout: post

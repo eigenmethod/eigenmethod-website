@@ -33,7 +33,7 @@ layout: default
     {{ content }}
   </div>
 
-  {% assign posts = (site.posts | where:"language", {{site.language_default}}) | where:"layout", "post" %}
+  {% assign posts = (site.posts | where:"language", {{site.language_default}}) | where:"layout", "vacancy" %}
 
   {% for post in posts %}
     {% if post.url == page.url %}
