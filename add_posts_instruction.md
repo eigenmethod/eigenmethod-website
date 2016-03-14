@@ -9,7 +9,7 @@ git clone https://github.com/eigenmethod/eigenmethod-website.git
 ```
 ##### 2) Переходим в склонированную папку
 ```sh
-cd ./eigenmethod-website/eigenmethod_website/_posts
+cd ./eigenmethod-website/eigenmethod_website/_posts/posts
 ```
 ##### 3) Создаем файл с постом
 Имя файла должно иметь следующий формат:
@@ -70,7 +70,7 @@ languages: ['en', 'ru']
 bundle exec jekyll build --destination _site_en/
 
 vim ./_config.yml
-:31
+:34
 i
 languages: ['ru', 'en']
 <esc>

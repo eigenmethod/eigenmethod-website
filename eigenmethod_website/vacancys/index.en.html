@@ -7,118 +7,20 @@ weight: 4
 
 
 <main>
-	<h1>About the company</h1>
-	<article class="about">
-		<p>EigenMethod is a team of 50 high-qualified developers. Our goal is to help our customers to grow their businesses using the latest software technologies and appropriate development methodologies.</p>
-		<p>We are good at Open Source technology stack: Python, C++, PostgreSQL, Django, Twisted, Tornado, Redis and others.</p>
-		<p>We are creating also own software applications and products.</p>
-		<p>We have an experience in development of applications with SAP system integration. We provide also services of outsourcing development on SAP HANA, SAPUI5 and ABAP.</p>
-		<p>Our offices are in the Eastern Europe which are rich in smart and efficient IT specialists. We can bring the best combination of highly skilled but cost effective team and provide the best cost/benefit ratio.</p>
-	</article>
-
-	<h1>Contacts</h1>
-	<div class="contacts-holder">
-		<div class="contact">
-			<h3>Head office and Development center</h3>
-			<div class="map-holder">
-				<address>
-					<dl>
-						<dt style="display: none;">City:</dt>
-						<dd>Kyiv</dd>
-						<br>
-						<dt>Address:</dt>
-						<dd>02121,<br>Kharkivske shosse, 175, 2 floor</dd>
-						<br>
-						<dt>Telephone:</dt>
-						<dd><a href="tel:0380445852243">038 044 585 22 43</a></dd>
-						<br>
-					</dl>
-				</address>
-				<div id="map-1" class="map"></div>
-			</div>
-		</div>
-
-		<div class="contact">
-			<h3>Development center</h3>
-			<div class="map-holder">
-				<address>
-					<dl>
-						<dt style="display: none;">City:</dt>
-						<dd>Saint Petersburg</dd>
-						<br>
-						<dt>Address:</dt>
-						<dd>197342,<br>Beloostrovskaya ul., 17/2А, 309</dd>
-						<br>
-						<dt>Telephone:</dt>
-						<dd><a href="tel:0078124382784">007 812 438 27 84</a></dd>
-						<br>
-					</dl>
-				</address>
-				<div id="map-2" class="map"></div>
-			</div>
-		</div>
-	</div>
-
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASQXLAKvIxadpZ1oMfchEZYg_IqsesHJU&callback=initMap"></script>
-
-	<script type="text/javascript">
-	function initMap() {
-
-		var icon = {
-			url: '/img/map-point.png',
-			anchor: google.maps.Point(10, 0)
-		}
-
-		var geocoder = new google.maps.Geocoder()
-
-		var map1
-		var point1
-
-		geocoder.geocode({address: 'Киев, Харьковское шоссе, 175'}, function(results, status) {
-			map1 = new google.maps.Map(document.getElementById('map-1'), {
-				center: results[0].geometry.location,
-				zoom: 11,
-				// disableDefaultUI: true,
-				streetViewControl: false,
-				mapTypeControl: false
-			});
-
-			var point1 = new google.maps.Marker({
-				map: map1,
-				position: results[0].geometry.location,
-				icon: icon,
-				anchorPoint: {
-					x: 0,
-					y: 0
-				}
-			})
-		})
-
-
-		var map2
-		var point2
-
-		geocoder.geocode({address: 'Санкт-Петербург, ул. Белоостровская, 17/2А'}, function(results, status) {
-			map2 = new google.maps.Map(document.getElementById('map-2'), {
-				center: results[0].geometry.location,
-				zoom: 11,
-				// disableDefaultUI: true,
-				streetViewControl: false,
-				mapTypeControl: false
-			});
-
-			var point2 = new google.maps.Marker({
-				map: map2,
-				position: results[0].geometry.location,
-				icon: icon,
-				anchorPoint: {
-					x: 0,
-					y: 0
-				}
-			})
-		})
-
-	}
-	</script>
-
+	{% assign posts = (site.posts | where:"language", {{site.language_default}}) | where:"layout", "vacancy" %}
+	    <div class="box">
+        <table class="hh-table">
+            <tr>
+                <th><div>Titile</div></th>
+                <th><div>City</div></th>
+                <th><div>Expirience</div></th>
+                <th><div>Skills</div></th>
+            </tr>
+			{% for post in posts %}
+            <tr>
+                <td><div><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div></td><td><div>{{ post.city }}</div></td><td><div>{{ post.expirience }}</div></td><td><div>{{ post.skills }}</div></td>
+            </tr>
+			{% endfor %}
+        </table>
+    </div>
 </main>
