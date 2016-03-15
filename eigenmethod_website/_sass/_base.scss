@@ -6,6 +6,7 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 
@@ -326,6 +327,10 @@ header .main-menu a.active {
 }
 
 footer .main-menu  {
+    //font-weight: bold;
+}
+
+footer .main-menu .active  {
     font-weight: bold;
 }
 
@@ -366,8 +371,10 @@ footer .main-menu {
 
 .flex-center {
     display: flex;
+    display: -webkit-flex; /* Safari */
     align-items: center;
     justify-content: flex-start;
+    -webkit-justify-content: flex-start; /* Safari 6.1+ */
 }
 
 .contacts-holder .contact .map-holder {
@@ -432,7 +439,7 @@ footer .main-menu {
 }
 
 .home .advantage {
-    width: 244px;
+    width: 242px;
 }
 
 .home .advantage p {
@@ -464,11 +471,10 @@ footer .main-menu {
 .home .news-main {
     width: 700px;
     height: 396px;
-    //cursor: pointer;
     margin: 0;
 }
 .home .news-small {
-    width: 525px;
+    width: 524px;
     height: 190px;
     margin: 0;
     margin-left: 10px;
@@ -518,16 +524,6 @@ footer .main-menu {
 .home .post-meta h4 {
     font-family: "Roboto-Bold", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
-//.home .news-main .post-meta {
-//    top: 50%;
-//    padding: 0 60px;
-//}
-//
-//.home .news-small li .post-meta {
-//    top: 40%;
-//    padding: 0 40px;
-//}
 
 .home .news-main .post-meta h4 {
     font-size: 36px;
@@ -702,7 +698,7 @@ footer .main-menu {
     height: 202px;
     background-color: #fff;
     box-shadow: $base-shadow;
-    margin: 0 10px 24px;
+    margin: 0 8px 24px;
     cursor: pointer;
     font-size: $base-font-size;
     vertical-align: top;

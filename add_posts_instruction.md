@@ -65,14 +65,19 @@ vim ./_config.yml
 :31
 i
 languages: ['en', 'ru']
+//Для нормальной работы RSS лучше еще поменять поле url
+url: "http://eigenmethod.com"
 <esc>
 :wq
+//Генерируем статику
 bundle exec jekyll build --destination _site_en/
 
 vim ./_config.yml
 :34
 i
 languages: ['ru', 'en']
+//Для нормальной работы RSS лучше еще поменять поле url
+url: "http://eigenmethod.ru"
 <esc>
 :wq
 bundle exec jekyll build --destination _site_ru/
