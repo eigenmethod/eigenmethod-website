@@ -6,7 +6,7 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
-    -webkit-font-smoothing: subpixel-antialiased;
+    //-webkit-font-smoothing: subpixel-antialiased;
 }
 
 
@@ -62,6 +62,11 @@ img.sv-icon {
     max-width: 90px;
     max-height: 125px;
 }
+
+img.sv-img {
+    height: 383px;
+}
+
 
 /**
  * Figures
@@ -373,8 +378,8 @@ footer .main-menu {
     display: flex;
     display: -webkit-flex; /* Safari */
     align-items: center;
-    justify-content: flex-start;
-    -webkit-justify-content: flex-start; /* Safari 6.1+ */
+    justify-content: center;
+    -webkit-justify-content: center; /* Safari 6.1+ */
 }
 
 .contacts-holder .contact .map-holder {
@@ -557,7 +562,7 @@ footer .main-menu {
 }
 
 .home .advantages .inline h4 {
-    padding: 0 20px;
+    padding: 0 12px;
     //height: 51px;
 }
 
@@ -600,7 +605,7 @@ footer .main-menu {
 
 .product-slide li .promo .platform-logo {
     position: absolute;
-    top: 65%;
+    bottom: 22%;
 }
 
 .product-slide li.promo-hh .promo {
@@ -918,11 +923,11 @@ a.more-info img {
 }
 
 .notice {
-    margin-top: 40px;
     display: flex;
     padding: 0 60px;
     font-size: 20px;
     justify-content: space-between;
+    margin: auto 0;
 }
 
 .notice.box {
@@ -936,7 +941,11 @@ a.more-info img {
 
 .notice > div {
     flex-basis: 40%;
+}
 
+.notice.box div:first-of-type {
+    flex-basis: 65%;
+    margin: auto;
 }
 
 .notice > div + div {
@@ -981,14 +990,6 @@ a.more-info img {
     padding: 25px;
     box-shadow: $base-shadow;
     color: white;
-}
-
-.box-img {
-    border-radius: 2px;
-    padding: 25px;
-    box-shadow: $base-shadow;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 .box h4 {

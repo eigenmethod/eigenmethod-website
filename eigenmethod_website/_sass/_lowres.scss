@@ -1,0 +1,101 @@
+@media screen and (max-device-width: 1450px) {
+
+  header, footer {
+    max-width: 1082px;
+  }
+
+  .main {
+    max-width: 1082px;
+  }
+
+  .home .advantages {
+    width: 1082px;
+  }
+
+  .home .advantage {
+    width: 209px;
+  }
+
+  .home .advantages .inline h4 {
+    padding: 0 5px;
+    font-size: 20px;
+  }
+
+  .home .advantage p {
+    margin: 0 10px;
+    font-size: 15px;
+  }
+
+  .home .news {
+    width: 1082px;
+  }
+
+  .product-slide {
+    width: 1082px;
+    height: 630px;
+  }
+
+  .home .news-main {
+    width: 626px;
+    height: 329px;
+  }
+
+  .home .news-small {
+    width: 440px;
+    height: 156px;
+  }
+
+  .tech-logo-01 {
+    margin: 0 20px;
+  }
+
+  .tech--ios {
+    margin: 0;
+  }
+
+  .tech--droid {
+    margin: 0;
+  }
+
+  .product-list li {
+    width: 350px;
+    height: 176px;
+  }
+
+  .service-slider {
+    width: 760px;
+  }
+
+  .service-list li {
+    width: 316px;
+  }
+
+  .service-list li .description {
+    font-size: 16px;
+  }
+
+  .description h2 {
+    font-size: 37px;
+  }
+
+  .description p {
+    font-size: 20px;
+  }
+
+  .hh-table th div {
+    height: 140px;
+  }
+
+  .notice p {
+    margin-bottom: 18px;
+  }
+
+  .notice.box div:first-of-type {
+    flex-basis: 70%;
+  }
+
+  img.sv-img {
+    height: 340px;
+  }
+
+}
