@@ -132,7 +132,7 @@
   }
 
   .post-content h6 {
-    padding-right: 40px;
+    max-width: 90%;
   }
 
 }
@@ -290,7 +290,7 @@
   }
 
   .post-content p {
-    padding-right: 50px;
+    max-width: 90%;
   }
 
   .post-content h2 {
@@ -298,7 +298,12 @@
   }
 
   .post-content h6 {
-    padding-right: 40px;
+    max-width: 90%;
+  }
+
+  .post-content h5 {
+    padding-left: 40px;
+    max-width: 90%;
   }
 
   a.prev-post img {
