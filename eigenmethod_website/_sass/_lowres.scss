@@ -231,7 +231,7 @@
   }
 
   .notice p {
-    margin-bottom: 18px;
+    font-size: 16px;
   }
 
   .notice.box div:first-of-type {
@@ -321,6 +321,22 @@
 
   img.sv-img {
     height: 288px;
+  }
+
+  .box {
+    font-size: 16px;
+  }
+
+  .notice h2 {
+    font-size: 32px;
+  }
+
+  .box-gray h4 {
+    font-size: 24px;
+  }
+
+  p.tech-logo {
+    font-size: 14px;
   }
 
 }
