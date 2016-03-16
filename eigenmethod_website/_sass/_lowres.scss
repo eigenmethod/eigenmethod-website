@@ -1,4 +1,4 @@
-@media screen and (max-device-width: 1450px) {
+@media screen and (min-device-width: 1250px) and (max-device-width: 1450px) {
 
   header, footer {
     max-width: 1082px;
@@ -96,6 +96,222 @@
 
   img.sv-img {
     height: 340px;
+  }
+
+  .product-list li .description {
+    width: 190px;
+    font-size: 15px;
+  }
+
+  .service .inline .slide .description {
+    //font-size: 18px;
+    width: 590px;
+  }
+
+  .service .inline .slide .description h2 {
+    font-size: 40px;
+  }
+
+.product-slide li .promo .mockup-samsung {
+    height: 456px;
+    width: 700px;
+  }
+
+.product-slide li .promo .mockup-iphone {
+    height: 458px;
+    width: 700px;
+  }
+
+  .post-content p {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .post-content h2 {
+    padding-right: 40px;
+  }
+
+  .post-content h6 {
+    padding-right: 40px;
+  }
+
+}
+
+
+@media screen and (max-device-width: 1250px) {
+
+  header, footer {
+    max-width: 900px;
+  }
+
+  .main {
+    max-width: 900px;
+  }
+
+  .home .advantages {
+    width: 900px;
+  }
+
+  .home .advantage {
+    width: 175px;
+  }
+
+  .home .advantages .inline h4 {
+    padding: 0 3px;
+    font-size: 18px;
+  }
+
+  .home .advantage p {
+    margin: 0 10px;
+    font-size: 15px;
+  }
+
+  .home .news {
+    width: 900px;
+  }
+
+  .product-slide {
+    width: 900px;
+    height: 524px;
+  }
+
+  .home .news-main {
+    width: 537px;
+    height: 243px;
+  }
+
+  .home .news-small {
+    width: 348px;
+    height: 113px;
+  }
+
+  .tech-logo-01 {
+    margin: 0 10px;
+  }
+
+  .tech--ios {
+    margin: 0;
+  }
+
+  .tech--droid {
+    margin: 0;
+  }
+
+  .product-list li {
+    width: 290px;
+    height: 146px;
+  }
+
+  .service-slider {
+    width: 634px;
+    height: 497px;
+  }
+
+  .service-list li {
+    width: 260px;
+    height: 124px;
+  }
+
+  .service-list li .description {
+    font-size: 15px;
+    max-width: 72%;
+  }
+
+  .service .inline .slide .description {
+    font-size: 18px;
+    width: 500px;
+  }
+
+  .service .inline .slide .description h2 {
+    font-size: 30px;
+  }
+
+  .hh-table th div {
+    height: 140px;
+  }
+
+  .notice p {
+    margin-bottom: 18px;
+  }
+
+  .notice.box div:first-of-type {
+    flex-basis: 70%;
+  }
+
+  img.sv-img {
+    height: 340px;
+  }
+
+  .product-list li .description {
+    width: 190px;
+    font-size: 15px;
+  }
+
+  .product-slide li .promo .mockup-samsung {
+    height: 358px;
+    width: 550px;
+    top: 100px;
+    right: -61px;
+  }
+
+  .product-slide li .promo .mockup-iphone {
+    height: 359px;
+    width: 550px;
+    top: 78px;
+    //right: -56px;
+  }
+
+  .product-slide .promo .head {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+
+  .product-slide li .promo {
+    height: 402px;
+  }
+
+  .product-list li .head {
+    font-size: 25px;
+  }
+
+  .product-list li .description {
+    width: 152px;
+    font-size: 12px;
+  }
+
+  .product-slide .promo > span {
+    font-size: 20px;
+    width: 450px;
+  }
+
+  a.more-info {
+    font-size: 15px;
+    padding: 7px 25px;
+  }
+
+  .post-content p {
+    padding-right: 50px;
+  }
+
+  .post-content h2 {
+    padding-right: 40px;
+  }
+
+  .post-content h6 {
+    padding-right: 40px;
+  }
+
+  a.prev-post img {
+    left: 5px;
+  }
+
+  a.next-post img {
+    right: 5px;
+  }
+
+  .contacts-holder .contact .map-holder {
+    width: 850px;
+    height: 190px;
   }
 
 }

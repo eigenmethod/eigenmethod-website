@@ -19,10 +19,10 @@ permalink: /products/sv/
                         <a class="tech-logo-01 tech--droid" title="Android"></a>
                     </div>
                 </span>
-                <div class="mockup"></div>
+                <div class="mockup-iphone"></div>
             </div>
             <div class="tech">
-                <span class="caption">we <strong>use</strong></span>
+                <span class="caption"><strong>we</strong> use</span>
                 <a class="tech-logo-01 tech--python" title="Python"></a>
                 <a class="tech-logo-01 tech--django" title="Django"></a>
                 <a class="tech-logo-01 tech--postgresql" title="PostgreSQL"></a>
@@ -150,7 +150,16 @@ permalink: /products/sv/
 
 <script type="text/javascript">
     $(document).ready(function() {
-        $('.feedback').hide();
+        $('.feedback').on('mouseenter', function () {
+            $('.feedback').animate({'right': '0px'}, 500);
+            clearTimeout(timer);
+        });
+
+        $('.feedback').on('mouseleave', function () {
+            timer = setTimeout(function () {
+                $('.feedback').animate({'right': '-183px'}, 500);
+            }, 1500);
+        });
     });
 
     $(document).scroll(function() {
@@ -162,4 +171,5 @@ permalink: /products/sv/
           $('.feedback').fadeOut();
         }
     });
+
 </script>
