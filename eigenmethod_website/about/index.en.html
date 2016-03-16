@@ -58,10 +58,28 @@ weight: 4
 		</div>
 	</div>
 
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASQXLAKvIxadpZ1oMfchEZYg_IqsesHJU&callback=initMap"></script>
-
 	<script type="text/javascript">
+	function robotoLoadPreventing() {
+		var head = document.getElementsByTagName('head')[0];
+
+		// Save the original method
+		var insertBefore = head.insertBefore;
+
+		// Replace it!
+		head.insertBefore = function (newElement, referenceElement) {
+
+			if (newElement.href && newElement.href.indexOf('https://fonts.googleapis.com/css?family=Roboto') === 0) {
+
+				console.info('Prevented Roboto from loading!');
+				return;
+			}
+
+			insertBefore.call(head, newElement, referenceElement);
+		};
+	}
+
 	function initMap() {
+		robotoLoadPreventing();
 
 		var icon = {
 			url: '/img/map-point.png',
@@ -119,5 +137,6 @@ weight: 4
 
 	}
 	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASQXLAKvIxadpZ1oMfchEZYg_IqsesHJU&callback=initMap"></script>
 
 </div>
