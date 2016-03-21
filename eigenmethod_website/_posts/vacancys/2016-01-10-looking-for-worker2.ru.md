@@ -11,6 +11,6 @@ description: Тестовая вакансия 2
 
 ##  Нужен сишник
 
-######  ![](/img/vacancys/employe.jpg)
+######  ![](/img/vacancies/employe.jpg)
 
 Тестовая вакансия 2!

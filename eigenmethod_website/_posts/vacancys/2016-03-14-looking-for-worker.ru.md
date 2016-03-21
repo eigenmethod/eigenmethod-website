@@ -11,6 +11,6 @@ description: Тестовая вакансия 1.
 
 ##  Ищем таланты которые ищут работу
 
-######  ![](/img/vacancys/employe.jpg)
+######  ![](/img/vacancies/employe.jpg)
 
 Тестовая вакансия 1!
