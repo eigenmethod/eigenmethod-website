@@ -61,25 +61,11 @@ sudo git pull origin master
 Пересобираем статику для каждого из языков (английский, русский, возможно в будущем появятся другие)
 ```sh
 cd ~/eigenmethod-website/eigenmethod_website
-vim ./_config.yml
-:31
-i
-languages: ['en', 'ru']
-//Для нормальной работы RSS лучше еще поменять поле url
-url: "http://eigenmethod.com"
-<esc>
-:wq
-//Генерируем статику
+
+cp ./_config.en.yml ./_config.yml
 bundle exec jekyll build --destination _site_en/
 
-vim ./_config.yml
-:34
-i
-languages: ['ru', 'en']
-//Для нормальной работы RSS лучше еще поменять поле url
-url: "http://eigenmethod.ru"
-<esc>
-:wq
+cp ./_config.ru.yml ./_config.yml
 bundle exec jekyll build --destination _site_ru/
 ```
 ##### 6) Проверяем что изменения появились на сайтах

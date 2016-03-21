@@ -8,10 +8,10 @@
 # Site settings
 title: Eigen Method
 email: info@eigenmethod.com
-description: EigenMethod — молодая компания специализирующаяся в разработке программных комплексов, включающих web-приложения, desktop-приложения, мобильные приложения. Все наши проекты связаны с решением сложных технологических задач, таких как алгоритмические задачи, задачи интеграции, обеспечение высокой отказоустойчивости, работы под высокой нагрузкой и многое другое.
+description: EigenMethod – is a company, specializing in software development, including web, mobile and desktop applications. Our projects request strong technical skills – we solve problems relating algorithms, integration, high availability and high load requirements and more.
 baseurl: "" # the subpath of your site, e.g. /blog
-#url: "http://eigenmethod.com"
-url: "http://eigenmethod.ru"
+url: "http://eigenmethod.com"
+#url: "http://eigenmethod.ru"
 #url: "http://31.131.21.120"
 #url: "http://localhost:4000"
 #twitter_username: eigen
@@ -32,7 +32,7 @@ paginate_path: "/blog/page:num"
 gems: ["jekyll-multiple-languages", "jekyll-paginate"]
 
 # Languages settings
-languages: ['ru', 'en']
+languages: ['en', 'ru']
 
 # Excludes
 exclude: ["lib_requirements.txt", "README.md", "add_posts_instruction.md",
