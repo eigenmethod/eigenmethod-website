@@ -140,7 +140,8 @@ permalink: /products/sv/
     <div class="feedback">
         <p>Информация по продукту:</p>
         <a href="tel:0380445852243" class="phone">038 044 585 22 43</a>
-        <a href="mailto:info@eigenmethod.com"><p>info@eigenmethod.com</p></a>
+        <br>
+        <a href="mailto:info@eigenmethod.com" class="mail">info@eigenmethod.com</a>
         <p><span>Микола Струтинский</span></p>
     </div>
 
@@ -150,7 +151,19 @@ permalink: /products/sv/
 
 <script type="text/javascript">
     $(document).ready(function() {
-        $('.feedback').hide();
+        $('.feedback').on('mouseenter', function () {
+            $('.feedback').css({ "background-color": "#fff"});
+            $('.feedback').animate({'right': '0px'}, 500);
+        });
+
+        $('.feedback').on('mouseleave', function () {
+            setTimeout(function () {
+                $('.feedback').animate({'right': '-186px'}, 500);
+            }, 1500);
+            setTimeout(function () {
+                $('.feedback').css({ "background-color": "#067DD9"});
+            }, 2000);
+        });
     });
 
     $(document).scroll(function() {
@@ -162,4 +175,5 @@ permalink: /products/sv/
           $('.feedback').fadeOut();
         }
     });
+
 </script>

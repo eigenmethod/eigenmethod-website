@@ -140,7 +140,8 @@ permalink: /products/sv/
     <div class="feedback">
         <p>Additional product information:</p>
         <a href="tel:0380445852243" class="phone">038 044 <b>585 22 43</b></a>
-        <a href="mailto:info@eigenmethod.com"><p>info@eigenmethod.com</p></a>
+        <br>
+        <a href="mailto:info@eigenmethod.com" class="mail">info@eigenmethod.com</a>
         <p><span><b>Mykola Strutynski</b>, <i>BDD</i></span></p>
     </div>
 
@@ -151,14 +152,17 @@ permalink: /products/sv/
 <script type="text/javascript">
     $(document).ready(function() {
         $('.feedback').on('mouseenter', function () {
+            $('.feedback').css({ "background-color": "#fff"});
             $('.feedback').animate({'right': '0px'}, 500);
-            clearTimeout(timer);
         });
 
         $('.feedback').on('mouseleave', function () {
-            timer = setTimeout(function () {
-                $('.feedback').animate({'right': '-183px'}, 500);
+            setTimeout(function () {
+                $('.feedback').animate({'right': '-186px'}, 500);
             }, 1500);
+            setTimeout(function () {
+                $('.feedback').css({ "background-color": "#067DD9"});
+            }, 2000);
         });
     });
 
