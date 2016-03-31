@@ -1,11 +1,20 @@
 <header>
 
 	<div class="logo inline">
-			<a href="{{ site.baseurl }}/"><img src="/img/logos/logo-eigenmethod.png" alt="{{ site.title }}"></a>
+		    <div class="desktop-visible">
+				<a href="{{ site.baseurl }}/">
+					<img src="/img/logos/logo-eigenmethod-desktop.png" alt="{{ site.title }}">
+				</a>
+			</div>
+		    <div class="mobile-visible">
+				<a href="{{ site.baseurl }}/">
+					<img style="height: 100px;" src="/img/logos/logo-eigenmethod-mobile.png" alt="{{ site.title }}">
+				</a>
+			</div>
 			<span class="slogan">{{ site.data.i18n[page.language].slogan }}</span>
 	</div>
 
-	<div class="inline">
+	<div class="inline contacts-header">
 		<a href="tel:0380445852243" class="phone">0380 44 585 22 43</a>
 		<br>
 		<a href="mailto:info@eigenmethod.com">info@eigenmethod.com</a>

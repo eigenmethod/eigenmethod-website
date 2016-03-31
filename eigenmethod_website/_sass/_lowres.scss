@@ -4,6 +4,10 @@
     max-width: 1082px;
   }
 
+  h1 {
+    font-size: 55px;
+  }
+
   .main {
     max-width: 1082px;
   }
@@ -103,6 +107,11 @@
     font-size: 15px;
   }
 
+  .product-slide .promo > span {
+    //font-size: 20px;
+    width: 550px;
+  }
+
   .service .inline .slide .description {
     //font-size: 18px;
     width: 590px;
@@ -135,13 +144,25 @@
     max-width: 90%;
   }
 
+  .hh-table th div {
+    height: 120px;
+  }
+
+  .hh-table td div {
+    height: 120px;
+  }
+
 }
 
 
-@media screen and (max-device-width: 1250px) {
+@media screen and (min-device-width: 1024px) and (max-device-width: 1250px) {
 
   header, footer {
     max-width: 900px;
+  }
+
+  h1 {
+    font-size: 45px;
   }
 
   .main {
@@ -183,6 +204,24 @@
   .home .news-small {
     width: 348px;
     height: 113px;
+  }
+
+  .home .news-main .post-meta h4 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+  .home .news-small .post-meta h4 {
+      font-size: 16px;
+      margin-bottom: 6px;
+  }
+
+  .home .news-main .post-meta p {
+      font-size: 15px;
+  }
+
+  .home .news-small .post-meta p {
+      font-size: 11px;
   }
 
   .tech-logo-01 {
@@ -240,11 +279,6 @@
 
   img.sv-img {
     height: 340px;
-  }
-
-  .product-list li .description {
-    width: 190px;
-    font-size: 15px;
   }
 
   .product-slide li .promo .mockup-samsung {
@@ -337,6 +371,319 @@
 
   p.tech-logo {
     font-size: 14px;
+  }
+
+  .hh-table th div {
+    height: 115px;
+  }
+
+  .hh-table td div {
+    height: 100px;
+  }
+
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+  .desktop-visible {
+    visibility: hidden;
+    display: none;
+  };
+
+  .mobile-visible {
+    visibility: visible;
+    display: inherit;
+  };
+
+  .lowres-nav {
+    z-index: 100;
+    position: fixed;
+    top: 3%;
+    right: 3%;
+  }
+
+  .logo {
+    margin-right: -40px;
+    margin-left: 40px;
+  }
+
+  .contacts-header {
+    margin-top: 20px;
+  }
+
+  body {
+      font-size: 15px;
+  }
+
+  header, footer {
+    max-width: 750px;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  p {
+    margin-bottom: 15px;
+
+  }
+
+  p.borded-top {
+    padding-top: 15px;
+  }
+
+  .main {
+    max-width: 750px;
+  }
+
+  .home .advantages {
+    width: 750px;
+  }
+
+  .home .advantage {
+    width: 175px;
+  }
+
+  .home .advantages .inline h4 {
+    padding: 0 3px;
+    font-size: 18px;
+  }
+
+  .home .advantage p {
+    margin: 0 10px;
+    font-size: 15px;
+  }
+
+  .home .news {
+    width: 750px;
+  }
+
+  .product-slide {
+    width: 750px;
+    height: 436px;
+  }
+
+  .home .news-main {
+    width: 420px;
+    height: 190px;
+  }
+
+  .home .news-small {
+    width: 315px;
+    height: 91px;
+    margin-left: 5px;
+  }
+
+  .home .news-main .post-meta h4 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .home .news-small .post-meta h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .home .news-main .post-meta p {
+    font-size: 15px;
+  }
+
+  .home .news-small .post-meta p {
+    font-size: 12px;
+  }
+
+  .home .news-small li {
+    margin-bottom: 8px;
+  }
+
+  //.home .news-small p.date {
+  //  margin-bottom: 5px;
+  //}
+
+  .tech-logo-01 {
+    margin: 0 4px;
+  }
+
+  .tech--ios {
+    margin: 0;
+  }
+
+  .tech--droid {
+    margin: 0;
+  }
+
+  .product-list li {
+    width: 250px;
+    height: 126px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .product-list li > div {
+    padding: 12px;
+  }
+
+  .service-slider {
+    width: 529px;
+    height: 412px;
+  }
+
+  .service-list li {
+    width: 216px;
+    height: 103px;
+  }
+
+  .service-list li .description {
+    font-size: 14px;
+    max-width: 72%;
+  }
+
+  .service .inline .slide .description {
+    font-size: 18px;
+    width: 500px;
+  }
+
+  .service .inline .slide .description h2 {
+    font-size: 26px;
+  }
+
+  .notice p {
+    font-size: 16px;
+  }
+
+  .notice.box div:first-of-type {
+    flex-basis: 70%;
+  }
+
+  img.sv-img {
+    height: 340px;
+  }
+
+  .product-slide li .promo .mockup-samsung {
+    height: 293px;
+    width: 450px;
+    top: 84px;
+    right: -37px;
+  }
+
+  .product-slide li .promo .mockup-iphone {
+    height: 294px;
+    width: 450px;
+    top: 72px;
+    //right: -56px;
+  }
+
+  .product-slide .promo .head {
+    font-size: 44px;
+    margin-bottom: 8px;
+  }
+
+  .product-slide li .promo {
+    height: 335px;
+  }
+
+  .product-slide li .promo {
+    padding-left: 30px;
+  }
+
+  .product-slide li .tech {
+    height: 102px;
+    padding: 10px;
+  }
+
+  .product-list li .head {
+    font-size: 25px;
+  }
+
+  .product-list li .description {
+    width: 152px;
+    font-size: 12px;
+  }
+
+  .product-slide .promo > span {
+    font-size: 15px;
+    width: 450px;
+  }
+
+  a.more-info {
+    font-size: 15px;
+    padding: 7px 25px;
+  }
+
+  .post-content p {
+    max-width: 90%;
+  }
+
+  .post-content h2 {
+    padding-right: 40px;
+  }
+
+  .post-content h6 {
+    max-width: 90%;
+  }
+
+  .post-content h5 {
+    padding-left: 40px;
+    max-width: 90%;
+  }
+
+  a.prev-post img {
+    left: 5px;
+  }
+
+  a.next-post img {
+    right: 5px;
+  }
+
+  .contacts-holder .contact .map-holder {
+    width: 850px;
+    height: 190px;
+  }
+
+  img.sv-img {
+    height: 288px;
+  }
+
+  .box {
+    font-size: 15px;
+  }
+
+  .notice h2 {
+    font-size: 26px;
+  }
+
+  .notice p {
+    font-size: 13px;
+  }
+
+  .box-gray h4 {
+    font-size: 18px;
+  }
+
+  p.tech-logo {
+    font-size: 14px;
+  }
+
+  .hh-table th div {
+    height: 115px;
+  }
+
+  .hh-table td div {
+    height: 90px;
+  }
+
+  .hh-table p.top-right {
+    margin: 25px 40px;
+  }
+
+  .hh-table p.bot-left {
+    margin: 25px 40px;
+  }
+
+  .contacts-holder .contact .map-holder {
+    width: 750px;
   }
 
 }

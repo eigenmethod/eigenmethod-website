@@ -13,7 +13,7 @@ description: EigenMethod — молодая компания специализ�
                     <div class="head">
                         <strong>Hyper</strong>Hive
                     </div>
-                    <span style="width: 550px;">
+                    <span>
                         Инновационный продукт на рынке решений Mobile Application Development Platform (MADP), позволяющий разработчикам и компаниям быстро разрабатывать и внедрять мобильные решения.
                         <br><br>
                         <a class="more-info" href="/products/hh">
@@ -28,7 +28,7 @@ description: EigenMethod — молодая компания специализ�
                     <img class="mockup-samsung" src="/img/products/mockup-hh.png" alt="HH on Samsung phone" />
                 </div>
                 <div class="tech">
-                    <span class="caption"><strong>we</strong> use</span>
+                    <span class="caption"><strong>используемые</strong> технологии</span>
                     <a class="tech-logo-01 tech--python" title="Python"></a>
                     <a class="tech-logo-01 tech--django" title="Django"></a>
                     <a class="tech-logo-01 tech--postgresql" title="PostgreSQL"></a>
@@ -222,7 +222,7 @@ description: EigenMethod — молодая компания специализ�
                                 <div class="news-gradient">
                                     <div class="post-meta">
                                         <h4>{{posts[1].title}}</h4>
-                                        <p class="date">
+                                        <p class="date desktop-visible">
                                             {% assign m = posts[1].date | date: "%-m" %}
                                             {{ posts[1].date | date: "%-d" }}
                                             {% case m %}
@@ -253,7 +253,7 @@ description: EigenMethod — молодая компания специализ�
                                 <div class="news-gradient">
                                     <div class="post-meta">
                                        <h4>{{posts[2].title}}</h4>
-                                       <p class="date">
+                                       <p class="date desktop-visible">
                                             {% assign m = posts[2].date | date: "%-m" %}
                                             {{ posts[2].date | date: "%-d" }}
                                             {% case m %}
@@ -284,7 +284,6 @@ description: EigenMethod — молодая компания специализ�
     </div>
 </div>
 
-<script src="/css/jquery.min.js"></script>
 
 <script type="text/javascript">
     var slideTimer;
@@ -315,7 +314,7 @@ description: EigenMethod — молодая компания специализ�
         });
 
         function slide() {
-            index = index < 3 ? index + 1 : 0
+            index = index < 3 ? index + 1 : 0;
             animSlide(index);
             slideTimer = setTimeout(slide, hwTimeOut);
         };

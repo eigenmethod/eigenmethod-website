@@ -224,8 +224,20 @@ pre {
     }
 }
 
+// classes for separate descktop and mobile components
+
+.desktop-visible {
+  visibility: visible;
+  display: inherit;
+};
+
+.mobile-visible {
+  visibility: hidden;
+  display: none;
+};
 
 
+// main eigenmethod elements
 
 header, footer {
     max-width: 1240px;

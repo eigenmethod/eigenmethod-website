@@ -1,6 +1,7 @@
-<nav class="main-menu">
-	{% assign pages = site.pages | sort:"weight"  %}
-	{% for node in pages%}
+{% assign pages = site.pages | sort:"weight"  %}
+
+<nav class="desktop-visible main-menu" role="navigation">
+	{% for node in pages %}
 		{% if node.title and site.language_default == node.language %}
 			{% if page.url == node.url %}
 				 <a class="page-link active" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>

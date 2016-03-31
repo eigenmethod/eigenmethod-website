@@ -1,0 +1,30 @@
+{% assign pages = site.pages | sort:"weight"  %}
+
+
+<div class="mobile-visible lowres-nav">
+	<div id="dl-menu" class="dl-menuwrapper">
+		<button class="dl-trigger">Open Menu</button>
+		<ul class="dl-menu">
+			{% for node in pages %}
+				{% if node.title and site.language_default == node.language %}
+					{% if page.url == node.url %}
+						 <li><a class="page-link active" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
+					{% else %}
+						<li><a class="page-link" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+
+<script src="/js/modernizr.custom.js"></script>
+<script src="/js/jquery.dlmenu.js"></script>
+
+<script type="text/javascript">
+	$(function() {
+		$( '#dl-menu' ).dlmenu({
+			animationClasses : { classin : 'dl-animate-in', classout : 'dl-animate-out' }
+		});
+	});
+</script>
