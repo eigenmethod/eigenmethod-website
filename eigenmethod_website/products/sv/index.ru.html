@@ -58,7 +58,7 @@ permalink: /products/sv/
             <p class="borded-top">В основе решения – инновационная технология по распознаванию мошенников на входе в магазин. Используемая технология распознавания лиц входит в тройку мировых лидеров!</p>
         </div>
         <div>
-            <img src="/img/sv/face.png" alt="Face model" style="height: 325px;">
+            <img class="sv-img-2" src="/img/sv/face.png" alt="Face model">
         </div>
     </div>
 
@@ -121,7 +121,7 @@ permalink: /products/sv/
         <p class="borded-top">Также вы можете использовать нашу систему для иных задач, таких как распознавание лояльных покупателей или идентификация сотрудников.
     </div>
 
-    <img class="sv-img" src="/img/sv/sv-img-1.png" alt="sv image 1" >
+    <img class="sv-img-1" src="/img/sv/sv-img-1.png" alt="sv image 1" >
 
     <div class="box" style="margin-bottom: 0; padding-bottom: 1px">
         <h4>Как стать владельцем Secure Vision?</h4>
@@ -147,31 +147,4 @@ permalink: /products/sv/
 
 </div>
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('.feedback').on('mouseenter', function () {
-            $('.feedback').css({ "background-color": "#fff"});
-            $('.feedback').animate({'right': '0px'}, 500);
-        });
-
-        $('.feedback').on('mouseleave', function () {
-            setTimeout(function () {
-                $('.feedback').animate({'right': '-186px'}, 500);
-            }, 1500);
-            setTimeout(function () {
-                $('.feedback').css({ "background-color": "#067DD9"});
-            }, 2000);
-        });
-    });
-
-    $(document).scroll(function() {
-        var y = $(this).scrollTop();
-
-        if (y > 1500) {
-          $('.feedback').fadeIn();
-        } else {
-          $('.feedback').fadeOut();
-        }
-    });
-
-</script>
+<script src="/js/feedback.js"></script>

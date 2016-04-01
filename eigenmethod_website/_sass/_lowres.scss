@@ -152,6 +152,10 @@
     height: 120px;
   }
 
+  img.sv-img-1 {
+    height: 295px;
+  }
+
 }
 
 
@@ -163,6 +167,8 @@
 
   h1 {
     font-size: 45px;
+    margin-bottom: 30px;
+    margin-top: 40px;
   }
 
   .main {
@@ -381,9 +387,22 @@
     height: 100px;
   }
 
+  img.sv-img-1 {
+    height: 295px;
+  }
+
+  img.sv-img-2 {
+      height: 280px;
+  }
+
+  .home .tags {
+    margin: 30px 0;
+  }
+
 }
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+//@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media screen and (max-device-width: 1024px) {
 
   .desktop-visible {
     visibility: hidden;
@@ -416,7 +435,11 @@
   }
 
   header, footer {
-    max-width: 750px;
+    max-width: 700px;
+  }
+
+  footer {
+    text-align: center;
   }
 
   h1 {
@@ -435,20 +458,23 @@
   }
 
   .main {
-    max-width: 750px;
+    max-width: 700px;
   }
 
   .home .advantages {
-    width: 750px;
+    width: 700px;
+    height: 450px;
+    position: relative;
   }
 
   .home .advantage {
-    width: 175px;
+    width: 210px;
   }
 
   .home .advantages .inline h4 {
     padding: 0 3px;
     font-size: 18px;
+    margin-bottom: 0;
   }
 
   .home .advantage p {
@@ -456,22 +482,26 @@
     font-size: 15px;
   }
 
+  .home .advantage img {
+    margin-bottom: 15px;
+  }
+
   .home .news {
-    width: 750px;
+    width: 700px;
   }
 
   .product-slide {
-    width: 750px;
+    width: 700px;
     height: 436px;
   }
 
   .home .news-main {
-    width: 420px;
+    width: 390px;
     height: 190px;
   }
 
   .home .news-small {
-    width: 315px;
+    width: 300px;
     height: 91px;
     margin-left: 5px;
   }
@@ -503,7 +533,7 @@
   //}
 
   .tech-logo-01 {
-    margin: 0 4px;
+    margin: 0 2px;
   }
 
   .tech--ios {
@@ -514,9 +544,13 @@
     margin: 0;
   }
 
+  .product-list {
+    margin-bottom: 30px;
+  }
+
   .product-list li {
-    width: 250px;
-    height: 126px;
+    width: 233px;
+    height: 123px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -525,24 +559,28 @@
     padding: 12px;
   }
 
+  .service {
+    margin-bottom: 40px;
+  }
+
   .service-slider {
-    width: 529px;
+    width: 500px;
     height: 412px;
   }
 
   .service-list li {
-    width: 216px;
+    width: 195px;
     height: 103px;
   }
 
   .service-list li .description {
-    font-size: 14px;
+    font-size: 12px;
     max-width: 72%;
   }
 
   .service .inline .slide .description {
-    font-size: 18px;
-    width: 500px;
+    font-size: 16px;
+    width: 455px;
   }
 
   .service .inline .slide .description h2 {
@@ -561,18 +599,22 @@
     height: 340px;
   }
 
+  .product-slide li .tech .caption {
+    margin-bottom: 10px;
+  }
+
   .product-slide li .promo .mockup-samsung {
     height: 293px;
     width: 450px;
     top: 84px;
-    right: -37px;
+    right: -35px;
   }
 
   .product-slide li .promo .mockup-iphone {
     height: 294px;
     width: 450px;
     top: 72px;
-    //right: -56px;
+    right: -35px;
   }
 
   .product-slide .promo .head {
@@ -684,6 +726,35 @@
 
   .contacts-holder .contact .map-holder {
     width: 750px;
+  }
+
+  img.sv-img-1 {
+    height: 244px;
+  }
+
+  img.sv-img-2 {
+      height: 259px;
+  }
+
+  .home .tags {
+    margin: 30px 0;
+  }
+
+  .vacancy {
+    padding: 15px;
+  }
+
+  .vacancy h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .vacancy img {
+    width: 100px;
+  }
+
+  .space {
+    padding-top: 20px;
   }
 
 }

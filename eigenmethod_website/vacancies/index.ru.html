@@ -1,39 +1,52 @@
 ---
 layout: default
-<!--title: Вакансии-->
+title: Вакансии
 permalink: /vacancies/
 weight: 3
 ---
 
 
 <div class="main">
-    <h1>Работа в нашей компании</h1>
-    <article class="about">
-		<p>На текущий момент мы имеем ядро команды разработки, в котором собрались представители таких известных компаний, как Google, Yandex, Avito, Motorola и Electronic Arts. </p>
-		<p>Но мы не останавливаемся на достигнутом и постоянно ищем новых талантливых коллег и соратников. Мы планируем расширить штат разработчиков для укомплектования проектных команд, а также привлекать специалистов смежных специальностей: тестировщиков, системных администраторов, девопсов, и специалистов по технической поддержке. В наши планы входит совершенствование наших текущих продуктов, вывод их на рынок, а также работа над новыми интересными проектами.</p>
-		<p>Все наши проекты сравнительно молодые и у нас нет накопившегося legacy-кода, который нужно поддерживать. Мы придерживаемся принципа «cutting-edge technologies», поэтому разработка программных продуктов реализуется при помощи стека технологий: Python, C++, PostgreSQL, Django, Twisted, Tornado, Redis и т.д.</p>
+    <h1>Вакансии</h1>
+    <div class="vacancy-container">
+        {% assign posts = (site.posts | where:"language", {{site.language_default}}) | where:"layout", "vacancy" %}
+        {% for post in posts %}
+        <div class="flex-center" style="align-items: stretch;">
+            <div class="inline box vacancy vacansy-info">
+                <h4>{{ post.title }}</h4>
+                <p><span>{{post.salary}}</span></p>
+                <p>{{post.description}}</p>
+                <p><span>{{post.city}}</span></p>
+            </div>
+            <div class="inline box vacancy vacancy-links">
+                <img src="{{ post.vacancy_logo }}" alt="{{ post.title }} vacancy logo" >
+                <a class="post-link" href="{{ post.vacancy_link }}" target="_blank">Подробнее</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+	<h1>О компании</h1>
+	<article class="about">
+		<p><strong>EigenMethod</strong> - это молодая компания, у нас более 50 высококвалифицированных разработчиков. Мы занимаемся разработкой собственных программных продуктов. Но также мы помогаем другим компаниям успешно реализовывать их проекты по созданию программного обеспечения.</p>
+		<p>Для разработки своих продуктов мы используем самые передовые информационные технологии и методологии разработки. Создание программных продуктов осуществляется при помощи открытого стека технологий: Python, C++, PostgreSQL, Django, Twisted, Tornado, Redis и других.</p>
+		<p>У нас есть опыт разработки программного обеспечения, где требуется тесная интеграция с SAP системами. Мы предоставляем услуги по аутсорсингу разработки на SAP HANA, SAPUI5 и ABAP.</p>
+		<p>Наши офисы находятся в Восточной Европе, где много ИТ-талантов. Наша команда не только высококвалифицированная, но еще и эффективная по стоимости для наших клиентов так и для разработки собственных продуктов.</p>
 	</article>
 
     <div class="space"></div>
 
-	{% assign posts = (site.posts | where:"language", {{site.language_default}}) | where:"layout", "vacancy" %}
-    <div class="box" style="padding: 0">
-        <table class="vacancy-table">
-            <tr>
-                <th><div>Название</div></th>
-                <th><div>Город</div></th>
-                <th><div>Опыт</div></th>
-                <th><div>Навыки</div></th>
-            </tr>
-			{% for post in posts %}
-            <tr>
-                <td><div><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div></td><td><div>{{ post.city }}</div></td><td><div>{{ post.expirience }}</div></td><td><div>{{ post.skills }}</div></td>
-            </tr>
-			{% endfor %}
-        </table>
+    <div class="vacancy-feedback">
+        <div>
+            <p>Если вдруг вы не смогли найти подходящей вакансии в нашем списке, но являетесь классным специалистом в своей области – пишите нам и мы придумаем, что вам предложить.</p>
+        </div>
+        <div>
+            <a class="more-info" href="mailto:hr@eigenmethod.com">
+                Написать
+                <img src="/img/arrow.png" alt="more info arrow" />
+            </a>
+        </div>
     </div>
-
-    <p>Если вдруг вы не смогли найти подходящей вакансии в нашем списке, но являетесь классным специалистом в своей области – пишите <a href="mailto:hr@eigenmethod.com">нам</a> и мы придумаем, что вам предложить.</p>
 
     <div class="space"></div>
 
