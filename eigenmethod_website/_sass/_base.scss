@@ -926,10 +926,10 @@ a.more-info {
     background-image: -webkit-linear-gradient( 90deg, rgb( 37, 72, 145 ) 0%, rgb( 6, 125, 217 ) 100%);
     background-image: -o-linear-gradient( 90deg, rgb( 37, 72, 145 ) 0%, rgb( 6, 125, 217 ) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb( 37, 72, 145 ) 0%, rgb( 6, 125, 217 ) 100%);
-
     box-shadow: 1px 1px 5px 0px rgb( 0, 0, 2 );
     text-decoration: none;
     font-family: "Roboto-Light", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    white-space: nowrap;
 }
 
 a.more-info img {
@@ -1265,6 +1265,7 @@ table, th, td, tr {
     width: 780px;
     height: 192px;
     margin: 0 auto;
+    padding: 10px;
     position: relative;
     background: url(/img/vacancies/vacansy-feedback.png) no-repeat;
     background-size: cover;
@@ -1280,6 +1281,7 @@ table, th, td, tr {
     font-size: 18px;
     display: inline-block;
     color: #fff;
+    margin-bottom: 0;
 }
 
 .vacancy-container {

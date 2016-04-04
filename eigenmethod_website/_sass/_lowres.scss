@@ -399,6 +399,11 @@
     margin: 30px 0;
   }
 
+  .vacancy-container
+  {
+    width: 850px;
+  }
+
 }
 
 //@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -680,8 +685,11 @@
   }
 
   .contacts-holder .contact .map-holder {
-    width: 850px;
-    height: 190px;
+    width: 700px;
+  }
+
+  .contacts-holder .contact .map-holder address {
+    width: 275px;
   }
 
   img.sv-img {
@@ -690,6 +698,7 @@
 
   .box {
     font-size: 15px;
+    padding: 27px 30px
   }
 
   .notice h2 {
@@ -700,12 +709,17 @@
     font-size: 13px;
   }
 
+  .box-gray {
+    padding-left: 27px;
+    padding-right: 30px;
+  }
+
   .box-gray h4 {
     font-size: 18px;
   }
 
   p.tech-logo {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .hh-table th div {
@@ -724,20 +738,24 @@
     margin: 25px 40px;
   }
 
-  .contacts-holder .contact .map-holder {
-    width: 750px;
-  }
-
   img.sv-img-1 {
-    height: 244px;
+    height: 225px;
   }
 
   img.sv-img-2 {
-      height: 259px;
+      height: 225px;
   }
 
   .home .tags {
     margin: 30px 0;
+  }
+
+  .vacancy-container {
+    width: 700px;
+  }
+
+  .vacancy-feedback {
+    width: 700px;
   }
 
   .vacancy {
