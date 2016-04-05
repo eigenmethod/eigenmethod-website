@@ -20,7 +20,7 @@ weight: 3
             </div>
             <div class="inline box vacancy vacancy-links">
                 <img src="{{ post.vacancy_logo }}" alt="{{ post.title }} vacancy logo" >
-                <a class="post-link" href="{{ post.vacancy_link }}" target="_blank">Подробнее</a>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" target="_blank">Подробнее</a>
             </div>
         </div>
         {% endfor %}

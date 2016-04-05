@@ -19,21 +19,21 @@ description: EigenMethod - это молодая компания, у нас б�
 	<h1>Контакты</h1>
 	<div class="contacts-holder">
 		<div class="contact">
-			<h3>Головной офис и центр разработки</h3>
+			<h3>Головной офис</h3>
 			<div class="map-holder">
 				<address>
 					<dl>
 						<dt style="display: none;">Город:</dt>
-						<dd>Киев</dd>
+						<dd>Москва</dd>
 						<br>
 						<dt>Адрес:</dt>
-						<dd>02121,<br>Харьковское шоссе, 175, 2 этаж</dd>
+						<dd>115114,<br>1-й Дербеневский пер., 5, 305</dd>
 						<br>
 						<dt>Телефон:</dt>
-						<dd><a href="tel:0380445852243">0380 44 585 22 43</a></dd>
+						<dd><a href="tel:0074956637759">007 495 663 7759</a></dd>
 						<br>
 						<dt>Почта:</dt>
-						<dd><a href="mailto:info@eigenmethod.com">info@eigenmethod.com</a></dd>
+						<dd><a href="mailto:info@eigenmethod.com">info@eigenmethod.кг</a></dd>
 					</dl>
 				</address>
 				<div id="map-1" class="map"></div>
@@ -57,6 +57,26 @@ description: EigenMethod - это молодая компания, у нас б�
 					</dl>
 				</address>
 				<div id="map-2" class="map"></div>
+			</div>
+		</div>
+
+		<div class="contact">
+			<h3>Центр разработки</h3>
+			<div class="map-holder">
+				<address>
+					<dl>
+						<dt style="display: none;">Город:</dt>
+						<dd>Киев</dd>
+						<br>
+						<dt>Адрес:</dt>
+						<dd>02121,<br>Харьковское шоссе, 175, 2 этаж</dd>
+						<br>
+						<dt>Телефон:</dt>
+						<dd><a href="tel:0380445852243">0380 44 585 22 43</a></dd>
+						<br>
+					</dl>
+				</address>
+				<div id="map-3" class="map"></div>
 			</div>
 		</div>
 	</div>
@@ -94,7 +114,7 @@ description: EigenMethod - это молодая компания, у нас б�
 		var map1
 		var point1
 
-		geocoder.geocode({address: 'Киев, Харьковское шоссе, 175'}, function(results, status) {
+		geocoder.geocode({address: 'Москва, 1-й Дербеневский пер., 5'}, function(results, status) {
 			map1 = new google.maps.Map(document.getElementById('map-1'), {
 				center: results[0].geometry.location,
 				zoom: 11,
@@ -112,8 +132,7 @@ description: EigenMethod - это молодая компания, у нас б�
 					y: 0
 				}
 			})
-		})
-
+		});
 
 		var map2
 		var point2
@@ -137,6 +156,29 @@ description: EigenMethod - это молодая компания, у нас б�
 				}
 			})
 		})
+
+		var map3;
+		var point3;
+
+		geocoder.geocode({address: 'Киев, Харьковское шоссе, 175'}, function(results, status) {
+			map3 = new google.maps.Map(document.getElementById('map-3'), {
+				center: results[0].geometry.location,
+				zoom: 11,
+				// disableDefaultUI: true,
+				streetViewControl: false,
+				mapTypeControl: false
+			});
+
+			var point3 = new google.maps.Marker({
+				map: map3,
+				position: results[0].geometry.location,
+				icon: icon,
+				anchorPoint: {
+					x: 0,
+					y: 0
+				}
+			})
+		});
 
 	}
 	</script>
