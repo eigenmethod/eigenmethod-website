@@ -43,3 +43,8 @@ vacancy_logo: /img/vacancies/vac.svg
 
 #### Тип занятости:
 Полная занятость, полный день.  
+
+### [Отправить резюме][mail]
+
+[//]: #
+   [mail]: <mailto:hr@eigenmethod.com>
