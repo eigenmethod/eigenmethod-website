@@ -12,6 +12,7 @@ vacancy_link:
 vacancy_logo: /img/vacancies/vac.svg
 ---
 
+###### ![](/img/vacancies/Title.jpg)
 
 #### Обязанности:  
 * разработка кроссплатформенных веб-приложений;  

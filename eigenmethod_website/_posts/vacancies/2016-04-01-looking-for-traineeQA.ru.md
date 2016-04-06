@@ -12,6 +12,8 @@ vacancy_link:
 vacancy_logo: /img/vacancies/vac.svg
 ---
 
+###### ![](/img/vacancies/Title.jpg)
+
 #### Обязанности:  
 
 * изучение подходов к проведению тестирования;  

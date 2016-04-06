@@ -12,6 +12,8 @@ vacancy_link:
 vacancy_logo: /img/vacancies/vac.svg
 ---
 
+###### ![](/img/vacancies/Title.jpg)
+
 #### Обязанности:  
 
 * тестирование web и мобильных версий приложения;  
