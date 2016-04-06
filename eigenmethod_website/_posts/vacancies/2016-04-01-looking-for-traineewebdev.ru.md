@@ -3,7 +3,7 @@ layout: vacancy
 title: Стажер web-разработчик
 city: Санкт-Петербург, Россия
 expirience: не требуется
-salary: до 25 000 руб
+salary: з/п до 25 000 руб
 skills: HTML5, CSS3, JS, Python
 created_at: 2016-04-01
 language: ru
