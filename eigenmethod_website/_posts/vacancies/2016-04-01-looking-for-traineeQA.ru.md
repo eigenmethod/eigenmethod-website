@@ -9,7 +9,7 @@ created_at: 2016-04-01
 language: ru
 description: В обособленное подразделение компании EigenMethod - Департамент разработки - набираются стажеры-тестировщики.
 vacancy_link: 
-vacancy_logo: /img/vacancies/logo-hh-ru.png
+vacancy_logo: /img/vacancies/vac.svg
 ---
 
 #### Обязанности:  
