@@ -20,24 +20,24 @@ description: EigenMethod is a young company, which has more than 50 highly quali
 	<h1>Contacts</h1>
 	<div class="contacts-holder">
 		<div class="contact">
-			<h3>Head office</h3>
+			<h3>Head office and development center</h3>
 			<div class="map-holder">
 				<address>
 					<dl>
 						<dt style="display: none;">City:</dt>
-						<dd>Moscow</dd>
+						<dd>Kyiv</dd>
 						<br>
 						<dt>Address:</dt>
-						<dd>115114,<br>1-st Derbenevsky bystreet, 5, 305</dd>
+						<dd>02121,<br>Kharkivske shosse, 175, 2 floor</dd>
 						<br>
 						<dt>Telephone:</dt>
-						<dd><a href="tel:0074956637759">007 495 663 7759</a></dd>
+						<dd><a href="tel:0380445852243">0380 44 585 22 43</a></dd>
 						<br>
 						<dt>Email:</dt>
 						<dd><a href="mailto:info@eigenmethod.com">info@eigenmethod.com</a></dd>
 					</dl>
 				</address>
-				<div id="map-1" class="map"></div>
+				<div id="map-3" class="map"></div>
 			</div>
 		</div>
 
@@ -58,26 +58,6 @@ description: EigenMethod is a young company, which has more than 50 highly quali
 					</dl>
 				</address>
 				<div id="map-2" class="map"></div>
-			</div>
-		</div>
-
-		<div class="contact">
-			<h3>Development center</h3>
-			<div class="map-holder">
-				<address>
-					<dl>
-						<dt style="display: none;">City:</dt>
-						<dd>Kyiv</dd>
-						<br>
-						<dt>Address:</dt>
-						<dd>02121,<br>Kharkivske shosse, 175, 2 floor</dd>
-						<br>
-						<dt>Telephone:</dt>
-						<dd><a href="tel:0380445852243">0380 44 585 22 43</a></dd>
-						<br>
-					</dl>
-				</address>
-				<div id="map-3" class="map"></div>
 			</div>
 		</div>
 	</div>
@@ -111,29 +91,6 @@ description: EigenMethod is a young company, which has more than 50 highly quali
 		}
 
 		var geocoder = new google.maps.Geocoder()
-
-		var map1
-		var point1
-
-		geocoder.geocode({address: 'Москва, 1-й Дербеневский пер., 5'}, function(results, status) {
-			map1 = new google.maps.Map(document.getElementById('map-1'), {
-				center: results[0].geometry.location,
-				zoom: 11,
-				// disableDefaultUI: true,
-				streetViewControl: false,
-				mapTypeControl: false
-			});
-
-			var point1 = new google.maps.Marker({
-				map: map1,
-				position: results[0].geometry.location,
-				icon: icon,
-				anchorPoint: {
-					x: 0,
-					y: 0
-				}
-			})
-		});
 
 		var map2
 		var point2
