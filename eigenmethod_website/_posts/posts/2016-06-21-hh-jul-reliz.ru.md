@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Июльский релиз мобильной платформs HyperHive
+title: Июльский релиз мобильной платформы HyperHive
 created_at: 2016-06-21
 language: ru
 representation_img: /img/posts/news-hh jul-rel.jpg
 description: Мы рады сообщить вам, что в июле выходит новая версия мобильной платформы HyperHive
 ---
 
-## Новый релиз - новые возможности 
+## Новый релиз - новые возможности!
 
 ###### ![](/img/posts/hh jul-rel.jpg)
 
