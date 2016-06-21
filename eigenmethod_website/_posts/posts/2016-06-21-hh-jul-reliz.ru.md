@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Ранний доступ к мобильной платформе HyperHive
+title: Июльский релиз мобильной платформе HyperHive
 created_at: 2016-06-21
 language: ru
-representation_img: /img/posts/news-hh jul-rel.jpg
-description: Мы рады представить вам первую бета-версию мобильной платформы HyperHive
+representation_img: /img/posts/news-hh jul-rel.png
+description: Мы рады сообщить вам, что в июле выходит новая версия мобильной платформы HyperHive
 ---
 
 ## Мы рады сообщить о запуске программы раннего доступа к продуктам EigenMethod
 
-###### ![](/img/posts/hh jul-rel.jpg)
+###### ![](/img/posts/hh jul-rel.png)
 
 Не за горами июльский релиз мобильной платформы [HyperHive][hh]. В этом релизе ожидается много нововведений по безопасности и удобству работы с платформой для разработчиков мобильных приложений.  
 
