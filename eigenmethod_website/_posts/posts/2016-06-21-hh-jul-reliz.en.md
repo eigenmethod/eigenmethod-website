@@ -27,4 +27,4 @@ You can find HyperHive documentation [here][conf].
 [//]: #
    [conf]:<https://eigenmethod.atlassian.net/wiki>
    [load]:<https://drive.google.com/open?id=0B8AkRifdvvd1anJSN0tndnpueFk>
-   [hh]: <http://eigenmethod.ru/products/hh/>
+   [hh]: <http://eigenmethod.com/products/hh/>
