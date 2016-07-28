@@ -25,10 +25,10 @@ description: Мобильная платформа HyperHive получила р
 
 Используйте следующие ссылки для начала работы с HyperHive v1.0:
 
-* [загрузка][hh_distr] дистрибутивов
+* [загрузка][hh_distr]
 * [документация][hh_doc] к продукту
 
 [//]: #
-   [hh_distr]: <https://eigenmethod.atlassian.net/wiki/display/HH10EN/2.+Download+and+install>
+   [hh_distr]: <https://eigenmethod.atlassian.net/wiki/pages/viewpage.action?pageId=5537881>
    [hh_doc]: <https://eigenmethod.atlassian.net/wiki>
 
