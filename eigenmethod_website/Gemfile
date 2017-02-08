@@ -1,9 +1,8 @@
-# A sample Gemfile
+# frozen_string_literal: true
 source "https://rubygems.org"
 
-group :jekyll_plugins do
-  gem "jekyll"
-  gem "jekyll-multiple-languages"
-  gem "jekyll-paginate"
-  # gem "eigenmethod-jekyll-paginate",  '>=0.0.6'
-end
+# gem "rails"
+gem "jekyll", "3.1.2"
+gem "jekyll-paginate", "1.1.0"
+gem "jekyll-multiple-languages", "2.0.3"
+# gem "jekyll-multiple-languages-plugin"
