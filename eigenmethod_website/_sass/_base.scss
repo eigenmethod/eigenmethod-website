@@ -2224,10 +2224,6 @@ table, th, td, tr {
   align-items: center;
   justify-content: center; }
 
-.mol-table div.diagonal-line {
-  background: url("/img/hh/corner-line.png") no-repeat, #fafafa;
-  display: table; }
-
 .mol-table p.bot-left {
   position: relative;
   text-align: left;
@@ -2259,6 +2255,13 @@ table, th, td, tr {
   align-items: center;
   justify-content: flex-start; }
 
+.mol-table tr:nth-child(3) div {
+    height: 120px;
+}
+.mol-table td:nth-child(1) div {
+    padding: 25px;
+}
+
 .mol-table th div {
   border-top: 1px solid #d2d2d2; }
 
@@ -2279,6 +2282,19 @@ table, th, td, tr {
 
 .mol-table th:last-of-type div {
   border-top: 3px solid #067dd9; }
+
+.mol-table tr:nth-child(1) div {
+    border-top: 1px solid #d2d2d2;
+    height: 70px;
+    border-left: 1px solid #d2d2d2;
+    border-right:1px solid #d2d2d2;
+    border-bottom: 0px;
+}
+.mol-table th:nth-child(1) div{
+    //border-top: 0px;
+    border-right: 0px;
+}
+
 
 .vacancy-table {
   width: 100%; }
