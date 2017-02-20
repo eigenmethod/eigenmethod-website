@@ -2290,10 +2290,18 @@ table, th, td, tr {
     border-right:1px solid #d2d2d2;
     border-bottom: 0px;
 }
-.mol-table th:nth-child(1) div{
-    //border-top: 0px;
+.mol-table th:nth-child(1) .cellnoborder{
+    border: 0px; 
+}
+.onecell{
+    background: #fafafa;
+    border:1px solid #d2d2d2;
     border-right: 0px;
 }
+
+
+
+
 
 
 .vacancy-table {
