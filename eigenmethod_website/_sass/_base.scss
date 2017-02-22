@@ -1796,13 +1796,6 @@ footer .main-menu {
   top: 61px;
   right: -56px; }
 
-.product-slide li .promo .mockup-imac {
-  position: absolute;
-  height: 435px;
-  width: 440px;
-  top: 61px;
-  right: -56px; }
-
 .product-slide li .tech {
   position: absolute;
   bottom: 0;
@@ -3109,6 +3102,7 @@ a.next-post span {
     height: 458px;
     width: 700px; }
 
+
   .post-content p {
     padding-right: 50px;
     padding-left: 50px; }
@@ -3236,6 +3230,13 @@ a.next-post span {
     height: 359px;
     width: 550px;
     top: 78px; }
+    
+.product-slide li .promo .mockup-imac {
+    height: 335px;
+    width: 340px;
+    top: 61px;
+    right: -56px;
+}
 
   .product-slide .promo .head {
     font-size: 50px;
@@ -3314,6 +3315,8 @@ a.next-post span {
 
   .vacancy-container {
     width: 850px; } }
+
+
 @media screen and (max-device-width: 1024px) {
   .desktop-visible {
     visibility: hidden;
@@ -3478,6 +3481,15 @@ a.next-post span {
     width: 450px;
     top: 72px;
     right: -35px; }
+.product-slide li .promo .mockup-imac {
+    height: 235px;
+    width: 240px;
+    top: 61px;
+    right: -35px;
+}
+
+
+
 
   .product-slide .promo .head {
     font-size: 44px;
