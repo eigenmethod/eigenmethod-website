@@ -18,7 +18,6 @@ description: EigenMethod - это молодая компания, у нас б�
 
 	<h1>Контакты</h1>
 	<div class="contacts-holder">
-
 		<div class="contact">
 			<h3>Центр разработки</h3>
 			<div class="map-holder">
@@ -35,7 +34,7 @@ description: EigenMethod - это молодая компания, у нас б�
 						<br>
 					</dl>
 				</address>
-				<div id="map-3" class="map"></div>
+				<div id="map-1" class="map"></div>
 			</div>
 		</div>
 	</div>
@@ -69,12 +68,12 @@ description: EigenMethod - это молодая компания, у нас б�
 		}
 
 		var geocoder = new google.maps.Geocoder()
+		
+		var map1;
+		var point1;
 
-		var map1
-		var point1
-
-		geocoder.geocode({address: 'Москва, 1-й Дербеневский пер., 5'}, function(results, status) {
-			map1 = new google.maps.Map(document.getElementById('map-1'), {
+		geocoder.geocode({address: 'Киев, Харьковское шоссе, 175'}, function(results, status) {
+			map3 = new google.maps.Map(document.getElementById('map-1'), {
 				center: results[0].geometry.location,
 				zoom: 11,
 				// disableDefaultUI: true,
@@ -84,52 +83,6 @@ description: EigenMethod - это молодая компания, у нас б�
 
 			var point1 = new google.maps.Marker({
 				map: map1,
-				position: results[0].geometry.location,
-				icon: icon,
-				anchorPoint: {
-					x: 0,
-					y: 0
-				}
-			})
-		});
-
-		var map2
-		var point2
-
-		geocoder.geocode({address: 'Санкт-Петербург, ул. Белоостровская, 17/2А'}, function(results, status) {
-			map2 = new google.maps.Map(document.getElementById('map-2'), {
-				center: results[0].geometry.location,
-				zoom: 11,
-				// disableDefaultUI: true,
-				streetViewControl: false,
-				mapTypeControl: false
-			});
-
-			var point2 = new google.maps.Marker({
-				map: map2,
-				position: results[0].geometry.location,
-				icon: icon,
-				anchorPoint: {
-					x: 0,
-					y: 0
-				}
-			})
-		})
-
-		var map3;
-		var point3;
-
-		geocoder.geocode({address: 'Киев, Харьковское шоссе, 175'}, function(results, status) {
-			map3 = new google.maps.Map(document.getElementById('map-3'), {
-				center: results[0].geometry.location,
-				zoom: 11,
-				// disableDefaultUI: true,
-				streetViewControl: false,
-				mapTypeControl: false
-			});
-
-			var point3 = new google.maps.Marker({
-				map: map3,
 				position: results[0].geometry.location,
 				icon: icon,
 				anchorPoint: {
