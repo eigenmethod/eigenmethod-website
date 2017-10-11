@@ -7,7 +7,7 @@
 
 # Site settings
 title: Eigen Method
-email: info@eigenmethod.com
+email: info@eigenmethod.com.ua
 description: EigenMethod – is a company, specializing in software development, including web, mobile and desktop applications. Our projects request strong technical skills – we solve problems relating algorithms, integration, high availability and high load requirements and more.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://eigenmethod.com"

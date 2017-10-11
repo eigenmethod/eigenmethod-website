@@ -47,4 +47,4 @@ vacancy_logo: /img/vacancies/vac.svg
 ### [Отправить резюме][mail]
 
 [//]: #
-   [mail]: <mailto:hr@eigenmethod.com>
+   [mail]: <mailto:hr@eigenmethod.com.ua>
