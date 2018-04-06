@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: New version of HyperHive mobile platform
-ceated_at: 2016-07-27
+ceated_at: 2018-03-27
 language: en
 representation_img: /img/posts/news-hh rel.jpg 
 description: HyperHive brings to the market new features, new benefits. Read more…
@@ -9,7 +9,7 @@ description: HyperHive brings to the market new features, new benefits. Read mor
 
 ## Security and convenience are priorities of current release
 
-Starting on July 22 you can get access to the HyperHive v1.0. HyperHive has several new security features:
+Starting on March 28 you can get access to the HyperHive v1.0. HyperHive has several new security features:
 
 * LDAP authentication of mobile device users,
 * data transfer channel encryption (using custom algorithms),

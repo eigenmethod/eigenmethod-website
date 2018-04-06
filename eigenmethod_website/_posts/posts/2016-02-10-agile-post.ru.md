@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Подход Agile в наших проектах
-created_at: 2015-02-10
+created_at: 2016-02-10
 language: ru
 representation_img: /img/posts/news-agile.png
 description: Разработка программных продуктов согласно подходу Agile

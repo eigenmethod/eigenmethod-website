@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: EigenMethod на TAdviser SummIT 2016
-created_at: 2016-05-31
+title: EigenMethod на TAdviser SummIT 2017
+created_at: 2017-05-31
 language: ru
 representation_img: /img/posts/tadp.png
 description: 31 мая в Москве состоялся TAdviser SummIT
@@ -12,7 +12,7 @@ description: 31 мая в Москве состоялся TAdviser SummIT
 
 ##### ![](/img/posts/tad.png)
 
-31 мая 2016 года в Москве состоялся [TAdviser SummIT][tad]. На конференции прошли параллельно панели Cloud DAY и [Mobility Day][con], где EigenMethod представил российскую инновационную платформу [HyperHive][hh] для быстрой разработки мобильных приложений.  
+31 мая 2017 года в Москве состоялся [TAdviser SummIT][tad]. На конференции прошли параллельно панели Cloud DAY и [Mobility Day][con], где EigenMethod представил российскую инновационную платформу [HyperHive][hh] для быстрой разработки мобильных приложений.  
 
 В пленарной части TAdviser SummIT прозвучали доклады, посвященные глобальным технологическим тенденциям, изменившимся политическим и экономическим реалиям, их влиянию на ИТ-отрасль. На панели Cloud DAY обсуждались вопросы использования облачных технологий в бизнесе и госуправлении. В рамках программы Mobility Day - главной темой стал вопрос повышения эффективности работы организации за счет использования ИТ на мобильных устройствах.   
 
@@ -23,7 +23,7 @@ description: 31 мая в Москве состоялся TAdviser SummIT
 
 #### **Дополнительные материалы:**   
 
-* [презентация][pres] доклада на TAdviser SummIT 2016;  
+* [презентация][pres] доклада на TAdviser SummIT 2017;  
 
 [//]: #
    [tad]:<http://summit.tadviser.ru/>

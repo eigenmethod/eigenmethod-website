@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Методология Scrum в наших проектах
-created_at: 2015-03-05
+created_at: 2016-03-05
 language: ru
 representation_img: /img/posts/news-scrum.jpg
 description: Методология Scrum в разработке EigenMethod

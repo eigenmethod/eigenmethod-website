@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Валидация программного обеспечения
-created_at: 2015-10-01
+created_at: 2016-10-01
 language: ru
 representation_img: /img/posts/news-validate.png
 description: Процесс валидации программного обеспечения согласно стандарту ISO 9001

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: New version of HyperHive platform coming soon
-created_at: 2016-06-21
+created_at: 2018-02-21
 language: en
 representation_img: /img/posts/news-hh jul-rel.jpg
 description: We’re glad to announce a new version of HyperHive platform, which is coming soon.
