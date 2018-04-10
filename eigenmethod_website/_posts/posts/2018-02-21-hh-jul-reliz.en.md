@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: New version of HyperHive platform coming soon
 created_at: 2018-02-21

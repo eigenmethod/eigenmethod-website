@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Методология Scrum в наших проектах
 created_at: 2016-03-05

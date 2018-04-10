@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: EigenMethod на TAdviser SummIT 2017
 created_at: 2017-05-31

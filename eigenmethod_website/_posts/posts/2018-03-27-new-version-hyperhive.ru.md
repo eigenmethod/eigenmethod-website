@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Новая версия мобильной платформы HyperHive
 created_at: 2018-03-27

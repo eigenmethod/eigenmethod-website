@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: New version of HyperHive mobile platform
 created_at: 2018-03-27

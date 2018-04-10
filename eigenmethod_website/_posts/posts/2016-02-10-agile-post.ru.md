@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Подход Agile в наших проектах
 created_at: 2016-02-10

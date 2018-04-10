@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Февральский релиз мобильной платформы HyperHive
 created_at: 2018-02-21
