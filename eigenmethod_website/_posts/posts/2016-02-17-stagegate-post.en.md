@@ -2,6 +2,7 @@
 layout: post
 title: Using Stage-Gate Process model
 created_at: 2016-02-17
+date: 2016-02-17
 language: en
 representation_img: /img/posts/SGP.jpg
 description: Stage-Gate model for accompanying products in the environment provided by the Eigenmethod team

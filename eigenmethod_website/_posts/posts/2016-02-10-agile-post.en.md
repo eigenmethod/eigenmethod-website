@@ -2,6 +2,7 @@
 layout: post
 title: Agile in our projects
 created_at: 2016-02-10
+date: 2016-02-10
 language: en
 representation_img: /img/posts/news-agile.png
 description: Development according to Agile approach

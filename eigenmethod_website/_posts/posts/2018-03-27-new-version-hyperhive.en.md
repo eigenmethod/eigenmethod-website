@@ -1,7 +1,8 @@
 ﻿---
 layout: post
 title: New version of HyperHive mobile platform
-ceated_at: 2018-03-27
+created_at: 2018-03-27
+date: 2018-03-27
 language: en
 representation_img: /img/posts/news-hh rel.jpg 
 description: HyperHive brings to the market new features, new benefits. Read more…

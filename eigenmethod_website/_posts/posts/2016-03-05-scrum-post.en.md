@@ -2,6 +2,7 @@
 layout: post
 title: Scrum in our projects
 created_at: 2016-03-05
+date: 2016-03-05
 language: en
 representation_img: /img/posts/news-scrum.jpg
 description: Scrum techniques in EigenMethod development

@@ -2,6 +2,7 @@
 layout: post
 title: Software validation
 created_at: 2017-02-17
+date: 2017-02-17
 language: en
 representation_img: /img/posts/news-validate.png
 description: The process of software validation according to the ISO 9001 standard

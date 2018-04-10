@@ -2,6 +2,7 @@
 layout: post
 title: Использование модели Stage-Gate Process
 created_at: 2016-02-17
+date: 2016-02-17
 language: ru
 representation_img: /img/posts/SGP.jpg
 description: На основании модели Stage-Gate был разработан подход к разработке программно-аппаратных комплексов любой сложности

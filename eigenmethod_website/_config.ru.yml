@@ -8,10 +8,10 @@
 # Site settings
 title: Eigen Method
 email: info@eigenmethod.com.ua
-description: EigenMethod — молодая компания специализирующаяся в разработке программных комплексов.
+description: EigenMethod — компания специализирующаяся в разработке программных комплексов.
 baseurl: "" # the subpath of your site, e.g. /blog
 #url: "http://eigenmethod.com"
-url: "http://eigenmethod.ru"
+url: "http://eigenmethod.com.ua"
 #url: "http://31.131.21.120"
 #url: "http://localhost:4000"
 #twitter_username: eigen

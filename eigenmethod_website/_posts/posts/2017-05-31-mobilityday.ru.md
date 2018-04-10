@@ -2,6 +2,7 @@
 layout: post
 title: EigenMethod на TAdviser SummIT 2017
 created_at: 2017-05-31
+date: 2017-05-31
 language: ru
 representation_img: /img/posts/tadp.png
 description: 31 мая в Москве состоялся TAdviser SummIT

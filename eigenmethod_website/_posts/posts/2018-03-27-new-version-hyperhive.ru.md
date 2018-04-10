@@ -1,7 +1,8 @@
 ﻿---
 layout: post
 title: Новая версия мобильной платформы HyperHive
-ceated_at: 2018-03-27
+created_at: 2018-03-27
+date: 2018-03-27
 language: ru
 representation_img: /img/posts/news-hh rel.jpg
 description: Мобильная платформа HyperHive получила ряд новых конкурентных преимуществ в новом релизе. Читать далее…

@@ -2,6 +2,7 @@
 layout: post
 title: Февральский релиз мобильной платформы HyperHive
 created_at: 2018-02-21
+date: 2018-02-21
 language: ru
 representation_img: /img/posts/news-hh jul-rel.jpg
 description: Мы рады сообщить вам, что в феврале выходит новая версия мобильной платформы HyperHive
