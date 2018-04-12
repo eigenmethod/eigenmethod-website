@@ -312,25 +312,6 @@ description: EigenMethod – is a company, specializing in software development,
                                 <div class="news-gradient">
                                     <div class="post-meta">
                                        <h4>{{posts[2].title}}</h4>
-                                       <p class="date desktop-visible">
-                                            {% assign m = posts[2].date | date: "%-m" %}
-                                            {{ posts[2].date | date: "%-d" }}
-                                            {% case m %}
-                                              {% when '1' %}{{ site.data.i18n[site.language_default].january }}
-                                              {% when '2' %}{{ site.data.i18n[site.language_default].february }}
-                                              {% when '3' %}{{ site.data.i18n[site.language_default].march }}
-                                              {% when '4' %}{{ site.data.i18n[site.language_default].april }}
-                                              {% when '5' %}{{ site.data.i18n[site.language_default].may }}
-                                              {% when '6' %}{{ site.data.i18n[site.language_default].june }}
-                                              {% when '7' %}{{ site.data.i18n[site.language_default].july }}
-                                              {% when '8' %}{{ site.data.i18n[site.language_default].august }}
-                                              {% when '9' %}{{ site.data.i18n[site.language_default].september }}
-                                              {% when '10' %}{{ site.data.i18n[site.language_default].october }}
-                                              {% when '11' %}{{ site.data.i18n[site.language_default].november }}
-                                              {% when '12' %}{{ site.data.i18n[site.language_default].december }}
-                                            {% endcase %}
-                                            {{ posts[2].date | date: "%Y" }}
-                                       </p>
                                        <p>{{posts[2].description}}</p>
                                     </div>
                                 </div>
